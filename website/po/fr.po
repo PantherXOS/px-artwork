@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20201121\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-01-13 15:18Z\n"
-"PO-Revision-Date: 2022-01-15 13:16+0000\n"
-"Last-Translator: Aurelien Coussat <acoussat@mail.fr>\n"
+"POT-Creation-Date: 2022-04-07 15:18Z\n"
+"PO-Revision-Date: 2022-02-22 16:56+0000\n"
+"Last-Translator: Julien Lepiller <fedora-account@lepiller.eu>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/guix/"
 "website/fr/>\n"
 "Language: fr\n"
@@ -281,10 +281,6 @@ msgstr "GNU Guix"
 msgctxt "webpage title"
 msgid "GNU Guix — Activity Feed"
 msgstr "GNU Guix — flux d'activités"
-
-#: apps/base/templates/theme.scm:126
-msgid "Online conference February 19-20. <1>Learn more</1>!"
-msgstr "Conférence en ligne les 19 et 20 février. <1>En savoir plus</1> !"
 
 #: apps/base/templates/theme.scm:151
 msgid ""
@@ -1001,6 +997,30 @@ msgstr ""
 "de paquets GNU Guix|Communauté|Listes de diffusion|Canaux IRC|Rapport de "
 "bogues|Aide"
 
+#: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
+msgid ""
+"We want to provide a warm, friendly, and harassment-free environment,\n"
+"           so that anyone can contribute to the best of their abilities.  "
+"To\n"
+"           this end our project uses a “Contributor Covenant”, which was "
+"adapted\n"
+"           from <1>https://contributor-covenant.org/</1>.  You can find the "
+"full pledge in the <2>CODE-OF-CONDUCT</2> file."
+msgstr ""
+"Nous voulons vous offrir un environnement accueillant, amical et sans "
+"harcèlement,\n"
+"pour que tout le monde puisse contribuer au mieux de ses capacités. Pour "
+"cela,\n"
+"notre projet utilise un « engagement du contributeur », adapté de\n"
+"<1>https://contributor-covenant.org/</1>. Vous pouvez trouver notre "
+"engagement complet dans le fichier <2>CODE-OF-CONDUCT</2>."
+
+#: apps/base/templates/contact.scm:54
+msgid ""
+"Participation to the project communication channels listed below\n"
+"            is subject to this code of conduct."
+msgstr ""
+
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
 msgid "Contribute"
@@ -1044,24 +1064,6 @@ msgstr ""
 "#guix</2> sur le réseau IRC Libera Chat. Dites-nous comment vous voulez "
 "aider,\n"
 "et nous ferons de notre mieux pour vous guider. "
-
-#: apps/base/templates/contribute.scm:51
-msgid ""
-"We want to provide a warm, friendly, and harassment-free environment,\n"
-"           so that anyone can contribute to the best of their abilities.  "
-"To\n"
-"           this end our project uses a “Contributor Covenant”, which was "
-"adapted\n"
-"           from <1>https://contributor-covenant.org/</1>.  You can find the "
-"full pledge in the <2>CODE-OF-CONDUCT</2> file."
-msgstr ""
-"Nous voulons vous offrir un environnement accueillant, amical et sans "
-"harcèlement,\n"
-"pour que tout le monde puisse contribuer au mieux de ses capacités. Pour "
-"cela,\n"
-"notre projet utilise un « engagement du contributeur », adapté de\n"
-"<1>https://contributor-covenant.org/</1>. Vous pouvez trouver notre "
-"engagement complet dans le fichier <2>CODE-OF-CONDUCT</2>."
 
 #: apps/base/templates/contribute.scm:72
 msgid "Project Management"
@@ -2171,7 +2173,7 @@ msgctxt "publication type"
 msgid "Article"
 msgstr "Article"
 
-#: apps/media/data.scm:52 apps/media/data.scm:73
+#: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "Article de journal"
@@ -2181,76 +2183,76 @@ msgctxt "publication type"
 msgid "Book chapter"
 msgstr "Chapitre de livre"
 
-#: apps/media/data.scm:79
+#: apps/media/data.scm:85
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "Connexion graphique"
 
-#: apps/media/data.scm:83
+#: apps/media/data.scm:89
 msgid "Graphical log-in screen"
 msgstr "Écran de connexion graphique"
 
-#: apps/media/data.scm:86
+#: apps/media/data.scm:92
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:90
+#: apps/media/data.scm:96
 msgid "GNOME desktop environment"
 msgstr "Environnement de bureau GNOME"
 
-#: apps/media/data.scm:93
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:97
+#: apps/media/data.scm:103
 msgid "Xfce desktop environment"
 msgstr "Environnement de bureau Xfce"
 
-#: apps/media/data.scm:100
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "Machine virtuelle"
 
-#: apps/media/data.scm:104
+#: apps/media/data.scm:110
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "Machine virtuelle démarré avec « guix system vm »"
 
-#: apps/media/data.scm:107
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:111
+#: apps/media/data.scm:117
 msgid "Sway window manager running wayland"
 msgstr "Gestionnaire de fenêtres Sway lancé sur wayland"
 
-#: apps/media/data.scm:114
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:118
+#: apps/media/data.scm:124
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment, Inkscape et du texte en écriture cyrillique"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:130
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL : Utilisation quotidienne de Guix"
 
-#: apps/media/data.scm:132
+#: apps/media/data.scm:138
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "Sécurité du système de construction de Bitcoin"
 
-#: apps/media/data.scm:139
+#: apps/media/data.scm:145
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "Administration système reproductible avec GNU Guix"
 
-#: apps/media/data.scm:146
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr ""
@@ -2481,6 +2483,16 @@ msgstr ""
 "<1>Problèmes de style</1><2><2.1/>. Voir <2.2>la définition du paquet</2.2> "
 "dans le code source de Guix.</2>"
 
+#~ msgid ""
+#~ "Online conference February 19-20. Watch the <1>pre-recorded talks</1>."
+#~ "<2>Join us</2>! Learn <3>more</3>!"
+#~ msgstr ""
+#~ "Conférence en ligne les 19 et 20 novembres. Regardez les <1>présentations "
+#~ "enregistrées</1>. <2>Rejoignez-nous</2> ! <3>Plus d'informations</3> !"
+
+#~ msgid "Online conference February 19-20. <1>Learn more</1>!"
+#~ msgstr "Conférence en ligne les 19 et 20 février. <1>En savoir plus</1> !"
+
 #~ msgctxt "website menu"
 #~ msgid "Stable"
 #~ msgstr "Stable"
@@ -2591,10 +2603,3 @@ msgstr ""
 #~ msgctxt "button"
 #~ msgid "Next →"
 #~ msgstr "Suivant →"
-
-#~ msgid ""
-#~ "Online conference November 22nd. Watch the <1>pre-recorded talks</1>."
-#~ "<2>Join us</2>! Learn <3>more</3>!"
-#~ msgstr ""
-#~ "Conférence en ligne le 22 novembre. Regardez les <1>présentations "
-#~ "enregistrées</1>. <2>Rejoignez-nous</2> ! <3>Plus d'informations</3> !"

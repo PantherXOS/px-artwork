@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20201005-2\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-01-13 15:18Z\n"
-"PO-Revision-Date: 2022-01-17 14:22+0000\n"
+"POT-Creation-Date: 2022-04-07 15:18Z\n"
+"PO-Revision-Date: 2022-03-29 19:21+0000\n"
 "Last-Translator: Florian Pelz <pelzflorian@pelzflorian.de>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/guix/"
 "website/de/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -280,10 +280,6 @@ msgstr "GNU Guix"
 msgctxt "webpage title"
 msgid "GNU Guix — Activity Feed"
 msgstr "GNU Guix — Aktivitäten-Feed"
-
-#: apps/base/templates/theme.scm:126
-msgid "Online conference February 19-20. <1>Learn more</1>!"
-msgstr "Online-Konferenz am 19. – 20. Februar. <1>Mehr erfahren</1>!"
 
 #: apps/base/templates/theme.scm:151
 msgid ""
@@ -994,6 +990,30 @@ msgstr ""
 "Guix-Paketverwaltung|Gemeinde|Community|Mailing-Listen|IRC-Kanäle|Probleme "
 "melden|Hilfe"
 
+#: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
+msgid ""
+"We want to provide a warm, friendly, and harassment-free environment,\n"
+"           so that anyone can contribute to the best of their abilities.  "
+"To\n"
+"           this end our project uses a “Contributor Covenant”, which was "
+"adapted\n"
+"           from <1>https://contributor-covenant.org/</1>.  You can find the "
+"full pledge in the <2>CODE-OF-CONDUCT</2> file."
+msgstr ""
+"Wir möchten eine warme, freundliche Umgebung frei von Belästigungen bieten, "
+"damit jeder so gut er kann mithelfen kann. Deshalb folgt dieses Projekt "
+"einer Vereinbarung („Contributor Covenant“), die auf <1>https://www."
+"contributor-covenant.org/translations</1> basiert. Sie können unser "
+"vollständiges Versprechen in der Datei <2>CODE-OF-CONDUCT</2> nachlesen."
+
+#: apps/base/templates/contact.scm:54
+msgid ""
+"Participation to the project communication channels listed below\n"
+"            is subject to this code of conduct."
+msgstr ""
+"Die Teilnahme in den unten aufgeführten Kommunikationskanälen des Projekts "
+"unterliegt diesen Verhaltensregeln."
+
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
 msgid "Contribute"
@@ -1036,22 +1056,6 @@ msgstr ""
 "Guix-Entwicklung</1> oder auf dem <2>„#guix“-Kanal</2> im IRC-Netzwerk "
 "Libera Chat herzlich willkommen. Sagen Sie uns, wie Sie uns helfen möchten, "
 "und wir tun unser Bestes, um Sie dabei zu begleiten. "
-
-#: apps/base/templates/contribute.scm:51
-msgid ""
-"We want to provide a warm, friendly, and harassment-free environment,\n"
-"           so that anyone can contribute to the best of their abilities.  "
-"To\n"
-"           this end our project uses a “Contributor Covenant”, which was "
-"adapted\n"
-"           from <1>https://contributor-covenant.org/</1>.  You can find the "
-"full pledge in the <2>CODE-OF-CONDUCT</2> file."
-msgstr ""
-"Wir möchten eine warme, freundliche Umgebung frei von Belästigungen bieten, "
-"damit jeder so gut er kann mithelfen kann. Deshalb folgt dieses Projekt "
-"einer Vereinbarung („Contributor Covenant“), die auf <1>https://www."
-"contributor-covenant.org/translations</1> basiert. Sie können unser "
-"vollständiges Versprechen in der Datei <2>CODE-OF-CONDUCT</2> nachlesen."
 
 #: apps/base/templates/contribute.scm:72
 msgid "Project Management"
@@ -1825,9 +1829,9 @@ msgid ""
 "Users should <1>verify<1.1>en</1.1><1.2>Binary-Installation.html</1.2></1> "
 "their downloads before extracting or running them."
 msgstr ""
-"Benutzer sollten heruntergeladene Dateien <1>verifizieren<1.1>de</1.1><1.2"
-">Aus-Binardatei-installieren.html</1.2></1>, bevor sie diese entpacken oder "
-"ausführen."
+"Benutzer sollten heruntergeladene Dateien "
+"<1>verifizieren<1.1>de</1.1><1.2>Aus-Binardatei-installieren.html</1.2></1>, "
+"bevor sie diese entpacken oder ausführen."
 
 #: apps/base/templates/security.scm:81
 msgid "Security updates"
@@ -2150,7 +2154,7 @@ msgctxt "publication type"
 msgid "Article"
 msgstr "Artikel"
 
-#: apps/media/data.scm:52 apps/media/data.scm:73
+#: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "Journalartikel"
@@ -2160,76 +2164,76 @@ msgctxt "publication type"
 msgid "Book chapter"
 msgstr "Buchkapitel"
 
-#: apps/media/data.scm:79
+#: apps/media/data.scm:85
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "Grafische Anmeldung"
 
-#: apps/media/data.scm:83
+#: apps/media/data.scm:89
 msgid "Graphical log-in screen"
 msgstr "Grafischer Anmeldebildschirm"
 
-#: apps/media/data.scm:86
+#: apps/media/data.scm:92
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:90
+#: apps/media/data.scm:96
 msgid "GNOME desktop environment"
 msgstr "GNOME-Arbeitsumgebung"
 
-#: apps/media/data.scm:93
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:97
+#: apps/media/data.scm:103
 msgid "Xfce desktop environment"
 msgstr "Xfce-Arbeitsumgebung"
 
-#: apps/media/data.scm:100
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "Virtuelle Maschine"
 
-#: apps/media/data.scm:104
+#: apps/media/data.scm:110
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "Über ‚guix system vm‘ gestartete Virtuelle Maschine"
 
-#: apps/media/data.scm:107
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:111
+#: apps/media/data.scm:117
 msgid "Sway window manager running wayland"
 msgstr "Sway-Fensterverwalter mit Wayland"
 
-#: apps/media/data.scm:114
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:118
+#: apps/media/data.scm:124
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment, Inkscape und kyrillische Schrift"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:130
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL: Alltägliche Nutzung von GNU Guix"
 
-#: apps/media/data.scm:132
+#: apps/media/data.scm:138
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "Bitcoins Erstellungssystem absichern"
 
-#: apps/media/data.scm:139
+#: apps/media/data.scm:145
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "Reproduzierbare Systemadministration mit GNU Guix"
 
-#: apps/media/data.scm:146
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr "Mehr als Container: Reproduzierbare Software-Umgebungen mit GNU Guix"
@@ -2456,6 +2460,13 @@ msgid ""
 msgstr ""
 "<1>Automatisch erkannte Paketfehler</1><2><2.1/>. Siehe die "
 "<2.2>Paketdefinition</2.2> im Quellcode von Guix.</2>"
+
+#, fuzzy
+#~| msgid "Online conference February 19-20. <1>Learn more</1>!"
+#~ msgid ""
+#~ "Online conference February 19-20. Watch the <1>pre-recorded talks</1>."
+#~ "<2>Join us</2>! Learn <3>more</3>!"
+#~ msgstr "Online-Konferenz am 19. – 20. Februar. <1>Mehr erfahren</1>!"
 
 #~ msgctxt "website menu"
 #~ msgid "Stable"

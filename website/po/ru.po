@@ -6,13 +6,14 @@
 # Mikhail Kirillov <w96k@riseup.net>, 2021.
 # Igor Gorbounov <igor.gorbounov@gmail.com>, 2021.
 # Nikolay Korotkiy <sikmir@disroot.org>, 2021.
+# Nikita Epifanov <nikgreens@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20210222\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-01-13 15:18Z\n"
-"PO-Revision-Date: 2021-12-10 18:56+0000\n"
-"Last-Translator: Iosilevitch Mihail <yosik@cock.li>\n"
+"POT-Creation-Date: 2022-04-07 15:18Z\n"
+"PO-Revision-Date: 2022-02-08 17:16+0000\n"
+"Last-Translator: Nikita Epifanov <nikgreens@protonmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/guix/"
 "website/ru/>\n"
 "Language: ru\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -280,10 +281,6 @@ msgctxt "webpage title"
 msgid "GNU Guix — Activity Feed"
 msgstr "GNU Guix — Лента активности"
 
-#: apps/base/templates/theme.scm:126
-msgid "Online conference February 19-20. <1>Learn more</1>!"
-msgstr ""
-
 #: apps/base/templates/theme.scm:151
 msgid ""
 "Made with <1>♥</1> by humans and powered by <2>GNU Guile</2>.  <3>Source "
@@ -325,7 +322,7 @@ msgstr "Загрузить"
 #: apps/base/templates/components.scm:404
 msgctxt "website menu"
 msgid "Standard"
-msgstr ""
+msgstr "Стандартная"
 
 #: apps/base/templates/components.scm:407
 #: apps/download/templates/download-latest.scm:162
@@ -1006,6 +1003,29 @@ msgstr ""
 "Пакетный менеджер GNU Guix|Сообщество|Списки рассылки|Каналы IRC|Сообщения "
 "об ошибках|Помощь"
 
+#: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
+msgid ""
+"We want to provide a warm, friendly, and harassment-free environment,\n"
+"           so that anyone can contribute to the best of their abilities.  "
+"To\n"
+"           this end our project uses a “Contributor Covenant”, which was "
+"adapted\n"
+"           from <1>https://contributor-covenant.org/</1>.  You can find the "
+"full pledge in the <2>CODE-OF-CONDUCT</2> file."
+msgstr ""
+"Мы хотим предоставить теплое, дружелюбное и свободное от притеснений "
+"окружение,\n"
+" так что каждый сможет содействовать в меру своих возможностей. Для\n"
+" этого наш проект использует “Contributor Covenant”, адаптированный\n"
+" из <1>https://contributor-covenant.org/</1>. Его можно найти полностью в "
+"файле <2>CODE-OF-CONDUCT</2>."
+
+#: apps/base/templates/contact.scm:54
+msgid ""
+"Participation to the project communication channels listed below\n"
+"            is subject to this code of conduct."
+msgstr ""
+
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
 msgid "Contribute"
@@ -1042,23 +1062,12 @@ msgid ""
 "like to help,\n"
 "           and we will do our best to guide you. "
 msgstr ""
-
-#: apps/base/templates/contribute.scm:51
-msgid ""
-"We want to provide a warm, friendly, and harassment-free environment,\n"
-"           so that anyone can contribute to the best of their abilities.  "
-"To\n"
-"           this end our project uses a “Contributor Covenant”, which was "
-"adapted\n"
-"           from <1>https://contributor-covenant.org/</1>.  You can find the "
-"full pledge in the <2>CODE-OF-CONDUCT</2> file."
-msgstr ""
-"Мы хотим предоставить теплое, дружелюбное и свободное от притеснений "
-"окружение,\n"
-" так что каждый сможет содействовать в меру своих возможностей. Для\n"
-" этого наш проект использует “Contributor Covenant”, адаптированный\n"
-" из <1>https://contributor-covenant.org/</1>. Его можно найти полностью в "
-"файле <2>CODE-OF-CONDUCT</2>."
+"GNU Guix - это большой проект, разработанный\n"
+"           в основном добровольцами со всего мира. Мы приглашаем вас\n"
+"           присоединиться к нам в списке рассылки <1>development</1> или в "
+"канале <2>#guix</2> в IRC-сети Libera Chat. Расскажите нам, как бы вы хотели "
+"помочь,\n"
+"           и мы сделаем все возможное, чтобы помочь вам. "
 
 #: apps/base/templates/contribute.scm:72
 msgid "Project Management"
@@ -1080,6 +1089,10 @@ msgid ""
 "            including software, web site, documentation, and artwork, are\n"
 "            available in <1>Git repositories</1> at Savannah. "
 msgstr ""
+"Исходные файлы для всех компонентов проекта,\n"
+"            включая программное обеспечение, веб-сайт, документацию и "
+"иллюстрации,\n"
+"            доступны в <1>Git-репозиториях</1> в Savannah. "
 
 #: apps/base/templates/contribute.scm:89
 msgid "Access Savannah"
@@ -1087,7 +1100,7 @@ msgstr "Доступ к Savannah"
 
 #: apps/base/templates/contribute.scm:94
 msgid "Art"
-msgstr ""
+msgstr "Иллюстрации"
 
 #: apps/base/templates/contribute.scm:95
 msgid ""
@@ -1095,12 +1108,18 @@ msgid ""
 "            improve user interfaces, and create multimedia material for\n"
 "            documentation, presentations, and promotional items. "
 msgstr ""
+"Мы всегда ищем художников, которые помогут нам разработать и\n"
+"            улучшать пользовательские интерфейсы, а также создавать "
+"мультимедийные материалы для\n"
+"            документации, презентаций и рекламных материалов. "
 
 #: apps/base/templates/contribute.scm:100
 msgid ""
 "The artwork used in the different components of the project\n"
 "            is available in the <1>guix-artwork</1> repository. "
 msgstr ""
+"Иллюстрации, используемые в различных компонентах проекта\n"
+"            доступны в репозитории <1>guix-artwork</1>. "
 
 #: apps/base/templates/contribute.scm:116 apps/base/templates/cuirass.scm:57
 msgid "Documentation"
@@ -1114,16 +1133,25 @@ msgid ""
 "            manuals, tutorials, and blog entries will also help users and\n"
 "            developers discover what we do. "
 msgstr ""
+"Вы можете ознакомиться с <1>документацией проекта</1>, в самой системе и на "
+"сайте, и\n"
+"            помочь нам выявить любые ошибки или упущения. Создание новых\n"
+"            руководств, обучающих материалов и записей в блогах также "
+"поможет пользователям и\n"
+"            разработчикам узнать, чем мы занимаемся. "
 
 #: apps/base/templates/contribute.scm:125
+#, fuzzy
 msgid ""
 "Helping improve the documentation of the <1>packaged software</1> is another "
 "way to contribute. "
 msgstr ""
+"Помощь в улучшении документации <1>упакованного программного обеспечения</1> "
+"- это еще один способ внести свой вклад. "
 
 #: apps/base/templates/contribute.scm:132
 msgid "Start writing"
-msgstr ""
+msgstr "Начните писать"
 
 #: apps/base/templates/contribute.scm:138
 #: apps/packages/templates/detailed-index.scm:43
@@ -1138,6 +1166,10 @@ msgid ""
 "            favorite tools with the Guix package manager, and be\n"
 "            productive using the system. "
 msgstr ""
+"Сотни программ, документации и ассеты должны быть\n"
+"            упакованы, чтобы пользователям было проще устанавливать свои\n"
+"            любимые инструменты с помощью менеджера пакетов Guix, и\n"
+"            продуктивно использовать свою систему. "
 
 #. TRANSLATORS: Packaging Guidelines is a section name in the
 #. English (en) manual.
@@ -1147,12 +1179,19 @@ msgid ""
 "            be found <1>in the manual<1.1>en</1.1><1.2>Contributing."
 "html</1.2></1>. "
 msgstr ""
+"Информацию о том, как добавлять пакеты в дистрибутив,\n"
+"            можно найти <1>в руководстве<1.1>ru</1.1><1.2>Sodeistvie."
+"html</1.2></1>. "
 
 #: apps/base/templates/contribute.scm:157
+#, fuzzy
 msgid ""
 "Check out the <1>package database</1> for a list of available packages, and "
 "the <2>patch-tracking database</2> for a list of pending submissions."
 msgstr ""
+"Просмотрите базу данных <1>пакетов</1>, чтобы получить список доступных "
+"пакетов, и базу данных <2>отслеживания патчей</2>, чтобы получить список "
+"предложений."
 
 #: apps/base/templates/contribute.scm:168
 msgid "Send a new package"
@@ -1168,6 +1207,10 @@ msgid ""
 "as the main programming and extension language for the\n"
 "            components of the system. "
 msgstr ""
+"Исходный код находится в <1>основном Git-репозитории</1>.  Мы используем "
+"<2>GNU Guile</2> в качестве основного языка программирования и расширения "
+"для\n"
+"            компонентов системы. "
 
 #. TRANSLATORS: Contributing is a section name in the English
 #. (en) manual.
@@ -1180,6 +1223,13 @@ msgid ""
 "            setup, as well as the coding and cooperation conventions used\n"
 "            in the project. "
 msgstr ""
+"Вам будет полезно просмотреть <1>руководство Guile</1> или другие <2>вводные "
+"материалы о Scheme</2>. Также обязательно прочтите раздел "
+"<3>Содействие<3.1>ru</3.1><3.2>Sodeistvie.html</3.2></3> в руководстве для "
+"получения более подробной информации о настройке\n"
+"            разработки, а также соглашении о кодировании и сотрудничестве, "
+"используемых\n"
+"            в проекте. "
 
 #: apps/base/templates/contribute.scm:205
 msgid "Send a patch"
@@ -1196,23 +1246,34 @@ msgid ""
 "            and users to be able to download and install packages. Help\n"
 "            us keep the system up and running smoothly. "
 msgstr ""
+"Инфраструктура нашей системы позволяет всем\n"
+"            участникам общаться и сотрудничать в проекте,\n"
+"            а пользователям загружать и устанавливать пакеты. Помогите\n"
+"            нам поддерживать систему в рабочем состоянии. "
 
 #: apps/base/templates/contribute.scm:218
 msgid ""
 "You can contribute to our continous integration software: <1/>. You can also "
 "<2>donate hardware or hosting</2> for our <3>build farm</3>"
 msgstr ""
+"Вы можете внести свой вклад в наше программное обеспечение непрерывной "
+"интеграции: <1/>. Вы также можете <2>пожертвовать оборудование или "
+"хостинг</2> для нашей <3>фермы сборки</3>"
 
 #: apps/base/templates/contribute.scm:235
 msgid "Test and Bug Reports"
-msgstr ""
+msgstr "Тестирование и сообщения об ошибках"
 
 #: apps/base/templates/contribute.scm:236
+#, fuzzy
 msgid ""
 "Install the software and send feedback to the community\n"
 "            about your experience. Help the project by reporting bugs. You "
 "can also get started by <1>picking an “easy” bug</1> to work on."
 msgstr ""
+"Установите программное обеспечение и отправьте отзыв в сообщество\n"
+"            о своём опыте. Помогите проекту, сообщая об ошибках. Вы также "
+"можете начать с <1>выбора \"легкой\" ошибки</1> для работы над ней."
 
 #: apps/base/templates/contribute.scm:245
 msgid ""
@@ -1220,6 +1281,11 @@ msgid ""
 "            already <1>in the bug database</1>. See <2>the developer "
 "information page</2> for more information on how to manipulate bug reports. "
 msgstr ""
+"Прежде чем сообщить об ошибке, пожалуйста, проверьте, не находится ли эта "
+"ошибка\n"
+"            уже <1>в базе данных ошибок</1>. Дополнительные сведения о том, "
+"как работать с сообщениями об ошибках, см. на странице <2>информации для "
+"разработчиков</2>. "
 
 #: apps/base/templates/contribute.scm:257
 msgid "Report a bug"
@@ -1230,19 +1296,28 @@ msgid "Translation"
 msgstr "Перевод"
 
 #: apps/base/templates/contribute.scm:264
+#, fuzzy
 msgid ""
 "You can help translate the <1>software</1>, the <2>package descriptions</2>, "
 "the <3>manual</3>, the <4>cookbook</4>, and this <5>website</5> into your "
 "language.  See your language's team at the <6>Translation Project</6> to "
 "have a look at the styleguides and the work of other translators"
 msgstr ""
+"Вы можете помочь перевести <1>программное обеспечение</1>, <2>описания "
+"пакетов</2>, <3>руководство</3>, <4>справочник</4> и этот <5>веб-сайт</5> на "
+"ваш язык.  Обратитесь к команде вашего языка в <6>Translation Project</6>, "
+"чтобы ознакомиться с руководствами по стилю и работой других переводчиков"
 
 #: apps/base/templates/contribute.scm:291
+#, fuzzy
 msgid ""
 "<1>Software packages</1> provided by the system may have their own "
 "translation\n"
 "            tools.  Visit their websites and help translate. "
 msgstr ""
+"<1>Пакеты программного обеспечения</1>, предоставляемые системой, могут "
+"иметь свои собственные инструменты\n"
+"            перевода.  Посетите их веб-сайты и помогите перевести. "
 
 #: apps/base/templates/contribute.scm:298
 msgid "Start translating"
@@ -1258,6 +1333,10 @@ msgid ""
 "          auxiliary information useful to hackers and maintainers is\n"
 "          available at <1/>."
 msgstr ""
+"Документы, вспомогательные материалы предыдущих выступлений и\n"
+"          вспомогательная информация, полезная для хакеров и "
+"сопровождающих,\n"
+"          доступны по адресу <1/>."
 
 #: apps/base/templates/cuirass.scm:16
 msgctxt "webpage title"
@@ -1265,17 +1344,22 @@ msgid "Cuirass"
 msgstr "Cuirass"
 
 #: apps/base/templates/cuirass.scm:18
+#, fuzzy
 msgid "GNU Guix continuous integration software."
-msgstr ""
+msgstr "Программное обеспечение непрерывной интеграции GNU Guix."
 
 #. TRANSLATORS: |-separated list of webpage keywords
 #: apps/base/templates/cuirass.scm:21
+#, fuzzy
 msgid ""
 "GNU|Linux|Unix|Free software|Libre software|Operating system|GNU Guix "
 "package manager|Cuirass|CI"
 msgstr ""
+"GNU|Linux|Unix|Свободное программное обеспечение|Бесплатное программное "
+"обеспечение|Операционная система|Менеджер пакетов GNU Guix|Cuirass|CI"
 
 #: apps/base/templates/cuirass.scm:31
+#, fuzzy
 msgid ""
 "Cuirass is the GNU Guix continuous\n"
 "integration software. It's a general purpose build automation server "
@@ -1286,10 +1370,17 @@ msgid ""
 "interface\n"
 "to monitor the build results."
 msgstr ""
+"Cuirass - это програминое обеспечение непрерывной интеграции GNU Guix. Это "
+"сервер автоматизации сборки общего назначения, написанный на языке\n"
+"GNU Guile, который проверяет исходные тексты из VCS-репозиториев, выполняет "
+"задания сборки\n"
+"и хранит результаты сборки в базе данных. Cuirass также предоставляет веб-"
+"интерфейс\n"
+"для мониторинга результатов сборки."
 
 #: apps/base/templates/cuirass.scm:37
 msgid "Cuirass is running on GNU Guix build farm at <1/>."
-msgstr ""
+msgstr "Cuirass работает на ферме сборки GNU Guix по адресу <1/>."
 
 #: apps/base/templates/cuirass.scm:41
 msgid "Features"
@@ -1974,7 +2065,7 @@ msgctxt "publication type"
 msgid "Article"
 msgstr "Статья"
 
-#: apps/media/data.scm:52 apps/media/data.scm:73
+#: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
 msgctxt "publication type"
 msgid "Journal article"
 msgstr ""
@@ -1984,78 +2075,78 @@ msgctxt "publication type"
 msgid "Book chapter"
 msgstr ""
 
-#: apps/media/data.scm:79
+#: apps/media/data.scm:85
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr ""
 
-#: apps/media/data.scm:83
+#: apps/media/data.scm:89
 msgid "Graphical log-in screen"
 msgstr ""
 
-#: apps/media/data.scm:86
+#: apps/media/data.scm:92
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:90
+#: apps/media/data.scm:96
 msgid "GNOME desktop environment"
 msgstr "Графическая среда GNOME"
 
-#: apps/media/data.scm:93
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:97
+#: apps/media/data.scm:103
 msgid "Xfce desktop environment"
 msgstr "Среда рабочего стола Xfce"
 
-#: apps/media/data.scm:100
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "Виртуальные машины"
 
-#: apps/media/data.scm:104
+#: apps/media/data.scm:110
 msgid "Virtual machine started with 'guix system vm'"
 msgstr ""
 
-#: apps/media/data.scm:107
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:111
+#: apps/media/data.scm:117
 msgid "Sway window manager running wayland"
 msgstr ""
 
-#: apps/media/data.scm:114
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:118
+#: apps/media/data.scm:124
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr ""
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:130
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr ""
 
-#: apps/media/data.scm:132
+#: apps/media/data.scm:138
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr ""
 
-#: apps/media/data.scm:139
+#: apps/media/data.scm:145
 #, fuzzy
 #| msgid "System Administration"
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "Администрирование системы"
 
-#: apps/media/data.scm:146
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr ""
@@ -2280,6 +2371,13 @@ msgid ""
 "<1>Lint issues</1><2><2.1/>. See <2.2>package definition</2.2> in Guix "
 "source code.</2>"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Online conference February 19-20. <1>Learn more</1>!"
+#~ msgid ""
+#~ "Online conference February 19-20. Watch the <1>pre-recorded talks</1>."
+#~ "<2>Join us</2>! Learn <3>more</3>!"
+#~ msgstr "Онлайн-конференция 19-20 февраля. <1>Узнайте больше</1>!"
 
 #~ msgctxt "website menu"
 #~ msgid "Stable"

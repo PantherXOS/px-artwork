@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20210527\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-01-13 15:18Z\n"
+"POT-Creation-Date: 2022-04-07 15:18Z\n"
 "PO-Revision-Date: 2021-10-24 19:05+0000\n"
 "Last-Translator: Whired Planck <fungdaat31@outlook.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -263,10 +263,6 @@ msgstr "GNU Guix"
 msgctxt "webpage title"
 msgid "GNU Guix — Activity Feed"
 msgstr "GNU Guix — 活動資訊"
-
-#: apps/base/templates/theme.scm:126
-msgid "Online conference February 19-20. <1>Learn more</1>!"
-msgstr ""
 
 #: apps/base/templates/theme.scm:151
 msgid ""
@@ -961,6 +957,28 @@ msgstr ""
 "GNU | Linux | Unix | 自由軟體 | 自由軟體 | 作業系統 | GNU Hurd | GNU Guix 包"
 "管理器 | 社群 | 郵件列表 | IRC 頻道 | 故障報修 | 幫助"
 
+#: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
+msgid ""
+"We want to provide a warm, friendly, and harassment-free environment,\n"
+"           so that anyone can contribute to the best of their abilities.  "
+"To\n"
+"           this end our project uses a “Contributor Covenant”, which was "
+"adapted\n"
+"           from <1>https://contributor-covenant.org/</1>.  You can find the "
+"full pledge in the <2>CODE-OF-CONDUCT</2> file."
+msgstr ""
+"我們希望提供一個溫馨、友好且沒有騷擾的環境，這樣任何人都可以盡己所能做出貢"
+"獻。\n"
+"為此，我們的專案使用了「貢獻者契約」，改編自 <1>https://contributor-covenant."
+"org/</1>。\n"
+"您可以從《<2>行為準則</2>》中找到契約全文。"
+
+#: apps/base/templates/contact.scm:54
+msgid ""
+"Participation to the project communication channels listed below\n"
+"            is subject to this code of conduct."
+msgstr ""
+
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
 msgid "Contribute"
@@ -1001,22 +1019,6 @@ msgstr ""
 "歡迎透過<1>開發郵件列表</1>或 Libera Chat IRC 網路上\n"
 "的<2>#guix 頻道</2>加入我們。告訴我們您想提供哪些幫助，\n"
 "我們將盡全力為您指引。 "
-
-#: apps/base/templates/contribute.scm:51
-msgid ""
-"We want to provide a warm, friendly, and harassment-free environment,\n"
-"           so that anyone can contribute to the best of their abilities.  "
-"To\n"
-"           this end our project uses a “Contributor Covenant”, which was "
-"adapted\n"
-"           from <1>https://contributor-covenant.org/</1>.  You can find the "
-"full pledge in the <2>CODE-OF-CONDUCT</2> file."
-msgstr ""
-"我們希望提供一個溫馨、友好且沒有騷擾的環境，這樣任何人都可以盡己所能做出貢"
-"獻。\n"
-"為此，我們的專案使用了「貢獻者契約」，改編自 <1>https://contributor-covenant."
-"org/</1>。\n"
-"您可以從《<2>行為準則</2>》中找到契約全文。"
 
 #: apps/base/templates/contribute.scm:72
 msgid "Project Management"
@@ -2088,7 +2090,7 @@ msgctxt "publication type"
 msgid "Article"
 msgstr "文章"
 
-#: apps/media/data.scm:52 apps/media/data.scm:73
+#: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "雜誌文章"
@@ -2098,78 +2100,78 @@ msgctxt "publication type"
 msgid "Book chapter"
 msgstr "書本章節"
 
-#: apps/media/data.scm:79
+#: apps/media/data.scm:85
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "圖形登入"
 
-#: apps/media/data.scm:83
+#: apps/media/data.scm:89
 msgid "Graphical log-in screen"
 msgstr "圖形登入介面"
 
-#: apps/media/data.scm:86
+#: apps/media/data.scm:92
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:90
+#: apps/media/data.scm:96
 msgid "GNOME desktop environment"
 msgstr "GNOME 桌面環境"
 
-#: apps/media/data.scm:93
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:97
+#: apps/media/data.scm:103
 msgid "Xfce desktop environment"
 msgstr "Xfce 桌面環境"
 
-#: apps/media/data.scm:100
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "虛擬機器"
 
-#: apps/media/data.scm:104
+#: apps/media/data.scm:110
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "以“guix system vm”啟動的虛擬機器"
 
-#: apps/media/data.scm:107
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:111
+#: apps/media/data.scm:117
 msgid "Sway window manager running wayland"
 msgstr "執行在 Wayland 上的 Sway 視窗管理器"
 
-#: apps/media/data.scm:114
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:118
+#: apps/media/data.scm:124
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment、Inkscape 和 Cyrillic text"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:130
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL：日常使用 Guix"
 
-#: apps/media/data.scm:132
+#: apps/media/data.scm:138
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "比特币 构建系统 安全"
 
-#: apps/media/data.scm:139
+#: apps/media/data.scm:145
 #, fuzzy
 #| msgid "System Administration"
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "系統管理"
 
-#: apps/media/data.scm:146
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr ""

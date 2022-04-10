@@ -3,16 +3,17 @@
 # This file is distributed under the same license as the guix-website package.
 # Peng Mei Yu <pengmeiyu@riseup.net>, 2020.
 # Yuqi Feng <jiderlesi@outlook.de>, 2021.
-# Charles Lee <lchopn@gmail.com>, 2021.
+# Charles Lee <lchopn@gmail.com>, 2021, 2022.
 # Liu Tao <lyuutau@outlook.com>, 2021.
 # Whired Planck <fungdaat31@outlook.com>, 2021, 2022.
+# Julien Lepiller <fedora-account@lepiller.eu>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20201121\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-01-13 15:18Z\n"
-"PO-Revision-Date: 2022-01-27 19:16+0000\n"
-"Last-Translator: Whired Planck <fungdaat31@outlook.com>\n"
+"POT-Creation-Date: 2022-04-07 15:18Z\n"
+"PO-Revision-Date: 2022-03-24 00:16+0000\n"
+"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/guix/website/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -66,7 +67,6 @@ msgstr ""
 #: apps/packages/templates/index.scm:27
 #: apps/packages/templates/package-list.scm:30
 #: apps/packages/templates/package.scm:32
-#, xml-format
 msgid ""
 "GNU|Linux|Unix|Free software|Libre software|Operating system|GNU Hurd|GNU "
 "Guix package manager|GNU Guile|Guile Scheme|Transactional upgrades|"
@@ -85,7 +85,6 @@ msgid "Summary"
 msgstr "概要"
 
 #: apps/base/templates/home.scm:44
-#, xml-format
 msgid ""
 "<1>Liberating.</1> Guix is an advanced distribution of the <2>GNU operating "
 "system</2> developed by the <3>GNU Project</3>—which respects the <4>freedom "
@@ -269,10 +268,6 @@ msgstr "GNU Guix"
 msgctxt "webpage title"
 msgid "GNU Guix — Activity Feed"
 msgstr "GNU Guix — 活动信息"
-
-#: apps/base/templates/theme.scm:126
-msgid "Online conference February 19-20. <1>Learn more</1>!"
-msgstr "二月 19 至 20 日，线上会议日。<1>点此了解更多</1>！"
 
 #: apps/base/templates/theme.scm:151
 msgid ""
@@ -563,8 +558,9 @@ msgid ""
 "for contact.  For sensitive issues, you can reach them using the <2/> "
 "private alias."
 msgstr ""
-"Guix 现任维护者有 Efraim Flashner、Mathieu Othacehe、Maxim Cournoyer 和 Tobias "
-"Geerinckx-Rice。请用<1>邮件列表</1>联系我们。对于敏感问题，可以使用私密地址 <2/> 联系我们。"
+"Guix 现任维护者有 Efraim Flashner、Mathieu Othacehe、Maxim Cournoyer 和 "
+"Tobias Geerinckx-Rice。请用<1>邮件列表</1>联系我们。对于敏感问题，可以使用私"
+"密地址 <2/> 联系我们。"
 
 #: apps/base/templates/about.scm:116
 msgid "Licensing"
@@ -951,6 +947,30 @@ msgstr ""
 "GNU | Linux | Unix | 自由软件 | 自由软件 | 操作系统 | GNU Hurd | GNU Guix 包"
 "管理器 | 社区 | 邮件列表 | IRC 频道 | 故障报修 | 帮助"
 
+#: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
+msgid ""
+"We want to provide a warm, friendly, and harassment-free environment,\n"
+"           so that anyone can contribute to the best of their abilities.  "
+"To\n"
+"           this end our project uses a “Contributor Covenant”, which was "
+"adapted\n"
+"           from <1>https://contributor-covenant.org/</1>.  You can find the "
+"full pledge in the <2>CODE-OF-CONDUCT</2> file."
+msgstr ""
+"我们希望提供一个温馨、友好且没有骚扰的环境，这样任何人都可以尽己所能做出贡"
+"献。\n"
+"为此，我们的项目使用了「贡献者契约」，改编自 <1>https://contributor-covenant."
+"org/</1>。\n"
+"您可以从《<2>行为准则</2>》中找到契约全文。"
+
+#: apps/base/templates/contact.scm:54
+msgid ""
+"Participation to the project communication channels listed below\n"
+"            is subject to this code of conduct."
+msgstr ""
+"加入下列的项目社区频道\n"
+"            受到此代码准则约束。"
+
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
 msgid "Contribute"
@@ -991,22 +1011,6 @@ msgstr ""
 "欢迎通过<1>开发邮件列表</1>或 Libera Chat IRC 网络上\n"
 "的<2>#guix 频道</2>加入我们。告诉我们您想提供哪些帮助，\n"
 "我们将尽全力为您指引。 "
-
-#: apps/base/templates/contribute.scm:51
-msgid ""
-"We want to provide a warm, friendly, and harassment-free environment,\n"
-"           so that anyone can contribute to the best of their abilities.  "
-"To\n"
-"           this end our project uses a “Contributor Covenant”, which was "
-"adapted\n"
-"           from <1>https://contributor-covenant.org/</1>.  You can find the "
-"full pledge in the <2>CODE-OF-CONDUCT</2> file."
-msgstr ""
-"我们希望提供一个温馨、友好且没有骚扰的环境，这样任何人都可以尽己所能做出贡"
-"献。\n"
-"为此，我们的项目使用了「贡献者契约」，改编自 <1>https://contributor-covenant."
-"org/</1>。\n"
-"您可以从《<2>行为准则</2>》中找到契约全文。"
 
 #: apps/base/templates/contribute.scm:72
 msgid "Project Management"
@@ -1212,8 +1216,8 @@ msgid ""
 "have a look at the styleguides and the work of other translators"
 msgstr ""
 "您可以帮助翻译<1>软件</1>、<2>软件包描述</2>、<3>用户手册</3>、 <4>食谱</4>以"
-"及本<5>网站</5>到您的语言。请在 <6>Translation Project</6> 查看您的语言团队，"
-"浏览风格指导以及其他译者的工作"
+"及本<5>网站</5>到您的语言。前往 <4>Translation Project</4> 寻找您的语言团队，"
+"查看风格指导以及其他译者的工作"
 
 #: apps/base/templates/contribute.scm:291
 msgid ""
@@ -1459,18 +1463,20 @@ msgid ""
 "Molecular Medicine</3.1> (hardware and hosting)</3>"
 msgstr ""
 "<1>berlin.guix.gnu.org</1><2>拥有 25 个 x86_64-linux 和 i686-linux 构建节点\n"
-"和专用存储设施的构建集群</2><3><3.1>马克斯·德尔布吕克分子医学中心（Max Delbrück Center for Molecular "
-"Medicine）</3.1>（提供硬件和托管）</3>"
+"和专用存储设施的构建集群</2><3><3.1>马克斯·德尔布吕克分子医学中心（Max "
+"Delbrück Center for Molecular Medicine）</3.1>（提供硬件和托管）</3>"
 
 #: apps/base/templates/donate.scm:130
 msgid "<1>overdrive1</1><2>aarch64-linux</2><3><3.1>ARM Holdings</3.1></3>"
 msgstr ""
-"<1>overdrive1</1><2>aarch64-linux</2><3><3.1>安谋国际科技股份有限公司（ARM Holdings）</3."
-"1></3>"
+"<1>overdrive1</1><2>aarch64-linux</2><3><3.1>安谋国际科技股份有限公司（ARM "
+"Holdings）</3.1></3>"
 
 #: apps/base/templates/donate.scm:140
 msgid "<1>bayfront</1><2>new build farm front-end (WIP)</2><3>Igalia</3>"
-msgstr "<1>bayfront</1><2>新的构建集群前端（正在建设中）</2><3>伊加利亚开源咨询公司（Igalia）</3>"
+msgstr ""
+"<1>bayfront</1><2>新的构建集群前端（正在建设中）</2><3>伊加利亚开源咨询公司"
+"（Igalia）</3>"
 
 #: apps/base/templates/donate.scm:152
 msgid ""
@@ -1528,9 +1534,10 @@ msgid ""
 "<3>Technische Universität München</3>."
 msgstr ""
 "感谢其他在过去为 Guix 提供过硬件和托管服务的组织和个人：\n"
-"<1>自由软件基金会（Free Software Foundation）</1>、GNU 西班牙（GNU España）、<2>自由软件基金会法国分会（"
-"FSF France）</2>和<3>慕尼黑工业大学（Technische Universität München）</3>的自由安全网络系统小组（"
-"Free Secure Network Systems Group）。"
+"<1>自由软件基金会（Free Software Foundation）</1>、GNU 西班牙（GNU España）、"
+"<2>自由软件基金会法国分会（FSF France）</2>和<3>慕尼黑工业大学（Technische "
+"Universität München）</3>的自由安全网络系统小组（Free Secure Network Systems "
+"Group）。"
 
 #: apps/base/templates/graphics.scm:16
 msgctxt "webpage title"
@@ -1732,8 +1739,8 @@ msgid ""
 "Users should <1>verify<1.1>en</1.1><1.2>Binary-Installation.html</1.2></1> "
 "their downloads before extracting or running them."
 msgstr ""
-"用户应该在解压和运行之前<1>验证<1.1>zh-cn</1.1><1.2>Er-Jin-Zhi-Wen-Jian-An-Zhuang.html</1."
-"2></1>下载文件的签名。"
+"用户应该在解压和运行之前<1>验证<1.1>zh-cn</1.1><1.2>Er-Jin-Zhi-Wen-Jian-An-"
+"Zhuang.html</1.2></1>下载文件的签名。"
 
 #: apps/base/templates/security.scm:81
 msgid "Security updates"
@@ -2024,8 +2031,9 @@ msgid ""
 "you might prefer to use well-tested released images\n"
 "that can be found <4>here.</4>"
 msgstr ""
-"在 <2/> 上下载由 <1>Cuirass<1.1>zh-cn</1.1><1.2>Chi-Xu-Ji-Cheng.html</1.2></1> "
-"持续集成系统构建的最新版 GNU Guix 系统映像。这些映像是<3>开发快照</3>，您可能更想使用经过充分测试的稳定版映像，\n"
+"在 <2/> 上下载由 <1>Cuirass<1.1>zh-cn</1.1><1.2>Chi-Xu-Ji-Cheng."
+"html</1.2></1> 持续集成系统构建的最新版 GNU Guix 系统映像。这些映像是<3>开发"
+"快照</3>，您可能更想使用经过充分测试的稳定版映像，\n"
 "可在<4>这里</4>找到。"
 
 #: apps/media/data.scm:27 apps/media/data.scm:33 apps/media/data.scm:39
@@ -2042,7 +2050,7 @@ msgctxt "publication type"
 msgid "Article"
 msgstr "文章"
 
-#: apps/media/data.scm:52 apps/media/data.scm:73
+#: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "期刊文章"
@@ -2052,76 +2060,76 @@ msgctxt "publication type"
 msgid "Book chapter"
 msgstr "书籍章节"
 
-#: apps/media/data.scm:79
+#: apps/media/data.scm:85
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "图形登录"
 
-#: apps/media/data.scm:83
+#: apps/media/data.scm:89
 msgid "Graphical log-in screen"
 msgstr "图形登录界面"
 
-#: apps/media/data.scm:86
+#: apps/media/data.scm:92
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:90
+#: apps/media/data.scm:96
 msgid "GNOME desktop environment"
 msgstr "GNOME 桌面环境"
 
-#: apps/media/data.scm:93
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:97
+#: apps/media/data.scm:103
 msgid "Xfce desktop environment"
 msgstr "Xfce 桌面环境"
 
-#: apps/media/data.scm:100
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "虚拟机"
 
-#: apps/media/data.scm:104
+#: apps/media/data.scm:110
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "以“guix system vm”启动的虚拟机"
 
-#: apps/media/data.scm:107
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:111
+#: apps/media/data.scm:117
 msgid "Sway window manager running wayland"
 msgstr "运行在 Wayland 上的 Sway 窗口管理器"
 
-#: apps/media/data.scm:114
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:118
+#: apps/media/data.scm:124
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment、Inkscape 和 Cyrillic text"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:130
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL: 日常使用 Guix"
 
-#: apps/media/data.scm:132
+#: apps/media/data.scm:138
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "比特币构建系统安全"
 
-#: apps/media/data.scm:139
+#: apps/media/data.scm:145
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "使用 GNU Guix 进行可复现的系统管理"
 
-#: apps/media/data.scm:146
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr "超越容器：利用 GNU Guix 打造可复现的软件环境"
@@ -2345,6 +2353,20 @@ msgstr ""
 "<1>检查出的问题：</1><2><2.1/>。参见 Guix 源代码里的<2.2>软件包定义</2.2>。"
 "</2>"
 
+#, fuzzy
+#~| msgid ""
+#~| "Online conference November 22nd. Watch the <1>pre-recorded talks</1>."
+#~| "<2>Join us</2>! Learn <3>more</3>!"
+#~ msgid ""
+#~ "Online conference February 19-20. Watch the <1>pre-recorded talks</1>."
+#~ "<2>Join us</2>! Learn <3>more</3>!"
+#~ msgstr ""
+#~ "11月22日在线会议。观看<1>提前发布的演讲</1>。<2>加入我们！</2>！了解<3>更"
+#~ "多</3>！"
+
+#~ msgid "Online conference February 19-20. <1>Learn more</1>!"
+#~ msgstr "二月 19 至 20 日，线上会议日。<1>点此了解更多</1>！"
+
 #~ msgctxt "website menu"
 #~ msgid "Stable"
 #~ msgstr "稳定版"
@@ -2444,10 +2466,3 @@ msgstr ""
 #~ msgctxt "button"
 #~ msgid "Next →"
 #~ msgstr "向后 →"
-
-#~ msgid ""
-#~ "Online conference November 22nd. Watch the <1>pre-recorded talks</1>."
-#~ "<2>Join us</2>! Learn <3>more</3>!"
-#~ msgstr ""
-#~ "11月22日在线会议。观看<1>提前发布的演讲</1>。<2>加入我们！</2>！了解<3>更"
-#~ "多</3>！"

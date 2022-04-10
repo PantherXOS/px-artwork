@@ -1,16 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2021 the authors of the Guix Website (msgid) and the following authors (msgstr)
 # This file is distributed under the same license as the guix-website package.
-# la snesne <lasnesne@lagunposprasihopre.org>, 2021.
+# la snesne <lasnesne@lagunposprasihopre.org>, 2021, 2022.
 # simmon <simmon@nplob.com>, 2021, 2022.
 # Julien Lepiller <fedora-account@lepiller.eu>, 2021.
+# 김인수 <simmon@nplob.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20210222\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-01-13 15:18Z\n"
-"PO-Revision-Date: 2022-02-01 06:16+0000\n"
-"Last-Translator: simmon <simmon@nplob.com>\n"
+"POT-Creation-Date: 2022-04-07 15:18Z\n"
+"PO-Revision-Date: 2022-03-25 07:57+0000\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/guix/"
 "website/ko/>\n"
 "Language: ko\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -268,10 +269,6 @@ msgctxt "webpage title"
 msgid "GNU Guix — Activity Feed"
 msgstr "GNU Guix - 활동 피드"
 
-#: apps/base/templates/theme.scm:126
-msgid "Online conference February 19-20. <1>Learn more</1>!"
-msgstr ""
-
 #: apps/base/templates/theme.scm:151
 msgid ""
 "Made with <1>♥</1> by humans and powered by <2>GNU Guile</2>.  <3>Source "
@@ -333,8 +330,6 @@ msgid "All"
 msgstr "모두"
 
 #: apps/base/templates/components.scm:418
-#, fuzzy
-#| msgid "GNU Guix Manual <1/>"
 msgctxt "website menu"
 msgid "GNU Guix Manual <1/>"
 msgstr "GNU Guix 매뉴얼 <1/>"
@@ -566,9 +561,10 @@ msgid ""
 "for contact.  For sensitive issues, you can reach them using the <2/> "
 "private alias."
 msgstr ""
-"Guix는 현재 Efraim Flashner, Mathieu Othacehe, Maxim Cournoyer, 그리고 Tobias "
-"Geerinckx-Rice에 의해 관리됩니다.  연락을 하려면 <1>전자우편 목록</1>를 사용해주세요.  민감한 문제가 있으면, <2/"
-"> 비공개 별칭을 사용하여 연락 할 수 있습니다."
+"Guix는 현재 Efraim Flashner, Mathieu Othacehe, Maxim Cournoyer, 그리고 "
+"Tobias Geerinckx-Rice에 의해 관리됩니다.  연락을 하려면 <1>전자우편 목록</1>"
+"를 사용해주세요.  민감한 문제가 있으면, <2/> 비공개 별칭을 사용하여 연락 할 "
+"수 있습니다."
 
 #: apps/base/templates/about.scm:116
 msgid "Licensing"
@@ -794,10 +790,8 @@ msgstr ""
 "다."
 
 #: apps/base/templates/help.scm:55
-#, fuzzy
-#| msgid "Read stable manual"
 msgid "Read manual <1/>"
-msgstr "안정된 매뉴얼 읽기"
+msgstr "매뉴얼 읽기 <1/>"
 
 #: apps/base/templates/help.scm:67
 msgid "Get Guix reference card"
@@ -966,6 +960,28 @@ msgstr ""
 "GNU|리눅스|유닉스|자유 소프트웨어|Libre 소프트웨어|운영 체제|GNU Hurd|GNU "
 "Guix 꾸러미 관리자|커뮤니티|전자우편 목록|IRC 채널|결점 보고|도움"
 
+#: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
+msgid ""
+"We want to provide a warm, friendly, and harassment-free environment,\n"
+"           so that anyone can contribute to the best of their abilities.  "
+"To\n"
+"           this end our project uses a “Contributor Covenant”, which was "
+"adapted\n"
+"           from <1>https://contributor-covenant.org/</1>.  You can find the "
+"full pledge in the <2>CODE-OF-CONDUCT</2> file."
+msgstr ""
+"우리는 누구나 능력을 최대한 발휘해 기여할 수 있도록\n"
+"따뜻하고, 친절하고, 괴롭힘 없는 공간을 제공하고 싶습니다. 이를 위해\n"
+" 우리 프로젝트는 <1>https://contributor-covenant.org/</1>를 차용한\n"
+" “기여자 계약”을 사용합니다. <2>CODE-OF-CONDUCT</2> 파일에서 모든 규칙을 찾"
+"아 볼 수 있습니다."
+
+#: apps/base/templates/contact.scm:54
+msgid ""
+"Participation to the project communication channels listed below\n"
+"            is subject to this code of conduct."
+msgstr ""
+
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
 msgid "Contribute"
@@ -1007,22 +1023,6 @@ msgstr ""
 "는 <2>#guix 채널</2>에서 우리와 함께하는 것을 환영합니다.\n"
 " 어떻게 돕고 싶은지 우리에게 알려주면,\n"
 " 우리는 최선을 다해 당신을 안내해드리겠습니다. "
-
-#: apps/base/templates/contribute.scm:51
-msgid ""
-"We want to provide a warm, friendly, and harassment-free environment,\n"
-"           so that anyone can contribute to the best of their abilities.  "
-"To\n"
-"           this end our project uses a “Contributor Covenant”, which was "
-"adapted\n"
-"           from <1>https://contributor-covenant.org/</1>.  You can find the "
-"full pledge in the <2>CODE-OF-CONDUCT</2> file."
-msgstr ""
-"우리는 누구나 능력을 최대한 발휘해 기여할 수 있도록\n"
-"따뜻하고, 친절하고, 괴롭힘 없는 공간을 제공하고 싶습니다. 이를 위해\n"
-" 우리 프로젝트는 <1>https://contributor-covenant.org/</1>를 차용한\n"
-" “기여자 계약”을 사용합니다. <2>CODE-OF-CONDUCT</2> 파일에서 모든 규칙을 찾"
-"아 볼 수 있습니다."
 
 #: apps/base/templates/contribute.scm:72
 msgid "Project Management"
@@ -1332,7 +1332,7 @@ msgstr "빌드 결과물 또는 아티팩트를 저장합니다."
 
 #: apps/base/templates/cuirass.scm:50
 msgid "Collect build logs and metrics."
-msgstr "빌드 로그와 매트릭스를 수집합니다."
+msgstr "빌드 로그와 메트릭스를 수집합니다."
 
 #: apps/base/templates/cuirass.scm:52
 msgid "Provides a REST API."
@@ -1404,8 +1404,8 @@ msgid ""
 "storage needs."
 msgstr ""
 "Guix의 <1>빌드 팜</1>은 기부된 하드웨어와 호스팅에서 운영됩니다. 배포해야 할 "
-"것들이 증가 할수록 (<2>꾸러미 목록</2> 참고), 필요한 컴퓨팅과 저장소 소요도 "
-"함께 증가합니다."
+"것들이 증가 할수록 (<2>꾸러미 목록</2> 참고) 소요되는 연산력과 저장 공간도 함"
+"께 증가합니다."
 
 #: apps/base/templates/donate.scm:47
 msgid ""
@@ -1479,7 +1479,7 @@ msgstr ""
 
 #: apps/base/templates/donate.scm:98
 msgid "Thanks to the donors!"
-msgstr "기부해주셔서 감사합니다!"
+msgstr "기부해주신 분들께 감사드립니다!"
 
 #: apps/base/templates/donate.scm:103
 msgid ""
@@ -1502,7 +1502,8 @@ msgid ""
 "Molecular Medicine</3.1> (hardware and hosting)</3>"
 msgstr ""
 "<1>berlin.guix.gnu.org</1><2>x86_64-linux와 i686-linux용 빌드 노드 25개와\n"
-"전용 저장소가 있는 빌드 팜</2><3><3.1>Max Delbrück 분자 의학 센타</3.1> (하드웨어와 호스팅)</3>"
+"전용 저장소가 있는 빌드 팜</2><3><3.1>Max Delbrück 분자 의학 센타</3.1> (하드"
+"웨어와 호스팅)</3>"
 
 #: apps/base/templates/donate.scm:130
 #, fuzzy
@@ -2128,7 +2129,7 @@ msgctxt "publication type"
 msgid "Article"
 msgstr "기사"
 
-#: apps/media/data.scm:52 apps/media/data.scm:73
+#: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "저널 기사"
@@ -2138,86 +2139,86 @@ msgctxt "publication type"
 msgid "Book chapter"
 msgstr "책 장"
 
-#: apps/media/data.scm:79
+#: apps/media/data.scm:85
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "그래픽 로그인"
 
-#: apps/media/data.scm:83
+#: apps/media/data.scm:89
 msgid "Graphical log-in screen"
 msgstr "그래픽 로그인 화면"
 
-#: apps/media/data.scm:86
+#: apps/media/data.scm:92
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "그놈"
 
-#: apps/media/data.scm:90
+#: apps/media/data.scm:96
 msgid "GNOME desktop environment"
 msgstr "그놈 데스크탑 환경"
 
-#: apps/media/data.scm:93
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:97
+#: apps/media/data.scm:103
 msgid "Xfce desktop environment"
 msgstr "Xfce 데스크탑 환경"
 
-#: apps/media/data.scm:100
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "가상 장비"
 
-#: apps/media/data.scm:104
+#: apps/media/data.scm:110
 msgid "Virtual machine started with 'guix system vm'"
-msgstr "'guix 시스템 vm'와 함께 시작되는 가상 장비"
+msgstr "'guix system vm' 명령어로 생성된 가상 머신"
 
-#: apps/media/data.scm:107
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:111
+#: apps/media/data.scm:117
 msgid "Sway window manager running wayland"
 msgstr "wayland와 동작하는 Sway 창 관리자"
 
-#: apps/media/data.scm:114
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "인라이트먼트(Enlightenment)"
 
-#: apps/media/data.scm:118
-msgid "Enlightenment, Inkscape, and Cyrillic text"
-msgstr "인라이트먼트, 잉크스페이스, 그리고 키릴 문서"
-
 #: apps/media/data.scm:124
+msgid "Enlightenment, Inkscape, and Cyrillic text"
+msgstr "Enlightenment, Inkscape와 키릴 문자"
+
+#: apps/media/data.scm:130
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL: 일상 생활에서 Guix 사용"
 
-#: apps/media/data.scm:132
+#: apps/media/data.scm:138
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "비트코인 빌드 시스템 보안"
 
-#: apps/media/data.scm:139
+#: apps/media/data.scm:145
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
-msgstr "GNU Guix로 재현 할 수 있는 시스템 관리"
+msgstr "GNU Guix로 재현 가능한 시스템 관리"
 
-#: apps/media/data.scm:146
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
-msgstr "컨테이너 넘어서: GNU Guix에 재현 가능한 소프트웨어 환경"
+msgstr "컨테이너 너머: GNU Guix를 이용한 재현 가능한 소프트웨어 환경"
 
 #: apps/media/templates/components.scm:37
 #: apps/media/templates/components.scm:85
 #: apps/media/templates/components.scm:158 apps/media/templates/video.scm:32
 msgctxt "SRFI-19 date->string format"
 msgid "~b ~d, ~Y"
-msgstr "~b ~d, ~Y"
+msgstr "~Y ~b ~d"
 
 #: apps/media/templates/components.scm:65
 msgid "Playlist: "
@@ -2256,19 +2257,19 @@ msgstr "<1/>. <3/>에 의해 <2/> 발행했습니다. "
 #. a video is playing.
 #: apps/media/templates/components.scm:190
 msgid "Playing: "
-msgstr "놀이: "
+msgstr "재생 중: "
 
 #. TRANSLATORS: Tool tip indicating that a video
 #. is playing.
 #: apps/media/templates/components.scm:194
 msgid "Playing"
-msgstr "놀이"
+msgstr "재생 중"
 
 #: apps/media/templates/screenshot.scm:20
 #: apps/media/templates/screenshots-overview.scm:17
 msgctxt "webpage title"
 msgid "Screenshots"
-msgstr "순간찍기"
+msgstr "스크린샷"
 
 #: apps/media/templates/screenshots-overview.scm:18
 msgid "Overview of all screenshots."
@@ -2295,7 +2296,7 @@ msgstr "비디오 내려받기"
 #. TRANSLATORS: <1/> is a date, <2/> is a list of authors.
 #: apps/media/templates/video.scm:87
 msgid "Published <1/> by <2/>. "
-msgstr "<2 />에 의해 <1 />이 발행되었습니다. "
+msgstr "<2 />로부터 <1 />에 발행되었습니다. "
 
 #: apps/media/templates/video-list.scm:27
 msgctxt "webpage title"
@@ -2396,8 +2397,8 @@ msgid ""
 "(updated <4/>)."
 msgstr ""
 "GNU Guix는 <1/> 개의 꾸러미의 <2> 미리 생성된 투명한 바이너리</2>들을 제공합"
-"니다. 이들 부분은 전체 꾸러미의 목록을 제공합니다.  우리의 <3>지속적 통합 시"
-"스템</3>은 이들 현재의 빌드 현황(<4/>에 갱신된)을 보여줍니다."
+"니다. 이 페이지들에서는 전체 꾸러미의 목록을 제공합니다.  <3>지속적 통합 시스"
+"템</3>에서 빌드 현황(<4/>에 갱신된)을 볼 수 있습니다."
 
 #: apps/packages/templates/detailed-package-list.scm:56
 #: apps/packages/templates/package-list.scm:54

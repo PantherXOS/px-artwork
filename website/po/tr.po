@@ -2,13 +2,13 @@
 # Copyright (C) 2021 the authors of the Guix Website (msgid) and the following authors (msgstr)
 # This file is distributed under the same license as the guix-website package.
 # The FLOSS Information <theflossinformation@gmail.com>, 2021.
-# Muha Aliss <muhaaliss@gmail.com>, 2021.
+# Muha Aliss <muhaaliss@gmail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20210124\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-01-13 15:18Z\n"
-"PO-Revision-Date: 2021-09-06 17:04+0000\n"
+"POT-Creation-Date: 2022-04-07 15:18Z\n"
+"PO-Revision-Date: 2022-03-15 21:23+0000\n"
 "Last-Translator: Muha Aliss <muhaaliss@gmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/guix/"
 "website/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -161,12 +161,9 @@ msgid "Instructional videos"
 msgstr "Eğitim videoları"
 
 #: apps/base/templates/home.scm:156
-#, fuzzy
-#| msgctxt "button"
-#| msgid "ALL POSTS"
 msgctxt "button"
 msgid "ALL VIDEOS"
-msgstr "TÜM GÖNDERİLER"
+msgstr "TÜM VİDEOLAR"
 
 #: apps/base/templates/home.scm:163
 msgid "GNU Guix in your field"
@@ -279,10 +276,6 @@ msgctxt "webpage title"
 msgid "GNU Guix — Activity Feed"
 msgstr "GNU Guix - Etkinlik Akışı"
 
-#: apps/base/templates/theme.scm:126
-msgid "Online conference February 19-20. <1>Learn more</1>!"
-msgstr ""
-
 #: apps/base/templates/theme.scm:151
 msgid ""
 "Made with <1>♥</1> by humans and powered by <2>GNU Guile</2>.  <3>Source "
@@ -325,7 +318,7 @@ msgstr "İndir"
 #: apps/base/templates/components.scm:404
 msgctxt "website menu"
 msgid "Standard"
-msgstr ""
+msgstr "Standart"
 
 #: apps/base/templates/components.scm:407
 #: apps/download/templates/download-latest.scm:162
@@ -345,8 +338,6 @@ msgid "All"
 msgstr "Tümü"
 
 #: apps/base/templates/components.scm:418
-#, fuzzy
-#| msgid "GNU Guix Manual <1/>"
 msgctxt "website menu"
 msgid "GNU Guix Manual <1/>"
 msgstr "GNU Guix Kılavuzu <1/>"
@@ -429,11 +420,9 @@ msgid "Screenshots"
 msgstr "Ekran görüntüleri"
 
 #: apps/base/templates/components.scm:462
-#, fuzzy
-#| msgid "Your location:"
 msgctxt "website menu"
 msgid "Publications"
-msgstr "Konumunuz:"
+msgstr "Yayınlar"
 
 #: apps/base/templates/components.scm:464 apps/base/templates/donate.scm:26
 #: apps/base/templates/donate.scm:29
@@ -565,28 +554,30 @@ msgid ""
 "<3>initialization system</3>, and to the <4>system "
 "services<4.1>en</4.1><4.2>Defining-Services.html</4.2></4>."
 msgstr ""
+"Guix, durum bilgisi olmayan,\n"
+"           yeniden üretilebilir <1>işletim sistemi "
+"yapılandırmalarını<1.1>en</1.1><1.2>Using-the-Configuration-System."
+"html</1.2></1> ek olarak destekleyerek bunu bir adım daha ileri götürüyor. "
+"Artık, <2>initial RAM disk<2.1>en</2.1><2.2>Initial-RAM-Disk.html</2.2></2> "
+"<3>başlatma sistemine</3> ve <4>sistem "
+"hizmetlerine<4.1>en</4.1><4.2>Defining-Services.html</4.2></4> kadar tüm "
+"sistem Scheme'de hacklenebilir."
 
 #: apps/base/templates/about.scm:106 apps/base/data.scm:211
 msgid "Maintainers"
 msgstr "Bakımcılar"
 
 #: apps/base/templates/about.scm:108
-#, fuzzy
-#| msgid ""
-#| "Guix is currently maintained by Ludovic Courtès, Marius Bakke, Maxim\n"
-#| "Cournoyer, Tobias Geerinckx-Rice and Mathieu Othacehe.  Please use the "
-#| "<1>mailing lists</1> for contact.  For sensitive issues, you can reach "
-#| "them using the <2/> private alias."
 msgid ""
 "Guix is currently maintained by Efraim Flashner, Mathieu Othacehe, Maxim "
 "Cournoyer and Tobias Geerinckx-Rice.  Please use the <1>mailing lists</1> "
 "for contact.  For sensitive issues, you can reach them using the <2/> "
 "private alias."
 msgstr ""
-"Guix şu anda Ludovic Courtès, Marius Bakke, Maxim\n"
-"Cournoyer, Tobias Geerinckx-Rice ve Mathieu Othacehe tarafından "
-"yönetilmektedir. İletişim için lütfen <1>posta listelerini</1> kullanın. "
-"Hassas konular için </2> özel takma adını kullanarak onlara ulaşabilirsiniz."
+"Guix şu anda Efraim Flashner, Mathieu Othacehe, Maxim Cournoyer ve Tobias "
+"Geerinckx-Rice tarafından sürdürülmektedir. İletişim için lütfen <1>mail "
+"listelerini</1> kullanınız. Hassas konular için onlara </2> özel takma adını "
+"kullanarak ulaşabilirsiniz."
 
 #: apps/base/templates/about.scm:116
 msgid "Licensing"
@@ -610,18 +601,13 @@ msgid "IRC Channel"
 msgstr "IRC Kanalı"
 
 #: apps/base/data.scm:26
-#, fuzzy
-#| msgid ""
-#| "Join the <1/> channel on the Freenode IRC network to chat\n"
-#| "       with the community about GNU Guix or to get help in\n"
-#| "       real-time."
 msgid ""
 "Join the <1/> channel on the Libera Chat IRC network to\n"
 "chat with the community about GNU Guix or to get help in real-time."
 msgstr ""
 "Toplulukla GNU Guix hakkında sohbet etmek\n"
 " veya gerçek zamanlı yardım almak için \n"
-"Freenode IRC ağındaki </1> kanalına katılın."
+"Freenode Libera Chat IRC ağındaki </1> kanalına katılın."
 
 #: apps/base/data.scm:34
 msgid "Info Mailing List"
@@ -649,8 +635,8 @@ msgid ""
 "though we also accept other languages."
 msgstr ""
 "GNU Guix topluluğundan e-posta yoluyla destek almak için\n"
-"Yardım posta listesine abone olun. Diğer dilleri de kabul etmemize rağmen\n"
-"İngilizce mesaj gönderebilirsiniz."
+"Yardım posta listesine abone olun. İngilizce öncelikli olmak üzere\n"
+"diğer dillerde de mesaj gönderebilirsiniz."
 
 #: apps/base/data.scm:54
 msgctxt "unique lingua code like en or zh-cn"
@@ -718,11 +704,11 @@ msgstr ""
 
 #: apps/base/data.scm:175
 msgid "Commits Mailing List"
-msgstr ""
+msgstr "Commit Posta Listesi"
 
 #: apps/base/data.scm:177
 msgid "Notifications of commits made to the <1>Git repositories</1>."
-msgstr ""
+msgstr "<1>Git depolarına</1> yapılan commit bildirimleri."
 
 #: apps/base/data.scm:186
 msgid "Security Mailing List"
@@ -747,13 +733,15 @@ msgstr "Sysadmin Posta Listesi"
 
 #: apps/base/data.scm:202
 msgid "Private mailing list for the <1>build farm</1> system administration."
-msgstr ""
+msgstr "<1>İnşa grubu</1> sistem yönetimi için özel posta listesi."
 
 #: apps/base/data.scm:213
 msgid ""
 "Private alias to reach the <1>maintainer collective</1>.  This should "
 "generally not be used to discuss technical issues."
 msgstr ""
+"<1>Bakım kolektifine</1> ulaşmak için özel diğer ad.  Bu genellikle teknik "
+"sorunları tartışmak için kullanılmamalıdır."
 
 #: apps/base/data.scm:225
 msgid "GNU System Discuss Mailing List"
@@ -822,10 +810,8 @@ msgstr ""
 "edinebilirsiniz."
 
 #: apps/base/templates/help.scm:55
-#, fuzzy
-#| msgid "Read stable manual"
 msgid "Read manual <1/>"
-msgstr "Kararlı kılavuzu oku"
+msgstr "<1/> kılavuzu oku"
 
 #: apps/base/templates/help.scm:67
 msgid "Get Guix reference card"
@@ -836,21 +822,15 @@ msgid "GNU Guix Manual (Latest)"
 msgstr "GNU Guix Kılavuzu (Güncel)"
 
 #: apps/base/templates/help.scm:77
-#, fuzzy
-#| msgid ""
-#| "This version of the manual is updated frequently to\n"
-#| "            include the latest changes from Guix's source files. It is\n"
-#| "            more up-to-date than the manual for the stable release of\n"
-#| "            Guix."
 msgid ""
 "This version of the manual is updated frequently to\n"
 "            include the latest changes from Guix's source files. It is\n"
 "            more up-to-date than the manual for the release of Guix."
 msgstr ""
 "Kılavuzun bu sürümü, \n"
-"Guix'in kaynak dosyalarındaki en son değişiklikleri \n"
-"eklemek için sık sık güncellenir. \n"
-"Guix'in kararlı sürüm kalvuzundan daha günceldir."
+"            Guix'in kaynak dosyalarındaki en son değişiklikleri içerecek "
+"şekilde sık sık güncellenmektedir.\n"
+"            Guix'in sürüm kılavuzundan daha günceldir."
 
 #: apps/base/templates/help.scm:83
 msgid "Read latest manual"
@@ -940,18 +920,13 @@ msgid "IRC Chat"
 msgstr "IRC Sohbet"
 
 #: apps/base/templates/help.scm:161
-#, fuzzy
-#| msgid ""
-#| "For real-time support from the community, you can connect\n"
-#| "            to the <1/> channel on irc.freenode.net. There\n"
-#| "            you can get help about anything related to GNU Guix."
 msgid ""
 "For real-time support from the community, you can connect\n"
 "            to the <1/> channel on irc.libera.chat. There\n"
 "            you can get help about anything related to GNU Guix."
 msgstr ""
 "Topluluktan gerçek zamanlı destek almak için\n"
-" irc.freenode.net'deki <1/> kanalına bağlanabilirsiniz.\n"
+" irc.libera.chat adresindeki <1/> kanalına bağlanabilirsiniz.\n"
 " Orada GNU Guix ile ilgili herhangi bir konuda yardım alabilirsiniz."
 
 #: apps/base/templates/help.scm:166
@@ -1010,6 +985,29 @@ msgstr ""
 "GNU|Linux|Unix|Özgür yazılım|Libre yazılım|İşletim sistemi|GNU Hurd|GNU Guix "
 "paket yönetici|Topluluk|Posta listesi|IRC kanalı|Hata raporlama|Yardım"
 
+#: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
+msgid ""
+"We want to provide a warm, friendly, and harassment-free environment,\n"
+"           so that anyone can contribute to the best of their abilities.  "
+"To\n"
+"           this end our project uses a “Contributor Covenant”, which was "
+"adapted\n"
+"           from <1>https://contributor-covenant.org/</1>.  You can find the "
+"full pledge in the <2>CODE-OF-CONDUCT</2> file."
+msgstr ""
+"Herkesin yeteneklerini en iyi şekilde kullanabilmesi için\n"
+" sıcak, arkadaş canlısı ve tacizden uzak bir ortam sağlamak istiyoruz.\n"
+" Bu amaçla projemiz, <1>https://contributor-covenant.org/</1> adresinden "
+"uyarlanmış bir\n"
+" “Katılımcı Sözleşmesi” kullanmaktadır. Sözleşmenin tamamını <2>CODE-OF-"
+"CONDUCT</2> dosyasında bulabilirsiniz."
+
+#: apps/base/templates/contact.scm:54
+msgid ""
+"Participation to the project communication channels listed below\n"
+"            is subject to this code of conduct."
+msgstr ""
+
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
 msgid "Contribute"
@@ -1038,15 +1036,6 @@ msgid "Contribute"
 msgstr "Katkı"
 
 #: apps/base/templates/contribute.scm:37
-#, fuzzy
-#| msgid ""
-#| "GNU Guix is a large project developed\n"
-#| "           mostly by volunteers from all around the world. You are "
-#| "welcome\n"
-#| "           to join us in the <1>development mailing list</1> or in the "
-#| "<2>#guix channel</2> in IRC Freenode. Tell us how would you like to help, "
-#| "and we\n"
-#| "          will do our best to guide you. "
 msgid ""
 "GNU Guix is a large project developed\n"
 "           mostly by volunteers from all around the world. You are welcome\n"
@@ -1057,27 +1046,10 @@ msgid ""
 msgstr ""
 "GNU Guix, dünyanın her yerinden katılan gönüllüler tarafından geliştirilen "
 "büyük bir projedir.\n"
-" Bize <1>Geliştirici Posta Listesinden</1> veya IRC Freenode ağındaki "
+" Bize <1>Geliştirici Posta Listesinden</1> veya Libera Chat IRC ağındaki "
 "<2>#guix kanalından</2> katılabilirsiniz.\n"
 " Bize nasıl yardım etmek istediğinizi söyleyin,\n"
-" size rehberlik etmek için elimizden gelenin en iyisini yapalım. "
-
-#: apps/base/templates/contribute.scm:51
-msgid ""
-"We want to provide a warm, friendly, and harassment-free environment,\n"
-"           so that anyone can contribute to the best of their abilities.  "
-"To\n"
-"           this end our project uses a “Contributor Covenant”, which was "
-"adapted\n"
-"           from <1>https://contributor-covenant.org/</1>.  You can find the "
-"full pledge in the <2>CODE-OF-CONDUCT</2> file."
-msgstr ""
-"Herkesin yeteneklerini en iyi şekilde kullanabilmesi için\n"
-" sıcak, arkadaş canlısı ve tacizden uzak bir ortam sağlamak istiyoruz.\n"
-" Bu amaçla projemiz, <1>https://contributor-covenant.org/</1> adresinden "
-"uyarlanmış bir\n"
-" “Katılımcı Sözleşmesi” kullanmaktadır. Sözleşmenin tamamını <2>CODE-OF-"
-"CONDUCT</2> dosyasında bulabilirsiniz."
+"size rehberlik etmek için elimizden geleni yapacağız. "
 
 #: apps/base/templates/contribute.scm:72
 msgid "Project Management"
@@ -1180,19 +1152,13 @@ msgstr ""
 #. TRANSLATORS: Packaging Guidelines is a section name in the
 #. English (en) manual.
 #: apps/base/templates/contribute.scm:147
-#, fuzzy
-#| msgid ""
-#| "Information on how to add packages to the distribution can\n"
-#| "            be found <1>in the manual<1.1>en</1.1><1.2>Packaging-"
-#| "Guidelines.html</1.2></1>. "
 msgid ""
 "Information on how to add packages to the distribution can\n"
 "            be found <1>in the manual<1.1>en</1.1><1.2>Contributing."
 "html</1.2></1>. "
 msgstr ""
 "Dağıtıma paketlerin nasıl ekleneceğine ilişkin bilgileri\n"
-" <1>kılavuzda<1.1>en</1.1><1.2>Packaging-Guidelines.html</1.2></1> "
-"bulabilirsiniz. "
+" <1>kılavuzda<1.1>en</1.1><1.2>Contributing.html</1.2></1> bulabilirsiniz. "
 
 #: apps/base/templates/contribute.scm:157
 msgid ""
@@ -1231,6 +1197,14 @@ msgid ""
 "            setup, as well as the coding and cooperation conventions used\n"
 "            in the project. "
 msgstr ""
+"<1>Guile kılavuzuna</1> veya <2>Scheme ile ilgili diğer tanıtım "
+"materyallerine</2> göz atmayı faydalı bulacaksınız. Ayrıca, projede "
+"kullanılan\n"
+"kodlama ve işbirliği kurallarının yanı sıra geliştirme kurulumu hakkında "
+"daha fazla ayrıntı için\n"
+"            kılavuzun <3>Katkıda Bulunanlar<3.1>en</3.1><3.2>Contributing."
+"html</3.2></3>\n"
+"            bölümünü mutlaka okuyun. "
 
 #: apps/base/templates/contribute.scm:205
 msgid "Send a patch"
@@ -1383,11 +1357,11 @@ msgstr ""
 
 #: apps/base/templates/cuirass.scm:46
 msgid "Execute builds on local or remote Guix daemons."
-msgstr ""
+msgstr "Derlemeleri yerel veya uzak Guix arka plan programlarında yürütün."
 
 #: apps/base/templates/cuirass.scm:48
 msgid "Store build products or artifacts."
-msgstr ""
+msgstr "Yapı ürünlerini veya eserlerini depolayın."
 
 #: apps/base/templates/cuirass.scm:50
 msgid "Collect build logs and metrics."
@@ -1401,6 +1375,8 @@ msgstr "REST API sağlar."
 msgid ""
 "High level of concurrency using <1>Guile-Fibers</1> asynchronous library."
 msgstr ""
+"<1>Guile-Fibers</1>asenkron kütüphanesi sayesinde yüksek düzeyde eş "
+"zamanlılık."
 
 #: apps/base/templates/cuirass.scm:58
 msgid "Cuirass documentation is accessible <1>here</1>."
@@ -1437,6 +1413,9 @@ msgid ""
 "   hosting for machines (they should be usable with exclusively\n"
 "   free software)."
 msgstr ""
+"Makineler için donanım ve isteğe bağlı olarak\n"
+"   barındırma bağışları arıyoruz (bunlar yalnızca\n"
+"   özgür yazılımlarla kullanılabilir olmalıdır)."
 
 #. TRANSLATORS: |-separated list of webpage keywords
 #: apps/base/templates/donate.scm:24
@@ -1499,6 +1478,8 @@ msgid ""
 "x86_64 machines, with on the order of 1 TiB of storage\n"
 "               and 4 GiB of RAM;"
 msgstr ""
+"x86_64 makineler, 1 TB depolama\n"
+"               ve 4 GB RAM içeren;"
 
 #: apps/base/templates/donate.scm:81
 msgid ""
@@ -1836,8 +1817,8 @@ msgstr ""
 "bulunduğunda, <1>güvenlik güncellemelerini<1.1>en</1.1><1.2>Security-Updates."
 "html</1.2></1> hızlı bir şekilde ve kullanıcılar için minimum kesinti ile "
 "sağlayacağız. Uygun olduğunda, blogda <2>Security Advisory</2> etiketiyle ve "
-"<3><3.1>info-guix</3.1> posta listesinde bir güvenlik danışma belgesi "
-"yayınlanır; </4> komutu danışma belgesini de görüntüleyebilir."
+"<3><3.1>info-guix</3.1> posta listesinde</3> bir güvenlik danışma belgesi "
+"yayınlanır; <4/> komutu danışma belgesini de görüntüleyebilir."
 
 #: apps/base/templates/security.scm:97
 msgid ""
@@ -2030,7 +2011,7 @@ msgid ""
 "          can be installed as an additional package manager on top of an\n"
 "          installed Linux-based system."
 msgstr ""
-"</1> sürümünden itibaren, bağımsız Guix Sistem bir i686, x86_64, ARMv7 veya "
+"<1/> sürümünden itibaren, bağımsız Guix Sistem bir i686, x86_64, ARMv7 veya "
 "AArch64 makinelere <2>kurulabilir.\n"
 "<2.1>en</2.1><2.2>System-Installation.html</2.2></2> <3>Linux-Libre</3> "
 "çekirdeğini ve <4>GNU Shepherd</4> başlangıç yönetim sistemini kullanır.\n"
@@ -2145,7 +2126,7 @@ msgctxt "publication type"
 msgid "Article"
 msgstr ""
 
-#: apps/media/data.scm:52 apps/media/data.scm:73
+#: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
 msgctxt "publication type"
 msgid "Journal article"
 msgstr ""
@@ -2155,63 +2136,61 @@ msgctxt "publication type"
 msgid "Book chapter"
 msgstr ""
 
-#: apps/media/data.scm:79
+#: apps/media/data.scm:85
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "Grafiksel oturum açma"
 
-#: apps/media/data.scm:83
+#: apps/media/data.scm:89
 msgid "Graphical log-in screen"
 msgstr "Grafiksel oturum açma ekranı"
 
-#: apps/media/data.scm:86
+#: apps/media/data.scm:92
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:90
+#: apps/media/data.scm:96
 msgid "GNOME desktop environment"
 msgstr "GNOME masaüstü ortamı"
 
-#: apps/media/data.scm:93
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:97
+#: apps/media/data.scm:103
 msgid "Xfce desktop environment"
 msgstr "XFCE masaüstü ortamı"
 
-#: apps/media/data.scm:100
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "Sanal makine"
 
-#: apps/media/data.scm:104
+#: apps/media/data.scm:110
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "'guix system vm' ile başlatılan sanal makine"
 
-#: apps/media/data.scm:107
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:111
+#: apps/media/data.scm:117
 msgid "Sway window manager running wayland"
 msgstr "Wayland üzerinden çalışan Sway pencere yöneticisi"
 
-#: apps/media/data.scm:114
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:118
-#, fuzzy
-#| msgid "Enlightenment, Inkscape, and Serbian text"
-msgid "Enlightenment, Inkscape, and Cyrillic text"
-msgstr "Enlightenment, Inkscape ve Sırpça metin"
-
 #: apps/media/data.scm:124
+msgid "Enlightenment, Inkscape, and Cyrillic text"
+msgstr "Enlightenment, Inkscape, ve Cyrillic text"
+
+#: apps/media/data.scm:130
 #, fuzzy
 #| msgctxt "video title"
 #| msgid "Everyday use of GNU Guix, Part One"
@@ -2219,19 +2198,19 @@ msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "GNU Guix'in Günlük Kullanımı, Birinci Bölüm"
 
-#: apps/media/data.scm:132
+#: apps/media/data.scm:138
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr ""
 
-#: apps/media/data.scm:139
+#: apps/media/data.scm:145
 #, fuzzy
 #| msgid "System Administration"
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "Sistem Yönetimi"
 
-#: apps/media/data.scm:146
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr ""

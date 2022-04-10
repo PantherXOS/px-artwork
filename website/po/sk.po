@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20210222\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-01-13 15:18Z\n"
-"PO-Revision-Date: 2022-01-19 22:16+0000\n"
+"POT-Creation-Date: 2022-04-07 15:18Z\n"
+"PO-Revision-Date: 2022-03-25 07:57+0000\n"
 "Last-Translator: Marek Felšöci <marek@felsoci.sk>\n"
 "Language-Team: Slovak <https://translate.fedoraproject.org/projects/guix/"
 "website/sk/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -274,10 +274,6 @@ msgctxt "webpage title"
 msgid "GNU Guix — Activity Feed"
 msgstr "GNU Guix — prehľad činností"
 
-#: apps/base/templates/theme.scm:126
-msgid "Online conference February 19-20. <1>Learn more</1>!"
-msgstr "Online konferencia 19. a 20. februára. <1>Viac podrobností</1>!"
-
 #: apps/base/templates/theme.scm:151
 msgid ""
 "Made with <1>♥</1> by humans and powered by <2>GNU Guile</2>.  <3>Source "
@@ -341,7 +337,7 @@ msgstr "Všetko"
 #: apps/base/templates/components.scm:418
 msgctxt "website menu"
 msgid "GNU Guix Manual <1/>"
-msgstr "Príručka GNU Guix </1>"
+msgstr "Príručka GNU Guix <1/>"
 
 #: apps/base/templates/components.scm:423
 msgctxt "website menu"
@@ -982,6 +978,30 @@ msgstr ""
 "GNU|Linux|Unix|Slobodný softvér|Operačný systém|GNU Hurd|Správca balíkov GNU "
 "Guix|Spoločenstvo|Elektronické konferencie|Kanály IRC|Hlásenie chýb|Pomoc"
 
+#: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
+msgid ""
+"We want to provide a warm, friendly, and harassment-free environment,\n"
+"           so that anyone can contribute to the best of their abilities.  "
+"To\n"
+"           this end our project uses a “Contributor Covenant”, which was "
+"adapted\n"
+"           from <1>https://contributor-covenant.org/</1>.  You can find the "
+"full pledge in the <2>CODE-OF-CONDUCT</2> file."
+msgstr ""
+"Chceme vám poskytnúť príjemné a priateľské prostredie bez obťažovania,\n"
+"           aby sa každý mohol zapojiť najlepšie ako vie.  Preto\n"
+"           sa náš projekt riadi „záväzkom prispievateľa“ založeným\n"
+"           na <1>https://contributor-covenant.org/</1>.  Úplné znenie "
+"záväzku nájdete v súbore <2>CODE-OF-CONDUCT</2>."
+
+#: apps/base/templates/contact.scm:54
+msgid ""
+"Participation to the project communication channels listed below\n"
+"            is subject to this code of conduct."
+msgstr ""
+"Zapájanie sa do komunikačných kanálov projektu zobrazených nižšie\n"
+"            podlieha týmto pravidlám správania sa."
+
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
 msgid "Contribute"
@@ -1024,22 +1044,6 @@ msgstr ""
 "vývojárov</1> alebo prostredníctvom kanála <2>#guix channel</2> v IRC sieti "
 "Libera Chat. Povedzte, s čím\n"
 "           by ste nám chceli pomôcť a my vám radi ukážeme ako na to. "
-
-#: apps/base/templates/contribute.scm:51
-msgid ""
-"We want to provide a warm, friendly, and harassment-free environment,\n"
-"           so that anyone can contribute to the best of their abilities.  "
-"To\n"
-"           this end our project uses a “Contributor Covenant”, which was "
-"adapted\n"
-"           from <1>https://contributor-covenant.org/</1>.  You can find the "
-"full pledge in the <2>CODE-OF-CONDUCT</2> file."
-msgstr ""
-"Chceme vám poskytnúť príjemné a priateľské prostredie bez obťažovania,\n"
-"           aby sa každý mohol zapojiť najlepšie ako vie.  Preto\n"
-"           sa náš projekt riadi „záväzkom prispievateľa“ založeným\n"
-"           na <1>https://contributor-covenant.org/</1>.  Úplné znenie "
-"záväzku nájdete v súbore <2>CODE-OF-CONDUCT</2>."
 
 #: apps/base/templates/contribute.scm:72
 msgid "Project Management"
@@ -2140,7 +2144,7 @@ msgctxt "publication type"
 msgid "Article"
 msgstr "Článok"
 
-#: apps/media/data.scm:52 apps/media/data.scm:73
+#: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "Článok z časopisu"
@@ -2150,76 +2154,76 @@ msgctxt "publication type"
 msgid "Book chapter"
 msgstr "Kapitola v knihe"
 
-#: apps/media/data.scm:79
+#: apps/media/data.scm:85
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "Grafické prihlasovanie"
 
-#: apps/media/data.scm:83
+#: apps/media/data.scm:89
 msgid "Graphical log-in screen"
 msgstr "Grafická prihlasovacia obrazovka"
 
-#: apps/media/data.scm:86
+#: apps/media/data.scm:92
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:90
+#: apps/media/data.scm:96
 msgid "GNOME desktop environment"
 msgstr "Pracovné prostredie GNOME"
 
-#: apps/media/data.scm:93
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:97
+#: apps/media/data.scm:103
 msgid "Xfce desktop environment"
 msgstr "Pracovné prostredie Xfce"
 
-#: apps/media/data.scm:100
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "Virtuálny stroj"
 
-#: apps/media/data.scm:104
+#: apps/media/data.scm:110
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "Virtuálny stroj spustený pomocou „guix system vm“"
 
-#: apps/media/data.scm:107
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:111
+#: apps/media/data.scm:117
 msgid "Sway window manager running wayland"
 msgstr "Správca okien Sway bežiaci na wayland"
 
-#: apps/media/data.scm:114
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:118
+#: apps/media/data.scm:124
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment, Inkscape a použitie cyriliky"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:130
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL: Každodenné používanie Guixu"
 
-#: apps/media/data.scm:132
+#: apps/media/data.scm:138
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "Bezpečnosť zostavovacieho systému Bitcoin"
 
-#: apps/media/data.scm:139
+#: apps/media/data.scm:145
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "Opakovateľná správa systému s GNU Guix"
 
-#: apps/media/data.scm:146
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr "Viac ako kontajnery: Opakovateľné softvérové prostredia s GNU Guix"
@@ -2446,6 +2450,17 @@ msgid ""
 msgstr ""
 "<1>Chyby v skladbe</1><2><2.1/>. Viď <2.2>zadávanie balíkov</2.2> v "
 "zdrojovom kóde Guixu.</2>"
+
+#, fuzzy
+#~| msgid ""
+#~| "Online conference February 19-20. Watch the <1>pre-recorded talks</1>! "
+#~| "Learn <2>more</2>!"
+#~ msgid ""
+#~ "Online conference February 19-20. Watch the <1>pre-recorded talks</1>."
+#~ "<2>Join us</2>! Learn <3>more</3>!"
+#~ msgstr ""
+#~ "Online konferencia 19. a 20. februára. Pozrite si <1>vopred nahraté "
+#~ "prednášky</1>! Zistite <2>viac</2>!"
 
 #~ msgctxt "website menu"
 #~ msgid "Stable"
