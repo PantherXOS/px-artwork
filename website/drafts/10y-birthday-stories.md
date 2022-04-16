@@ -168,7 +168,7 @@ Externally I wish a much bigger awareness in the commercial "Open Source"
 world about software freedom, bootstrapping your environment and dependencies
 from free source code in a real reproducible way, instead of relying on
 opaque, binary containers.  I wish people would much more take care of their
-dependencies (with Guix, of cause!), put much more thoughts in their usage of
+dependencies (with Guix, of course!), put much more thoughts in their usage of
 dependencies, break-up dependency hell and support third parties in building
 their sources with free software (instead of relying on binary dependencies
 and opaque containerized dev-environments).
