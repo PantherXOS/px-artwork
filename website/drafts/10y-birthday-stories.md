@@ -4,18 +4,25 @@ tags: Community
 date: 2022-04-18 23:21:11
 ---
 
-Happy birthday of the [initial
-commit](https://git.savannah.gnu.org/cgit/guix.git/commit/?id=207cba8114d354737b231e510d6110ea2a42e07b)!
-On April, 18th 2012, the first file had been added and the journey started.
-Thirteen minutes later, [another
-commit](https://git.savannah.gnu.org/cgit/guix.git/commit/?id=77d3cf087dca7b92af745b7e25af186d1d11f7b9)
-representing one pillar of the project: what is the best solution.  Quoting
-the initial header file: Guix was «Nix package management from Guile».  The
-175 blog posts cover the evolution.  Today, 10 years later from this initial
-commit, Guix means 94k+ commits by more than 600 contributors.  Guix is made
-by people, let thanks them.
+It’s been ten years today since the [very first
+commit](https://archive.softwareheritage.org/browse/revision/207cba8114d354737b231e510d6110ea2a42e07b/)
+to what was already called Guix—the unimaginative name is a homage to
+[Guile](https://gnu.org/software/guile) and
+[Nix](https://nixos.org/nix), which Guix started by blending together.
+On April 18th, 2012, there was very little to see and no actual
+“project”.  The project formed in the following months and became a
+collective adventure around a shared vision.
 
-Here a collection of stories by contributors.
+Ten years later, it’s amazing to see what more than 600 people achieved,
+with 94K commits, countless hours of translation, system administration,
+web design work, and no less than [175 blog
+posts](https://guix.gnu.org/en/blog) to share our enthusiasm at each
+major milestone.  It’s been quite a ride!
+
+What follows is a series of personal accounts by some of the
+contributors who offered their time and energy and made it all possible.
+Read their stories and perhaps you too will be inspired [to join all the
+nice folks on this journey](https://guix.gnu.org/en/contribute)?
 
 # Alice Brenon
 
