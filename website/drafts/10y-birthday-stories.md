@@ -27,14 +27,14 @@ nice folks on this journey](https://guix.gnu.org/en/contribute)?
 # Alice Brenon
 
 As a conclusion, Guix is a really neat system and I hope you enjoy it as much
-as I do !
+as I do!
 
 My story with Guix is a bit topsy-turvy so I thought I might as well start by
-the end : ) I first ranked it last among systems I wanted to test, then was a
+the end :) I first ranked it last among systems I wanted to test, then was a
 bit puzzled by it when I had the chance to test it after all the others had
 disappointed me, and we finally got to know each other once I installed it on
 my work laptop, because when you need a good, stable system you know you can
-rely on, why not use the most surprising one ? Strangely, the alchemy worked
+rely on, why not use the most surprising one? Strangely, the alchemy worked
 and it has never let me down so far.
 
 Like all good computer things, it looked way scarier from a distance than it
@@ -617,7 +617,7 @@ valued the strong commitment to Free Software with Guix.
 
 Eventually I even grew crazy enough to package Guix in Debian... which
 indirectly lead to one of my most creative contributions to a Free Software
-project, a typo poem embedded in !
+project, a typo poem embedded in!
 
 I really appeciate the community around Guix and the process, values and
 thoughtfulness that work proactively to maintain a healthy community, even in
