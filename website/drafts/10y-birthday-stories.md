@@ -177,8 +177,8 @@ and opaque containerized dev-environments).
 
 New media artists and designers suffer from following dilemma: our work, with
 its primary medium being code, is at once perhaps the simplest medium to
-/distribute/ -- requiring little more than copying a directory of text files
-from one hard drive to another -- yet the works themselves remain a total
+/distribute/ — requiring little more than copying a directory of text files
+from one hard drive to another — yet the works themselves remain a total
 nightmare to faithfully /reproduce/ across varying machines at different
 points in time. Among other reasons, this is because our works are often
 composed of disparate parts with accompanying technical debt: an audio-visual
@@ -335,7 +335,7 @@ wrote GNU Mes and started working on solving this problem.  Twice we halved
 the size of the bootstrap binaries and the work is still ongoing.
 
 What possibly started somewhat as a April fools joke in 2020 about the
-Hurd---this is still unclear---was (mis?)taken by some as a real project and
+Hurd—this is still unclear—was (mis?)taken by some as a real project and
 led to a fun hacking frenzy of several months finally producing the
 "Childhurd": A Guix Shepherd service that gives access to the GNU/Hurd in a
 VM.  My wish for the near future would be see an up-to-date Hurd including the
@@ -544,7 +544,7 @@ playing around with Guix.
 
 After an encouraging chat on IRC I realized that I could probably replace our
 custom RPM repository and build different variants of scientific software on
-much more solid ground---all the while contributing to a project that felt
+much more solid ground—all the while contributing to a project that felt
 like a new and exciting take on GNU.  We're building the GNU system!
 
 Guix only had very few of the packages I needed, so I got busy.  I packaged
