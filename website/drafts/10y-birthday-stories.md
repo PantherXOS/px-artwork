@@ -245,19 +245,19 @@ having its 0.8.3 (or so) release and it looked like something that I
 could try to contribute to. I certainly made a number of mistakes in the
 beginning; I didn't know that 'git revert' was an actual command and I
 tried to revert a commit by hand, leaving a dangling parenthesis and
-breaking the repo. Another time I added java as a dependency to an image
+breaking the repo. Another time I added Java as a dependency to an image
 library and broke the graphics stack for half the architectures until I
 reverted that! I even had a stint as a failed GSoC student. I was
-working on bournish, a gash/gash-utils like utility to make debugging in
+working on bournish, a Gash/Gash-utils like utility to make debugging in
 the early boot process far easier by providing common CLI utilities. I
 had some issues with time management and ended up spending more time
 than I should have updating packages in the repository, as a result I
-didn't spend enough time working on bournish and it's languished since
+didn't spend enough time working on Bournish and it's languished since
 then.
 
 Currently I enjoy working on troublesome packages and expanding the
 number of packages available on non-popular architectures. Sometimes
-it's removing compiler flags or 'ifdef gating' architecture-specific
+it's removing compiler flags or ‘ifdef gating’ architecture-specific
 includes and other times certain parts of programs need to be disabled.
 Then everything needs to be double-checked for cross-compiling.
 Right now I'm working on riscv64-linux support in Guix, it has a lot of
@@ -428,23 +428,24 @@ reproducible software environments to researchers in(?) psychology and I
 was researching software to accomplish that. Binder/repo2docker was the
 obvious and most mature solution at that time and a colleague of mine had
 set up a proof of concept server already. But it could only handle public
-projects out-of-the-box and setting up an entire kubernetes cluster
+projects out-of-the-box and setting up an entire Kubernetes cluster
 didn’t seem particularly appealing at that time, because no other
 project was moving in that direction yet. So I set out to look for
 alternatives. Another idea was based around OpenStack and one virtual
 machine per project with preinstalled software, which we would keep
 for eternity. Also not ideal and OpenStack is very hard to master
-too. So I looked further at nix, which – at that time – lacked
+too. So I looked further at Nix, which – at that time – lacked
 an obvious way to spawn ad-hoc environments with a certain set of
 packages. Thankfully I stumbled upon GNU Guix by mere accident, which had
 exactly that feature. And so in December 2019 [my first code contribution
 was merged](https://issues.guix.gnu.org/38576).
+
 Prior to that I had never written a single line of Scheme or Lisp and
 even now it’s still a steep hill. GNU Guix still powers our project and
 allows us to easily share software environments while providing
 excellent application startup times. I also started contributing
 software that I run on my own machines, but I’m not running Guix System,
-because compared to systemd shepherd is quite limited on the desktop and
+because compared to systemd, Shepherd is quite limited on the desktop and
 Guix’ lack of first-class support for non-free drivers/firmware, which I
 need to even boot my machine.
 
