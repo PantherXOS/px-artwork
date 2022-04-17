@@ -486,6 +486,12 @@ big part of my life, I use it everywhere and even though I am not able to help
 much nowadays I am following the project as much as I can.  Here's hoping to
 another 10 year!
 
+# Marius Bakke
+
+I originally got interested in Guix after facing shortcomings in traditional configuration management tools.  A fully declarative and immutable system which cleans out old user accounts and packages, that also offers reproducibility, rollbacks, and the ability to generate virtual machines and containers from the same code.  Where do I sign up?
+
+It turns out, signing up was easy, and I soon found myself contributing the pieces I needed to make it a daily driver.  Watching the community grow from a handful of contributors to [100 monthly](https://www.openhub.net/p/gnuguix) has been astonishing.  I have learned a lot from this community and am proud to be a part of it.   Can't wait to see what the next decade brings.  Happy birthday Guix!
+
 # Mathieu Othacehe
 
 I was introduced to GNU Guix by a colleague, Clément Lassieur in 2016. At
