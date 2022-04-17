@@ -57,7 +57,7 @@ things done in the end.
 
 # Andreas Enge
 
-When I think of Guix, I always kid myself into believing that I had the idea -
+When I think of Guix, I always kid myself into believing that I had the idea —
 I remember chatting with Ludovic around a GNU hackers' meeting about Nix; I
 joked that since Guile is the GNU language, Nix should be rewritten in Guile.
 But it turned out that Ludovic had already started such a project in
@@ -69,12 +69,12 @@ quite difficult, but I fondly remember discussing quotes and quasiquotes with
 Ludovic. After that, I mostly added packages to Guix, which was possible
 without knowing much of functional programming; the most tricky packages that
 stayed in my mind were ImageMagick and TeX Live.  I came to appreciate the GNU
-Autotools - with all their shortcomings, having a uniform (and usually
+Autotools — with all their shortcomings, having a uniform (and usually
 reliable) way of compiling and installing a software makes creating a Guix
 package almost trivial.
 
 The most compelling feature of Guix was (and still is, I think) the ability to
-roll back package installations, and now complete system installations - no
+roll back package installations, and now complete system installations — no
 more fear of updating a package to a non-working state!  And on a completely
 different level, the nice and welcoming atmosphere in the community, in no
 small part thanks to Ludovic's initial efforts of creating an inclusive
@@ -98,7 +98,7 @@ I admired their way of facilitating the workshop, which I then tried to copy
 for our own meeting.
 
 The Guix system meets all my daily needs now, so I have no technical wishes
-for the future - but I trust in the many creative minds working on advancing
+for the future — but I trust in the many creative minds working on advancing
 the project to come up with nice new ideas.  And I wish the human adventure
 and community building around Guix to continue!
 
@@ -179,14 +179,14 @@ and opaque containerized dev-environments).
 
 New media artists and designers suffer from following dilemma: our work, with
 its primary medium being code, is at once perhaps the simplest medium to
-/distribute/ — requiring little more than copying a directory of text files
+_distribute_ — requiring little more than copying a directory of text files
 from one hard drive to another — yet the works themselves remain a total
-nightmare to faithfully /reproduce/ across varying machines at different
+nightmare to faithfully _reproduce_ across varying machines at different
 points in time. Among other reasons, this is because our works are often
 composed of disparate parts with accompanying technical debt: an audio-visual
-installation may use the C++ library /openFrameworks/ for high-performance
-interactive graphics, Haskell's /TidalCycles/ for realtime sequencing, the
-fantastic /FAUST/ signal processing language for zero-delay audio DSP, plus
+installation may use the C++ library **openFrameworks** for high-performance
+interactive graphics, Haskell's **TidalCycles** for realtime sequencing, the
+fantastic **FAUST** signal processing language for zero-delay audio DSP, plus
 the usual dependencies; openCV, libfreenect, cairo, gstreamer, ffmpeg and so
 on.  Time and its corresponding ABI changes intensify our predicament; not
 only is it often an error-prone and laborious task to get all of this running
@@ -197,7 +197,7 @@ simplest to copy are simultaneously some of the most difficult to reproduce
 and the quickest to depreciate.
 
 Guix, on the other hand, offers its users provenance-preserving
-/bit-reproducible builds/ of their entire operating systems: using Guix's
+_bit-reproducible builds_ of their entire operating systems: using Guix's
 implementation of the functional software deployment model, I should be able
 to reproduce, bit-for-bit, the exact same results across equivalent
 hardware. Suddenly our artworks can be deterministically produced not only at
