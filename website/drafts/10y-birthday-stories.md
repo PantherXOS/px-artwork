@@ -24,6 +24,8 @@ contributors who offered their time and energy and made it all possible.
 Read their stories and perhaps you too will be inspired [to join all the
 nice folks on this journey](https://guix.gnu.org/en/contribute)?
 
+![10 year anniversary artwork](/static/blog/img/10-years-of-guix_colorful-10.gif)
+
 # Alice Brenon
 
 As a conclusion, Guix is a really neat system and I hope you enjoy it as much
