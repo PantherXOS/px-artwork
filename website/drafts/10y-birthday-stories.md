@@ -362,7 +362,8 @@ some „guix compose“ for managing compound containers.
 
 # Jan (janneke) Nieuwenhuizen
 
-At FOSDEM 2016 there were seven talks about GNU Guix: A talk about the Hurd by
+At FOSDEM 2016 there were seven talks about GNU Guix: A
+[talk](https://guix.gnu.org/en/blog/tags/talks) about the Hurd by
 Manolis Ragkousis, about functional package management by Ricardo Wurmus and
 that was just what I needed to hear: Finally a viable promise for the GNU
 System and much more innovative than I could have hoped for.  At the time I
@@ -383,16 +384,17 @@ feel: Go Guix!
 This is how I found how amazingly helpful and friendly the community was.  I
 created the MinGW cross build for Guile 2.0 and then "found out" about the
 bootstrap binaries: The only packages in Guix that are not built from source.
-Something just did not feel right.  The manual said: "These big chunks of
+Something just did not feel right.  The manual said: "_These big chunks of
 binary code are practically non-auditable which breaks the source to binary
-transparency that we get in the rest of the package dependency graph."  So, I
-wrote GNU Mes and started working on solving this problem.  Twice we halved
+transparency that we get in the rest of the package dependency graph_."  So, I
+wrote GNU Mes and started working on solving this problem.  [Twice](https://guix.gnu.org/en/blog/2019/guix-reduces-bootstrap-seed-by-50/) we [halved](https://guix.gnu.org/en/blog/2020/guix-further-reduces-bootstrap-seed-to-25/)
 the size of the bootstrap binaries and the work is still ongoing.
 
-What possibly started somewhat as a April fools joke in 2020 about the
+What possibly started somewhat as a [April fools joke in 2020](https://guix.gnu.org/en/blog/2020/deprecating-support-for-the-linux-kernel/) about the
 Hurd—this is still unclear—was (mis?)taken by some as a real project and
 led to a fun hacking frenzy of several months finally producing the
-"Childhurd": A Guix Shepherd service that gives access to the GNU/Hurd in a
+["Childhurd"](https://guix.gnu.org/en/blog/2020/childhurds-and-substitutes/):
+A Guix Shepherd service that gives access to the GNU/Hurd in a
 VM.  My wish for the near future would be see an up-to-date Hurd including the
 Debian rumpkernel patches that may finally enable running the Hurd on real
 hardware again.
@@ -583,12 +585,13 @@ every Linux service out there and keeping them up to date seemed like
 impossible.  However, I quickly fell in love with the package manager, the
 distribution and the community behind. A few months later, GNU Guix was
 running on all my machines and I started hacking on the continuous integration
-tool: Cuirass.
+tool: [Cuirass](https://guix.gnu.org/en/cuirass/).
 
 Since then GNU Guix has been an important part of my life. I wrote most of the
-Guix System installer while traveling by bike to China in 2018. During the
-2020 lockdown, I worked with janneke on the new image API and the Hurd
-port. At that time, I was proposed a co-maintainer position of the project.
+[Guix System installer](https://guix.gnu.org/en/videos/2020/system-graphical-installer/) while traveling by bike to China in 2018. During the
+2020 lockdown, I worked with janneke on the new image API and the [Hurd
+port](https://guix.gnu.org/en/blog/2020/childhurds-and-substitutes/).
+At that time, I was proposed a co-maintainer position of the project.
 In 2021, thanks to an NGI sponsorship, I dedicated 6 months to improving our
 continuous integration process and overall substitutes coverage.
 
