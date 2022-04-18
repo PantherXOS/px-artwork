@@ -262,12 +262,15 @@ that `git revert` was an actual command and I tried to revert a commit by
 hand, leaving a dangling parenthesis and breaking the repo.  Another time I
 added Java as a dependency to an image library and broke the graphics stack
 for half the architectures until I reverted that!  I even had a stint as a
-failed GSoC student.  I was working on Bournish, a Gash/Gash-utils like
-utility to make debugging in the early boot process far easier by providing
-common CLI utilities.  I had some issues with time management and ended up
-spending more time than I should have updating packages in the repository, as
-a result I didn't spend enough time working on Bournish and it's languished
-since then.
+failed [GSoC
+student]((https://guix.gnu.org/en/blog/2016/gnu-guix-welcomes-four-students-for-gsoc/).
+I was working on
+[Bournish](https://git.savannah.gnu.org/cgit/guix.git/tree/guix/build/bournish.scm),
+a Gash/Gash-utils like utility to make debugging in the early boot process far
+easier by providing common CLI utilities.  I had some issues with time
+management and ended up spending more time than I should have updating
+packages in the repository, as a result I didn't spend enough time working on
+Bournish and it's languished since then.
 
 Currently, I enjoy working on troublesome packages and expanding the number of
 packages available on non-popular architectures.  Sometimes it's removing
