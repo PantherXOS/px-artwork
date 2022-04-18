@@ -309,16 +309,20 @@ around the GNU Hurd and Guile spheres.  To me at the time Guix had the exact
 mix of upstart energy, optimism, and long-term vision that I was hoping to
 find.  2Over the years I've been able to contribute packages I use in both my
 personal and work lives, and I'm proud to have implemented the [first version
-of `guix refresh --list-dependents`.  I've really loved how Guix allows me to
-easily move my environments around to different systems, and "rollback" gives
-me much peace of mind knowing that I can tinker with the system and recover
-should something go wrong.  But probably my favorite part of Guix is the
-fantastic community I've seen grow around the project.  It exemplifies the
+of `guix refresh
+--list-dependents`](https://git.savannah.gnu.org/cgit/guix.git/commit/?id=7d193ec34881843573a8013163347cfd8b1e9001).
+I've really loved how Guix allows me to easily move my environments around to
+different systems, and
+["rollback"](https://guix.gnu.org/en/blog/2018/multi-dimensional-transactions-and-rollbacks-oh-my/)
+gives me much peace of mind knowing that I can tinker with the system and
+recover should something go wrong.  But probably my favorite part of Guix is
+the fantastic community I've seen grow around the project.  It exemplifies the
 sort of caring, kind, supportive group I wish many other projects had.
 Together I know we'll be able to make advances on many fronts.  In particular,
 I'd like to see further work on peer-to-peer substitutes delivery, a native
-build daemon, additional tools for managing relocatable pack collections, and
-continued leadership in bootstrapping.
+build daemon, additional tools for managing [relocatable pack
+collections](https://guix.gnu.org/manual/devel/en/html_node/Invoking-guix-pack.html#Invoking-guix-pack),
+and continued leadership in bootstrapping.
 
 
 # Florian Pelz (pelzflorian)
