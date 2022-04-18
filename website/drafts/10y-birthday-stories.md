@@ -48,12 +48,12 @@ format.  That's probably what I like best about it: the ability to use
 potentially any software I want without trashing my system. The welcoming
 community eager to help and valuing my contributions made it even better, and
 submitting patches came naturally.  I mostly use it for development, and to
-keep my sanity in spite of all the data science tools I have to use for
-work.  I sometimes wish it were easier to tweak the core of the system, but I
-blame my lack of free time at least as much as its design.  I would absolutely
-love to see my Guix system using the runit init system one day but it just
-works and I finally learnt that it was all that mattered if you wanted to get
-things done in the end.
+keep my sanity in spite of all the data science tools I have to use for work.
+I sometimes wish it were easier to tweak the core of the system, but I blame
+my lack of free time at least as much as its design.  I would absolutely love
+to see my Guix system using the [runit](http://smarden.org/runit/) init system
+one day but it just works and I finally learnt that it was all that mattered
+if you wanted to get things done in the end.
 
 # Andreas Enge
 
