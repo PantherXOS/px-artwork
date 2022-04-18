@@ -434,13 +434,14 @@ have been nothing short of amazing: helpful, intelligent, supportive, and fun
 to hang out with on the `#guix` channel.  In less than a year, my journey so
 far has taken me through the (is it infamous yet?) recent big core-updates
 branch and merge, submitting patches for random libraries and key desktop
-features I use, and participating in the motivating Guix Days 2022.  Looking
-to the future, I hope we can better harness the energy and resources of the
-growing Guix community.  It is already a great project to get involved with
-and make your own, but with better and quicker patch review, further building
-out and using our development tools and ecosystem, and continuing to smooth
-out the rough edges for new users/contributors, I'm sure the next 10 years of
-GNU Guix will be very bright indeed.
+features I use, and participating in the motivating [Guix Days
+2022](https://guix.gnu.org/en/blog/2022/online-guix-days-2022-announcement-2/).
+Looking to the future, I hope we can better harness the energy and resources
+of the growing Guix community.  It is already a great project to get involved
+with and make your own, but with better and quicker patch review, further
+building out and using our development tools and ecosystem, and continuing to
+smooth out the rough edges for new users/contributors, I'm sure the next 10
+years of GNU Guix will be very bright indeed.
 
 
 # Konrad Hinsen
