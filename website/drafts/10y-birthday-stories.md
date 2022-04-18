@@ -360,7 +360,7 @@ Quicklisp, as it would make packaging Common Lisp software even easier.
 # Hartmut Goebel
 
 Christian Grothoff ([GNU Taler](https://taler.net/en/)) pointed me to Guix
-early 2016, saying «This will become the new Debian!» and asking me to look at
+early 2016, saying “This will become the new Debian!” and asking me to look at
 it for GNU Taler.  Well, quickly I was attracted by the ideas of reproducible
 build and the ease of packaging software.  I also love the one-time usage of
 programs without littering my system.
@@ -389,8 +389,8 @@ much more innovative than I could have hoped for.  At the time I also worked
 on a project where building binary releases was becoming more unmanageable
 with every release because of conflicting requirements.  We were slowly
 migrating away from C++ to GNU Guile, so while not directly applicable the
-talk ["Your distro is a Scheme
-library"]((https://archive.fosdem.org/2016/schedule/event/guixdistro/) by) by
+talk [“Your distro is a Scheme
+library”](https://archive.fosdem.org/2016/schedule/event/guixdistro/) by
 Ludovic Courtès also made me feel: Go Guix!
 
 Using Guix, my intricate dependency problems building binary packages quickly
@@ -404,9 +404,9 @@ created a package.
 This is how I found how amazingly helpful and friendly the community was.  I
 created the MinGW cross build for Guile 2.0 and then "found out" about the
 bootstrap binaries: The only packages in Guix that are not built from source.
-Something just did not feel right.  The manual said: "_These big chunks of
+Something just did not feel right.  The manual said: “_These big chunks of
 binary code are practically non-auditable which breaks the source to binary
-transparency that we get in the rest of the package dependency graph_."  So, I
+transparency that we get in the rest of the package dependency graph_.”  So, I
 wrote GNU Mes and started working on solving this problem.  [Twice](https://guix.gnu.org/en/blog/2019/guix-reduces-bootstrap-seed-by-50/) we [halved](https://guix.gnu.org/en/blog/2020/guix-further-reduces-bootstrap-seed-to-25/)
 the size of the bootstrap binaries and the work is still ongoing.
 
@@ -693,20 +693,20 @@ calling this community their home.
 
 # Simon Tournier
 
-Back in 2014, I watched the video [«Growing a GNU with
-Guix»](https://archive.fosdem.org/2014/schedule/event/gnuguix/) at FOSDEM but
-the real revelation had been in 2015 with [«GNU Guix: The Emacs of
-Distros»](https://archive.fosdem.org/2015/schedule/event/the_emacs_of_distros/),
+Back in 2014, I watched the video [“Growing a GNU with
+Guix”](https://archive.fosdem.org/2014/schedule/event/gnuguix/) at FOSDEM but
+the real revelation had been in 2015 with [“GNU Guix: The Emacs of
+Distros”](https://archive.fosdem.org/2015/schedule/event/the_emacs_of_distros/),
 again at FOSDEM.  Then, I was following the development but not using Guix
 yet.  2016, new job where I was spending my time to fight against dependencies
 and
-[Modulesfiles](https://gitlab.inria.fr/guix-hpc/guix-modules/-/tree/main/).
+[Modulefiles](https://gitlab.inria.fr/guix-hpc/guix-modules/-/tree/main/).
 Then I have totally jumped in Guix in December 2018.  My first interaction
-with the project – and not yet running Guix – was a in-person event in Paris
+with the project — and not yet running Guix — was a in-person event in Paris
 before the [Reproducible Builds](https://reproducible-builds.org/) workshop.
-Back to home, I proofread cover to cover the French manual – my first
-contribution – and installed Guix on the top of my Debian GNU/Linux system.
-So amazing!  Guix fixes many issues I had at work – and introduce new ones^W
+Back to home, I proofread cover to cover the French manual — my first
+contribution — and installed Guix on the top of my Debian GNU/Linux system.
+So amazing!  Guix fixes many issues I had at work — and introduce new ones^W
 challenges.  Plus, thanks to people around, I am learning a lot, both about
 technical details and about inter-personal interactions.  My wish for the near
 future is a community more structured: more events and meetups, more process
@@ -714,9 +714,9 @@ for smoothing the contributions (“teams“ for improving the reviewing by
 sharing the load, RFC for discussing new features, regular releases, etc.),
 and more materials for using Guix in various configurations.
 
-In scientific context, transparency – being able to audit the whole
+In scientific context, transparency — being able to audit the whole
 computational environment from the source codes to the production of binaries
-– is one of the keys for a true [reproducible
+— is one of the keys for a true [reproducible
 research](https://en.wikipedia.org/wiki/Reproducibility).  Since Guix is
 transparent by design, it appears to me one part for a solution in tackling
 the computational side of the [replication
