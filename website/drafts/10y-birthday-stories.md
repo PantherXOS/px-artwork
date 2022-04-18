@@ -65,8 +65,9 @@ earnest... Luckily there is the git history to refresh our memories.
 Apparently I installed Guix, at the time only the package manager, with
 Ludovic's help in December 2012, and immediately reported a few bugs.  My next
 action was to update the package for my own software.  Learning Scheme was
-quite difficult, but I fondly remember discussing quotes and quasiquotes with
-Ludovic. After that, I mostly added packages to Guix, which was possible
+quite difficult, but I fondly remember discussing [quotes and
+quasiquotes](https://www.gnu.org/software/guile/manual/html_node/Expression-Syntax.html)
+with Ludovic.  After that, I mostly added packages to Guix, which was possible
 without knowing much of functional programming; the most tricky packages that
 stayed in my mind were ImageMagick and TeX Live.  I came to appreciate the GNU
 Autotools — with all their shortcomings, having a uniform (and usually
@@ -74,11 +75,12 @@ reliable) way of compiling and installing a software makes creating a Guix
 package almost trivial.
 
 The most compelling feature of Guix was (and still is, I think) the ability to
-roll back package installations, and now complete system installations — no
-more fear of updating a package to a non-working state!  And on a completely
-different level, the nice and welcoming atmosphere in the community, in no
-small part thanks to Ludovic's initial efforts of creating an inclusive
-environment.
+[roll back package
+installations](https://guix.gnu.org/en/blog/2018/multi-dimensional-transactions-and-rollbacks-oh-my/),
+and now complete system installations — no more fear of updating a package to
+a non-working state!  And on a completely different level, the nice and
+welcoming atmosphere in the community, in no small part thanks to Ludovic's
+initial efforts of creating an inclusive environment.
 
 Many formidable adventures are attached to working on Guix.  Buying our first
 server for the build farm was difficult, since we wanted to use a machine with
