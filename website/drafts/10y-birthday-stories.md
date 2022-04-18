@@ -621,12 +621,16 @@ running on all my machines and I started hacking on the continuous integration
 tool: [Cuirass](https://guix.gnu.org/en/cuirass/).
 
 Since then GNU Guix has been an important part of my life. I wrote most of the
-[Guix System installer](https://guix.gnu.org/en/videos/2020/system-graphical-installer/) while traveling by bike to China in 2018. During the
-2020 lockdown, I worked with janneke on the new image API and the [Hurd
-port](https://guix.gnu.org/en/blog/2020/childhurds-and-substitutes/).
-At that time, I was proposed a co-maintainer position of the project.
-In 2021, thanks to an NGI sponsorship, I dedicated 6 months to improving our
-continuous integration process and overall substitutes coverage.
+[Guix System
+installer](https://guix.gnu.org/en/videos/2020/system-graphical-installer/)
+while traveling by bike to China in 2018. During the 2020 lockdown, I worked
+with janneke on the new image API and the [Hurd
+port](https://guix.gnu.org/en/blog/2020/childhurds-and-substitutes/).  At that
+time, I was proposed a [co-maintainer
+position](https://guix.gnu.org/en/blog/2020/gnu-guix-maintainer-collective-update/)
+of the project.  In 2021, thanks to an NGI sponsorship, I dedicated 6 months
+to improving our continuous integration process and overall substitutes
+coverage.
 
 Recently it has been harder to dedicate as much efforts on the project but I'm
 sure this is a transient phase.  I can't wait to start working again with the
