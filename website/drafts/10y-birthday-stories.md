@@ -382,15 +382,16 @@ some `guix compose` for managing compound containers.
 # Jan (janneke) Nieuwenhuizen
 
 At FOSDEM 2016 there were seven talks about GNU Guix: A
-[talk](https://guix.gnu.org/en/blog/tags/talks) about the Hurd by
-Manolis Ragkousis, about functional package management by Ricardo Wurmus and
-that was just what I needed to hear: Finally a viable promise for the GNU
-System and much more innovative than I could have hoped for.  At the time I
-also worked on a project where building binary releases was becoming more
-unmanageable with every release because of conflicting requirements.  We were
-slowly migrating away from C++ to GNU Guile, so while not directly applicable
-the talk "Your distro is a Scheme library" by Ludovic Courtès also made me
-feel: Go Guix!
+[talk](https://guix.gnu.org/en/blog/tags/talks) about the Hurd by Manolis
+Ragkousis, about functional package management by Ricardo Wurmus and that was
+just what I needed to hear: Finally a viable promise for the GNU System and
+much more innovative than I could have hoped for.  At the time I also worked
+on a project where building binary releases was becoming more unmanageable
+with every release because of conflicting requirements.  We were slowly
+migrating away from C++ to GNU Guile, so while not directly applicable the
+talk ["Your distro is a Scheme
+library"]((https://archive.fosdem.org/2016/schedule/event/guixdistro/) by) by
+Ludovic Courtès also made me feel: Go Guix!
 
 Using Guix, my intricate dependency problems building binary packages quickly
 and easily disappeared.  That gave me the confidence that I needed and I
