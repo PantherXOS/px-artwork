@@ -790,6 +790,7 @@ informal in a way that works for me.
 
 I look forward to the day when Guix has a full source bootstrap!
 
+> [10 Years of Guix artwork](https://git.savannah.gnu.org/cgit/guix/guix-artwork.git/tree/promotional/10-years-of-guix) by Luis Felipe.
 
 #### About GNU Guix
 
