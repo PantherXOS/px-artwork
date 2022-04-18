@@ -111,12 +111,13 @@ It's all lisp, no distraction, pure consistency!  Every few years I migrate to
 a different workhorse and it has always been a pain to bring my software setup
 with me: forgot a pam/udev rule here, package here and some tiny hack here and
 everything is messed up, easier to reinstall everything from ground up.  With
-declarative and reproducible nature of Guix System, Guix Home and rde project
-it's just a pure pleasure: write the configuration once, use it everywhere!
-Daemon configurations, package build phases, cron tasks, everything described
-in Guile Scheme.  The one language to rule them all!  I look forward for a
-little more: wider adoption of Guix for managing development environments and
-infrastructures.
+declarative and reproducible nature of Guix System, [Guix
+Home](https://guix.gnu.org/manual/devel/en/html_node/Home-Configuration.html)
+and rde project it's just a pure pleasure: write the configuration once, use
+it everywhere!  Daemon configurations, package build phases, cron tasks,
+everything described in Guile Scheme.  The one language to rule them all!  I
+look forward for a little more: wider adoption of Guix for managing
+development environments and infrastructures.
 
 GNU Guix respects you and your freedoms: anyone can explore and study, tweak
 and adjust, and share everything they want, every program available.  Moreover
