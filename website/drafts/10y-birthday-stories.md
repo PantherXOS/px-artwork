@@ -46,7 +46,7 @@ incompatible package formats for systems, then for each specific languages,
 and was flushed to discover at last what seemed to be a reasonable universal
 format.  That's probably what I like best about it: the ability to use
 potentially any software I want without trashing my system. The welcoming
-community eager to help and valueing my contributions made it even better, and
+community eager to help and valuing my contributions made it even better, and
 submitting patches came naturally.  I mostly use it for development, and to
 keep my sanity in spite of all the data science tools I have to use for
 work.  I sometimes wish it were easier to tweak the core of the system, but I
@@ -105,8 +105,8 @@ and community building around Guix to continue!
 
 # Andrew Tropin
 
-It's all lisp, no distraction, pure consistency!)  Every few years I migrate
-to a different workhorse and it always been a pain to bring my software setup
+It's all lisp, no distraction, pure consistency!  Every few years I migrate to
+a different workhorse and it has always been a pain to bring my software setup
 with me: forgot a pam/udev rule here, package here and some tiny hack here and
 everything is messed up, easier to reinstall everything from ground up.  With
 declarative and reproducible nature of Guix System, Guix Home and rde project
@@ -118,7 +118,7 @@ infrastructures.
 
 GNU Guix respects you and your freedoms: anyone can explore and study, tweak
 and adjust, and share everything they want, every program available.  Moreover
-every package is bootstraped, what a miracle!  Yes, some hardware isn't
+every package is bootstrapped, what a miracle!  Yes, some hardware isn't
 supported, but for a good reason, for this price you get a lot.  I look
 forward for a little more: [decentralized
 substitutes](https://issues.guix.gnu.org/52555) and RISC-V laptops running GNU
@@ -182,7 +182,7 @@ its primary medium being code, is at once perhaps the simplest medium to
 _distribute_ — requiring little more than copying a directory of text files
 from one hard drive to another — yet the works themselves remain a total
 nightmare to faithfully _reproduce_ across varying machines at different
-points in time. Among other reasons, this is because our works are often
+points in time.  Among other reasons, this is because our works are often
 composed of disparate parts with accompanying technical debt: an audio-visual
 installation may use the C++ library **openFrameworks** for high-performance
 interactive graphics, Haskell's **TidalCycles** for realtime sequencing, the
@@ -192,7 +192,7 @@ on.  Time and its corresponding ABI changes intensify our predicament; not
 only is it often an error-prone and laborious task to get all of this running
 correctly across many machines, the nature of technical debt means that
 getting an installation from 2014 up and running in 2022 is often more trouble
-than its worth. Sadly, these seemingly immaterial works of art that are the
+than its worth.  Sadly, these seemingly immaterial works of art that are the
 simplest to copy are simultaneously some of the most difficult to reproduce
 and the quickest to depreciate.
 
@@ -200,23 +200,23 @@ Guix, on the other hand, offers its users provenance-preserving
 _bit-reproducible builds_ of their entire operating systems: using Guix's
 implementation of the functional software deployment model, I should be able
 to reproduce, bit-for-bit, the exact same results across equivalent
-hardware. Suddenly our artworks can be deterministically produced not only at
+hardware.  Suddenly our artworks can be deterministically produced not only at
 the level of the source code's changelog but also as the level of the build,
 offering the guarantee that our usually glued-together towers of systems that
 power our installations can be revisited and reproduced in the future, and the
 deployment processes becomes as simple as packing your system into a container
-to be deployed to a remote target. These guarantees means that the scaling of
+to be deployed to a remote target.  These guarantees means that the scaling of
 our works become simplified: if you want to do an installation that involves
 100 Raspberry Pis communicating with one another in a dynamic system, you can
-focus on working on just a small paramaterized subset, and then generate their
-varying configurations using the infrastructure that guix provides, . I'm
+focus on working on just a small parameterized subset, and then generate their
+varying configurations using the infrastructure that Guix provides.  I'm
 currently in the early phases of developing re::producer, a "creative
 plumber's toolkit" that seeks to simplify this process for artists, tailoring
 the tools provided by Guix to the domain-specific needs of media art and
 allowing artists to declaratively define complex media art systems using one
 of the greatest programming language of all time, Scheme.
 
-This is still new terrain, so there is plenty of work to do. But thats no
+This is still new terrain, so there is plenty of work to do.  But that’s no
 excuse to keep up with your old habits, so roll up your sleeves and come hack
 the good hack!
 
@@ -240,34 +240,32 @@ is used in science and has joined forces with Software Heritage.
 
 # Efraim Flashner
 
-Back in 2015 or so I had been using GNU/Linux on the desktop for a
-number of years and I wanted to contribute somehow. I had just finished
-a course in University using Lisp and Prolog and then I heard about Guix
-having its 0.8.3 (or so) release and it looked like something that I
-could try to contribute to. I certainly made a number of mistakes in the
-beginning; I didn't know that 'git revert' was an actual command and I
-tried to revert a commit by hand, leaving a dangling parenthesis and
-breaking the repo. Another time I added Java as a dependency to an image
-library and broke the graphics stack for half the architectures until I
-reverted that! I even had a stint as a failed GSoC student. I was
-working on bournish, a Gash/Gash-utils like utility to make debugging in
-the early boot process far easier by providing common CLI utilities. I
-had some issues with time management and ended up spending more time
-than I should have updating packages in the repository, as a result I
-didn't spend enough time working on Bournish and it's languished since
-then.
+Back in 2015 or so I had been using GNU/Linux on the desktop for a number of
+years and I wanted to contribute somehow.  I had just finished a course in
+University using Lisp and Prolog and then I heard about Guix having its 0.8.3
+(or so) release and it looked like something that I could try to contribute
+to.  I certainly made a number of mistakes in the beginning; I didn't know
+that `git revert` was an actual command and I tried to revert a commit by
+hand, leaving a dangling parenthesis and breaking the repo.  Another time I
+added Java as a dependency to an image library and broke the graphics stack
+for half the architectures until I reverted that!  I even had a stint as a
+failed GSoC student.  I was working on Bournish, a Gash/Gash-utils like
+utility to make debugging in the early boot process far easier by providing
+common CLI utilities.  I had some issues with time management and ended up
+spending more time than I should have updating packages in the repository, as
+a result I didn't spend enough time working on Bournish and it's languished
+since then.
 
-Currently I enjoy working on troublesome packages and expanding the
-number of packages available on non-popular architectures. Sometimes
-it's removing compiler flags or ‘ifdef gating’ architecture-specific
-includes and other times certain parts of programs need to be disabled.
-Then everything needs to be double-checked for cross-compiling.
-Right now I'm working on riscv64-linux support in Guix, it has a lot of
-potential but powerful boards are hard to come by. Also there are some
-lingering bugs with `guix show` showing different supported-systems for
-packages depending on which architecture you run it from; on
-x86_64-linux only two are shown, from aarch64-linux all 9 architectures
-are shown.
+Currently, I enjoy working on troublesome packages and expanding the number of
+packages available on non-popular architectures.  Sometimes it's removing
+compiler flags or `ifdef gating` architecture-specific includes and other
+times certain parts of programs need to be disabled.  Then everything needs to
+be double-checked for cross-compiling.  Right now I'm working on riscv64-linux
+support in Guix, it has a lot of potential but powerful boards are hard to
+come by.  Also there are some lingering bugs with `guix show` showing different
+supported-systems for packages depending on which architecture you run it
+from; on x86_64-linux only two are shown, from aarch64-linux all 9
+architectures are shown.
 
 # Ekaitz Zarraga
 
@@ -275,11 +273,11 @@ A friend of mine introduced me to Nix and Guix a while ago but I was hesitant
 to try it because I hate configuring stuff and this didn't look as an easy
 distribution to use.  Once I discovered we could have separate environments
 and how easy is to write a package (despite all other difficulties Guix has) I
-was completely into it.  I installed Guix in my laptop and never looked
-back. In the 10 years I've been using a GNU/Linux distribution I never
-interacted that directly with my packages: creating custom ones, sending them
-upstream, making fixes…  That's also freedom!  Now, a couple of years later, I
-am working on improving the bootstrap process for RISC-V and using Guix as a
+was completely into it.  I installed Guix in my laptop and never looked back.
+In the 10 years I've been using a GNU/Linux distribution I never interacted
+that directly with my packages: creating custom ones, sending them upstream,
+making fixes…  That's also freedom!  Now, a couple of years later, I am
+working on improving the bootstrap process for RISC-V and using Guix as a
 mechanism that provides reproducible builds and an easy way to manage all the
 actors I have to deal with: very old software with old dependencies, colliding
 libraries, environment variables, custom patches in source code…  This would
@@ -288,20 +286,20 @@ Guix also makes easy things hard sometimes, but we are working on that!
 
 # Eric Bavier
 
-As a young(ish) computer programmer, I had been running Gnu/Linux systems for
+As a young(ish) computer programmer, I had been running GNU/Linux systems for
 about 7 years but wanted to find a project I could contribute back to.
 Fortunately, I came upon a release announcement for Guix after having poked
 around the GNU Hurd and Guile spheres.  To me at the time Guix had the exact
 mix of upstart energy, optimism, and long-term vision that I was hoping to
-find. Over the years I've been able to contribute packages I use in both my
-personal and work lives, and I'm proud to have implemented the first version
-of `guix refresh --list-dependents`. I've really loved how Guix allows me to
+find.  2Over the years I've been able to contribute packages I use in both my
+personal and work lives, and I'm proud to have implemented the [first version
+of `guix refresh --list-dependents`.  I've really loved how Guix allows me to
 easily move my environments around to different systems, and "rollback" gives
 me much peace of mind knowing that I can tinker with the system and recover
-should something go wrong. But probably my favorite part of Guix is the
+should something go wrong.  But probably my favorite part of Guix is the
 fantastic community I've seen grow around the project.  It exemplifies the
 sort of caring, kind, supportive group I wish many other projects had.
-Together I know we'll be able to make advances on many fronts. In particular,
+Together I know we'll be able to make advances on many fronts.  In particular,
 I'd like to see further work on peer-to-peer substitutes delivery, a native
 build daemon, additional tools for managing relocatable pack collections, and
 continued leadership in bootstrapping.
@@ -328,11 +326,11 @@ Guix, because I had read somewhere that they used functional package
 management, which gives the possibility to roll back to a working state when
 an upgrade causes problems.  I chose Guix because I thought it was going in
 the right direction by using only free software and trying to get reproducible
-builds. The fact that package definitions use the Scheme language was a bonus
+builds.  The fact that package definitions use the Scheme language was a bonus
 point as I like Lisp languages.  And there was even a build system for Common
 Lisp packages, which is rarely the case in the GNU/Linux distributions I tried
-over time. So I started using Guix, and packaging softwares I wanted that were
-not in Guix yet. One day someone asked me if I would be interested in having
+over time.  So I started using Guix, and packaging software I wanted that were
+not in Guix yet.  One day someone asked me if I would be interested in having
 commit access, and I accepted.  I also found a way to improve the build system
 for Common Lisp packages that simplified package definitions.  In the future,
 I think it would be nice to add an importer fetching information from
@@ -340,25 +338,24 @@ Quicklisp, as it would make packaging Common Lisp software even easier.
 
 # Hartmut Goebel
 
-Christian Grothoff (GNU Taler) pointed me to Guix early 2016, saying
-„This will become the new Debian!“ and asking me to look at it for GNU 
-Taler. Well, quickly I was attracted by the ideas of reproducible
-build and the ease of packaging software. I also love the one-time
-usage of programs without littering my system.
+Christian Grothoff (GNU Taler) pointed me to Guix early 2016, saying «This
+will become the new Debian!» and asking me to look at it for GNU Taler.  Well,
+quickly I was attracted by the ideas of reproducible build and the ease of
+packaging software.  I also love the one-time usage of programs without
+littering my system.
 
-Curiously, even as I'm a Python developer, my first contributions have
-been about Java packaging. And I spend quite some time trying to build 
-maven. This challenge I gave up after two (or three? can't remember)
-attempts. Glad Julien Lepiller continued the endeavor and created the 
-maven build system.
+Curiously, even as I'm a Python developer, my first contributions have been
+about Java packaging.  And I spend quite some time trying to build maven.
+This challenge I gave up after two (or three? can't remember) attempts.  Glad
+Julien Lepiller continued the endeavor and created the Maven build system.
 
-Nowadays I still use Guix on a foreign distro only, as KDE desktop and
-some of my main applications are still not here. Guix keeps my main 
-system tidy, while I can have different development environments
-without dependency conflicts.
+Nowadays I still use Guix on a foreign distro only, as KDE desktop and some of
+my main applications are still not here.  Guix keeps my main system tidy,
+while I can have different development environments without dependency
+conflicts.
 
 As you can imagine, I'd like to see KDE desktop in Guix as well as
-some „guix compose“ for managing compound containers.
+some `guix compose` for managing compound containers.
 
 # Jan (janneke) Nieuwenhuizen
 
@@ -373,13 +370,13 @@ slowly migrating away from C++ to GNU Guile, so while not directly applicable
 the talk "Your distro is a Scheme library" by Ludovic Courtès also made me
 feel: Go Guix!
 
- Using Guix, my intricate dependency problems building binary packages
- quickly and easily disappeared.  That gave me the confidence that I
- needed and I wanted to get involved.  My first contributions where a
- programming game called Laby and its dependencies and a few more
- packages that I missed.  After running Guix on top of Debian GNU/Linux
- for three months I switched to what we now call Guix System.  Guix did
- not have log rotation yet in those days, so I created a package.
+Using Guix, my intricate dependency problems building binary packages quickly
+and easily disappeared.  That gave me the confidence that I needed and I
+wanted to get involved.  My first contributions where a programming game
+called Laby and its dependencies and a few more packages that I missed.  After
+running Guix on top of Debian GNU/Linux for three months I switched to what we
+now call Guix System.  Guix did not have log rotation yet in those days, so I
+created a package.
 
 This is how I found how amazingly helpful and friendly the community was.  I
 created the MinGW cross build for Guile 2.0 and then "found out" about the
@@ -404,23 +401,23 @@ hardware again.
 All I wanted to do was to try out a new status bar, but the author only
 officially supported Nix for building.  That started me to finally look at Nix
 after hearing about it in passing before. I was intrigued by the focus on
-reproducible and declarative builds. The language, not so much. My brother
-mentioned another project in the same vein but built on a Lisp. As a lover of
+reproducible and declarative builds.  The language, not so much.  My brother
+mentioned another project in the same vein but built on a Lisp.  As a lover of
 all things Lisp, that was basically enough for me to dive right in.  Beyond
 the banner features of the powerful package and system management,
 reproducible builds, system configuration, and, of course, Guile, I quickly
-found perhaps the biggest and most important: the GNU Guix community. They
+found perhaps the biggest and most important: the GNU Guix community.  They
 have been nothing short of amazing: helpful, intelligent, supportive, and fun
-to hang out with on the #guix channel. In less than a year, my journey so far
-has taken me through the (is it infamous yet?)  recent big core-updates branch
-and merge, submitting patches for random libraries and key desktop features I
-use, and participating in the motivating Guix Days 2022. Looking to the
-future, I hope we can better harness the energy and resources of the growing
-Guix community. It is already a great project to get involved with and make
-your own, but with better and quicker patch review, further building out and
-using our development tools and ecosystem, and continuing to smooth out the
-rough edges for new users/contributors, I'm sure the next 10 years of GNU Guix
-will be very bright indeed.
+to hang out with on the `#guix` channel.  In less than a year, my journey so
+far has taken me through the (is it infamous yet?) recent big core-updates
+branch and merge, submitting patches for random libraries and key desktop
+features I use, and participating in the motivating Guix Days 2022.  Looking
+to the future, I hope we can better harness the energy and resources of the
+growing Guix community.  It is already a great project to get involved with
+and make your own, but with better and quicker patch review, further building
+out and using our development tools and ecosystem, and continuing to smooth
+out the rough edges for new users/contributors, I'm sure the next 10 years of
+GNU Guix will be very bright indeed.
 
 
 # Konrad Hinsen
@@ -449,31 +446,29 @@ hope to contribute to making this happen.
 
 # Lars-Dominik Braun
 
-Around the end of 2019 we were looking for a way to provide
-reproducible software environments to researchers in(?) psychology and I
-was researching software to accomplish that. Binder/repo2docker was the
-obvious and most mature solution at that time and a colleague of mine had
-set up a proof of concept server already. But it could only handle public
-projects out-of-the-box and setting up an entire Kubernetes cluster
-didn’t seem particularly appealing at that time, because no other
-project was moving in that direction yet. So I set out to look for
-alternatives. Another idea was based around OpenStack and one virtual
-machine per project with preinstalled software, which we would keep
-for eternity. Also not ideal and OpenStack is very hard to master
-too. So I looked further at Nix, which – at that time – lacked
-an obvious way to spawn ad-hoc environments with a certain set of
-packages. Thankfully I stumbled upon GNU Guix by mere accident, which had
-exactly that feature. And so in December 2019 [my first code contribution
-was merged](https://issues.guix.gnu.org/38576).
+Around the end of 2019 we were looking for a way to provide reproducible
+software environments to researchers in(?) psychology and I was researching
+software to accomplish that.  Binder/repo2docker was the obvious and most
+mature solution at that time and a colleague of mine had set up a proof of
+concept server already.  But it could only handle public projects
+out-of-the-box and setting up an entire Kubernetes cluster didn’t seem
+particularly appealing at that time, because no other project was moving in
+that direction yet.  So I set out to look for alternatives.  Another idea was
+based around OpenStack and one virtual machine per project with preinstalled
+software, which we would keep for eternity.  Also not ideal and OpenStack is
+very hard to master too.  So I looked further at Nix, which – at that time –
+lacked an obvious way to spawn ad-hoc environments with a certain set of
+packages.  Thankfully I stumbled upon GNU Guix by mere accident, which had
+exactly that feature. And so in December 2019 [my first code contribution was
+merged](https://issues.guix.gnu.org/38576).
 
-Prior to that I had never written a single line of Scheme or Lisp and
-even now it’s still a steep hill. GNU Guix still powers our project and
-allows us to easily share software environments while providing
-excellent application startup times. I also started contributing
-software that I run on my own machines, but I’m not running Guix System,
-because compared to systemd, Shepherd is quite limited on the desktop and
-Guix’ lack of first-class support for non-free drivers/firmware, which I
-need to even boot my machine.
+Prior to that I had never written a single line of Scheme or Lisp and even now
+it’s still a steep hill. GNU Guix still powers our project and allows us to
+easily share software environments while providing excellent application
+startup times.  I also started contributing software that I run on my own
+machines, but I’m not running Guix System, because compared to systemd,
+Shepherd is quite limited on the desktop and Guix’ lack of first-class support
+for non-free drivers/firmware, which I need to even boot my machine.
 
 # Ludovic Courtès
 
@@ -573,14 +568,23 @@ another 10 year!
 
 # Marius Bakke
 
-I originally got interested in Guix after facing shortcomings in traditional configuration management tools.  A fully declarative and immutable system which cleans out old user accounts and packages, that also offers reproducibility, rollbacks, and the ability to generate virtual machines and containers from the same code.  Where do I sign up?
+I originally got interested in Guix after facing shortcomings in traditional
+configuration management tools.  A fully declarative and immutable system
+which cleans out old user accounts and packages, that also offers
+reproducibility, rollbacks, and the ability to generate virtual machines and
+containers from the same code.  Where do I sign up?
 
-It turns out, signing up was easy, and I soon found myself contributing the pieces I needed to make it a daily driver.  Watching the community grow from a handful of contributors to [100 monthly](https://www.openhub.net/p/gnuguix) has been astonishing.  I have learned a lot from this community and am proud to be a part of it.   Can't wait to see what the next decade brings.  Happy birthday Guix!
+It turns out, signing up was easy, and I soon found myself contributing the
+pieces I needed to make it a daily driver.  Watching the community grow from a
+handful of contributors to [100 monthly](https://www.openhub.net/p/gnuguix)
+has been astonishing.  I have learned a lot from this community and am proud
+to be a part of it.  Can't wait to see what the next decade brings.  Happy
+birthday Guix!
 
 # Mathieu Othacehe
 
 I was introduced to GNU Guix by a colleague, Clément Lassieur in 2016. At
-first I found the concept overwhelming. Writing Guile wrappers for each and
+first I found the concept overwhelming.  Writing Guile wrappers for each and
 every Linux service out there and keeping them up to date seemed like
 impossible.  However, I quickly fell in love with the package manager, the
 distribution and the community behind. A few months later, GNU Guix was
@@ -596,7 +600,7 @@ In 2021, thanks to an NGI sponsorship, I dedicated 6 months to improving our
 continuous integration process and overall substitutes coverage.
 
 Recently it has been harder to dedicate as much efforts on the project but I'm
-sure this is a transient phase. I can't wait to start working again with the
+sure this is a transient phase.  I can't wait to start working again with the
 incredibly talented people making this piece of software so special to me.
 
 
@@ -707,24 +711,24 @@ There are multiple reasons I started using Guix.  On the tech side, I'd been
 playing around with 9front for a while at that time, but kept running into
 issues where the imperative structure of namespaces was getting in my way. I
 like Haskell a lot and heard about the many benefits of a pure functional
-approach to build systems, et cetera. I ran Guix on top of Arch for a while
-and liked it a lot. Using package transformations still feels magical. But
+approach to build systems, et cetera.  I ran Guix on top of Arch for a while
+and liked it a lot. Using package transformations still feels magical.  But
 yall already know about this cool stuff from Ambrevar's blog post.  On the
-social side, I saw that one of my favorite compsci people - Christine Lemmer
-Webber - was involved with the project, so I knew it probably has a nice
-community, which turned out to be very true. This is one of the best
+social side, I saw that one of my favorite compsci people – Christine Lemmer
+Webber – was involved with the project, so I knew it probably has a nice
+community, which turned out to be very true.  This is one of the best
 communities centered around a piece of tech that I've been in and yall inspire
-me to be better with each interaction. Huge thank you for that.  My favorite
+me to be better with each interaction.  Huge thank you for that.  My favorite
 Guix memory is when someone CC'd me in a patch for the egg importer, which was
-built on top of the Chicken Scheme build system I contributed. Seeing others
+built on top of the Chicken Scheme build system I contributed.  Seeing others
 build on top of my work is an amazing feeling.  For the future, I hope the
 service management improvements will keep coming, but what I'd like to see the
-most is Guix running on old and slow devices. There is a lot of work to be
+most is Guix running on old and slow devices.  There is a lot of work to be
 done to make it more bandwidth and space efficient and to support development
-on systems with little RAM. If I could use it instead of PostmarketOS/Alpine,
-I'd be elated. On the human side, I hope we can keep contributors from
-burnout, while increasing the software's quality. I think the way Blender
-development is structured could be a source of inspiration. On that note,
+on systems with little RAM.  If I could use it instead of PostmarketOS/Alpine,
+I'd be elated.  On the human side, I hope we can keep contributors from
+burnout, while increasing the software's quality.  I think the way Blender
+development is structured could be a source of inspiration.  On that note,
 using Guix for reproducible art workflows would be rad.  Okay that's it, bye
 yall lovely people.
 
@@ -743,7 +747,7 @@ Eventually I even grew crazy enough to package Guix in Debian... which
 indirectly lead to one of my most creative contributions to a Free Software
 project, a typo poem embedded in!
 
-I really appeciate the community around Guix and the process, values and
+I really appreciate the community around Guix and the process, values and
 thoughtfulness that work proactively to maintain a healthy community, even in
 the face of inevitable and occasional conflict.  Guix balances formal and
 informal in a way that works for me.
