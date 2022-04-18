@@ -581,14 +581,18 @@ was early 2014 when I encountered Guix by luck, while I was still a student at
 Crete, Greece.  I remember there was a strike during that time and I had
 plenty of free time for a week, so I decided that I will try start working on
 this.  Then a idea came in mind, why not try porting Guix to GNU/Hurd and
-build a system with it?  One thing led to another and it also became a GSoC
-project in 2015 and 2016.  In 2016 I also gave a Fosdem talk about this, which
-somehow ended up being the start of me helping out with the GNU Guile devroom
-in 2017 and 2018, and then what became the Minimalistic Languages until today.
-When I am thinking about Guix is like thinking about the story of me growing
-up and the people I met through all these year I consider family! Guix is a
-big part of my life, I use it everywhere and even though I am not able to help
-much nowadays I am following the project as much as I can.  Here's hoping to
+build a system with it?  One thing led to another and it also became a [GSoC
+project](https://guix.gnu.org/en/blog/2015/gnu-guix-welcomes-three-students-for-gsoc/)
+in [2015](https://guix.gnu.org/en/blog/2015/gsoc-update/) and
+[2016](https://guix.gnu.org/en/blog/2016/gnu-guix-welcomes-four-students-for-gsoc/).
+In 2016 I also gave a [FOSDEM talk about
+this](https://archive.fosdem.org/2016/schedule/event/guixhurd/), which somehow
+ended up being the start of me helping out with the GNU Guile devroom in 2017
+and 2018, and then what became the Minimalistic Languages until today.  When I
+am thinking about Guix is like thinking about the story of me growing up and
+the people I met through all these year I consider family! Guix is a big part
+of my life, I use it everywhere and even though I am not able to help much
+nowadays I am following the project as much as I can.  Here's hoping to
 another 10 year!
 
 # Marius Bakke
