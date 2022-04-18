@@ -235,16 +235,21 @@ Back in early 2013, I was lucky enough to be unemployed for a few months.
 This gave me a lot of time to try out GNU Guix.  Ludovic had told me about it
 a few months earlier, while we were still working at the same place.  It was
 so easy to add new packages that I naturally ended up submitting a few patches
-and quickly trolled the whole project by adding my editor of choice, vim.
+and quickly trolled the whole project by [adding my editor of choice,
+vim](https://git.savannah.gnu.org/cgit/guix.git/commit/?id=eb4908581cae8b787c63b39fa524adf764ae8c25).
 Debugging package definitions was also very simple since the builds were
 reproducible by default.
 
-I also had some fun writing the first version of the linter and improving the
-importer/updater for Python packages.  I even hacked tox to make it use Guix
-instead of virtualenv and gave a talk about this at
+I also had some fun writing the first version of the
+[linter](https://guix.gnu.org/manual/devel/en/html_node/Invoking-guix-lint.html#Invoking-guix-lint)
+and improving the
+[importer/updater](https://guix.gnu.org/manual/devel/en/html_node/Invoking-guix-import.html#Invoking-guix-import)
+for Python packages.  I even hacked tox to make it use Guix instead of
+virtualenv and gave a talk about this at
 [FOSDEM](https://archive.fosdem.org/2016/schedule/event/guix_tox/).  Even
 though I left the project a few years ago, I'm glad to see it's doing well and
-is used in science and has joined forces with Software Heritage.
+is used in science and [has joined forces with Software
+Heritage](https://guix.gnu.org/en/blog/2019/connecting-reproducible-deployment-to-a-long-term-source-code-archive/).
 
 # Efraim Flashner
 
