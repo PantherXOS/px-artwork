@@ -652,6 +652,38 @@ reality, blurring the lines between developers and users.  In the decades to
 come I hope many more people will get to experience what I did and end up
 calling this community their home.
 
+# Simon Tournier
+
+Back in 2014, I watched the video [«Growing a GNU with
+Guix»](https://archive.fosdem.org/2014/schedule/event/gnuguix/) at FOSDEM but
+the real revelation had been in 2015 with [«GNU Guix: The Emacs of
+Distros»](https://archive.fosdem.org/2015/schedule/event/the_emacs_of_distros/),
+again at FOSDEM.  Then, I was following the development but not using Guix
+yet.  2016, new job where I was spending my time to fight against dependencies
+and
+[Modulesfiles](https://gitlab.inria.fr/guix-hpc/guix-modules/-/tree/main/).
+Then I have totally jumped in Guix in December 2018.  My first interaction
+with the project – and not yet running Guix – was a in-person event in Paris
+before the [Reproducible Builds](https://reproducible-builds.org/) workshop.
+Back to home, I proofread cover to cover the French manual – my first
+contribution – and installed Guix on the top of my Debian GNU/Linux system.
+So amazing!  Guix fixes many issues I had at work – and introduce new ones^W
+challenges.  Plus, thanks to people around, I am learning a lot, both about
+technical details and about inter-personal interactions.  My wish for the near
+future is a community more structured: more events and meetups, more process
+for smoothing the contributions (“teams“ for improving the reviewing by
+sharing the load, RFC for discussing new features, regular releases, etc.),
+and more materials for using Guix in various configurations.
+
+In scientific context, transparency – being able to audit the whole
+computational environment from the source codes to the production of binaries
+– is one of the keys for a true [reproducible
+research](https://en.wikipedia.org/wiki/Reproducibility).  Since Guix is
+transparent by design, it appears to me one part for a solution in tackling
+the computational side of the [replication
+crisis](https://en.wikipedia.org/wiki/Replication_crisis).  For the near
+future, I wish more [scientific practitioners will employ
+Guix](https://hpc.guix.info/).
 
 # Thiago Jung Bauermann
 
