@@ -460,13 +460,14 @@ when I left macOS for Linux.  During those five years, I also learned to
 appreciate the Guix community, which is friendly, competent, and refreshingly
 low-ceremony in spite of continuous growth.  That makes for an easy transition
 from newbie to contributor (mostly contributing packages, but also the
-time-machine command that matters for reproducibility).  The anniversary is a
-good occasion to express my thanks to all those who answered my many
-questions, ranging from conceptual to technical, and to the maintainer team
-that does an important but not very visible work by critically examining all
-submitted packages and code enhancements.  My main wish for the future is a
-lower barrier to adoption for my colleagues in computational science, and I
-hope to contribute to making this happen.
+[time-machine](https://guix.gnu.org/manual/devel/en/html_node/Invoking-guix-time_002dmachine.html#Invoking-guix-time_002dmachine)
+command that matters for reproducibility).  The anniversary is a good occasion
+to express my thanks to all those who answered my many questions, ranging from
+conceptual to technical, and to the maintainer team that does an important but
+not very visible work by critically examining all submitted packages and code
+enhancements.  My main wish for the future is a lower barrier to adoption for
+my colleagues in computational science, and I hope to contribute to making
+this happen.
 
 # Lars-Dominik Braun
 
