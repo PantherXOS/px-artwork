@@ -100,7 +100,7 @@ I admired their way of facilitating the workshop, which I then tried to copy
 for our own meeting.
 
 The Guix system meets all my daily needs now, so I have no technical wishes
-for the future — but I trust in the many creative minds working on advancing
+for the future — but I trust the many creative minds working on advancing
 the project to come up with nice new ideas.  And I wish the human adventure
 and community building around Guix to continue!
 
@@ -307,7 +307,7 @@ about 7 years but wanted to find a project I could contribute back to.
 Fortunately, I came upon a release announcement for Guix after having poked
 around the GNU Hurd and Guile spheres.  To me at the time Guix had the exact
 mix of upstart energy, optimism, and long-term vision that I was hoping to
-find.  2Over the years I've been able to contribute packages I use in both my
+find.  Over the years I've been able to contribute packages I use in both my
 personal and work lives, and I'm proud to have implemented the [first version
 of `guix refresh
 --list-dependents`](https://git.savannah.gnu.org/cgit/guix.git/commit/?id=7d193ec34881843573a8013163347cfd8b1e9001).
@@ -381,8 +381,8 @@ some `guix compose` for managing compound containers.
 
 # Jan (janneke) Nieuwenhuizen
 
-At FOSDEM 2016 there were seven talks about GNU Guix: A
-[talk](https://guix.gnu.org/en/blog/tags/talks) about the Hurd by Manolis
+At FOSDEM 2016 there were [seven talks](https://guix.gnu.org/en/blog/2016/meet-guix-at-fosdem/)
+about GNU Guix: A talk about the Hurd by Manolis
 Ragkousis, about functional package management by Ricardo Wurmus and that was
 just what I needed to hear: Finally a viable promise for the GNU System and
 much more innovative than I could have hoped for.  At the time I also worked
@@ -518,7 +518,7 @@ why such a crazy-looking project made sense not just technically but also
 socially—for GNU, for user freedom.  I remember Nikita Karetnikov as the first
 heroic contributor at a time when Guix could barely install packages.
 
-One of my “ah ha!” moments was when I built the first bootable image a [a year
+One of my “ah ha!” moments was when I built the first bootable image [a year
 later](https://lists.gnu.org/archive/html/guile-user/2013-02/msg00131.html).
 [G-expressions](https://hal.inria.fr/hal-01580582/en), the [service
 framework](https://guix.gnu.org/manual/devel/en/html_node/Service-Composition.html),
@@ -579,8 +579,8 @@ too.
 When I think how I started with Guix, I use one word to describe it, luck!  It
 was early 2014 when I encountered Guix by luck, while I was still a student at
 Crete, Greece.  I remember there was a strike during that time and I had
-plenty of free time for a week, so I decided that I will try start working on
-this.  Then a idea came in mind, why not try porting Guix to GNU/Hurd and
+plenty of free time for a week, so I decided that I will try to start working on
+this.  Then an idea came in mind, why not try porting Guix to GNU/Hurd and
 build a system with it?  One thing led to another and it also became a [GSoC
 project](https://guix.gnu.org/en/blog/2015/gnu-guix-welcomes-three-students-for-gsoc/)
 in [2015](https://guix.gnu.org/en/blog/2015/gsoc-update/) and
@@ -590,7 +590,7 @@ this](https://archive.fosdem.org/2016/schedule/event/guixhurd/), which somehow
 ended up being the start of me helping out with the GNU Guile devroom in 2017
 and 2018, and then what became the Minimalistic Languages until today.  When I
 am thinking about Guix is like thinking about the story of me growing up and
-the people I met through all these year I consider family! Guix is a big part
+the people I met through all these years I consider family! Guix is a big part
 of my life, I use it everywhere and even though I am not able to help much
 nowadays I am following the project as much as I can.  Here's hoping to
 another 10 year!
@@ -749,8 +749,8 @@ like Haskell a lot and heard about the many benefits of a pure functional
 approach to build systems, et cetera.  I ran Guix on top of Arch for a while
 and liked it a lot. Using package transformations still feels magical.  But
 yall already know about this cool stuff from Ambrevar's blog post.  On the
-social side, I saw that one of my favorite compsci people – Christine Lemmer
-Webber – was involved with the project, so I knew it probably has a nice
+social side, I saw that one of my favorite compsci people — Christine Lemmer
+Webber — was involved with the project, so I knew it probably has a nice
 community, which turned out to be very true.  This is one of the best
 communities centered around a piece of tech that I've been in and yall inspire
 me to be better with each interaction.  Huge thank you for that.  My favorite
