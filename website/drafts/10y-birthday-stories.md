@@ -649,13 +649,15 @@ better things would be if one could specify the exact components of the
 environment and re-create it whenever it is needed.  I discovered that Guix
 provides the machinery to do just that.  Scheme was new to me then so I had
 some learning to do before contributing.  This included a detour via
-Vonnegut/Cat's Cradle, of course, to discover the meaning of ice-9.  Suitably
-informed I returned to add a number of finite volume and finite element
-frameworks to the Guix package collection.  Keeping these packages up- to-date
-and welcoming new simulation-related packages is the next target.  Looking
-ahead to the next ten years, an important task is to popularise the use of the
-Guix tools.  Many more engineers and scientists stand to benefit from the use
-of the dependable software environments that are now made possible.
+Vonnegut/Cat's Cradle, of course, to discover the [meaning of
+ice-9](https://lists.gnu.org/archive/html/guile-devel/2010-07/msg00046.html).
+Suitably informed I returned to add a number of finite volume and finite
+element frameworks to the Guix package collection.  Keeping these packages up-
+to-date and welcoming new simulation-related packages is the next target.
+Looking ahead to the next ten years, an important task is to popularise the
+use of the Guix tools.  Many more engineers and scientists stand to benefit
+from the use of the dependable software environments that are now made
+possible.
 
 
 # Ricardo Wurmus
