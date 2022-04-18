@@ -778,9 +778,10 @@ normalized, containerized build environments and the "guix challenge" tool to
 verify reproducibility.  I had heard of Nix as an interesting model, but
 valued the strong commitment to Free Software with Guix.
 
-Eventually I even grew crazy enough to package Guix in Debian... which
-indirectly lead to one of my most creative contributions to a Free Software
-project, a typo poem embedded in!
+Eventually I even grew crazy enough to [package Guix in
+Debian](https://packages.debian.org/bullseye/guix)... which indirectly lead to
+one of my most creative contributions to a Free Software project, a typo poem
+embedded in!
 
 I really appreciate the community around Guix and the process, values and
 thoughtfulness that work proactively to maintain a healthy community, even in
