@@ -1,7 +1,7 @@
 title: 10 years of stories behind Guix
 author: Guix Hackers
 tags: Community
-date: 2022-04-18 23:21:11
+date: 2022-04-18 18:45:00
 ---
 
 It’s been ten years today since the [very first
