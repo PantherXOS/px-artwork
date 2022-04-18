@@ -166,12 +166,14 @@ questions on the mailing lists.  Sometimes during that process I found bugs
 and analyzed them further, which helped Ludovic and other developers to fix
 them.  I reviewed mostly Java packages and added some on my own.  I very much
 enjoyed co-mentoring for [Outreachy](https://www.outreachy.org/), and learned
-more on automated video/screencast generation.  I should be really more active
-in the community again!
+more on [automated video/screencast
+generation](https://guix.gnu.org/en/blog/2019/documentation-video-creation/).
+I should be really more active in the community again!
 
 For the future of Guix, I would like to see more Java and Go packages (hem,
 this comes not from alone, I should review and contribute more).  Internally I
-wish a more intuitive bug- and patch-tracker instead of Debbugs+Mumi.
+wish a more intuitive bug- and patch-tracker instead of
+Debbugs+[Mumi](https://git.elephly.net/gitweb.cgi?p=software/mumi.git;a=summary).
 Externally I wish a much bigger awareness in the commercial "Open Source"
 world about software freedom, bootstrapping your environment and dependencies
 from free source code in a real reproducible way, instead of relying on
