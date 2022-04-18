@@ -263,7 +263,7 @@ hand, leaving a dangling parenthesis and breaking the repo.  Another time I
 added Java as a dependency to an image library and broke the graphics stack
 for half the architectures until I reverted that!  I even had a stint as a
 failed [GSoC
-student]((https://guix.gnu.org/en/blog/2016/gnu-guix-welcomes-four-students-for-gsoc/).
+student](https://guix.gnu.org/en/blog/2016/gnu-guix-welcomes-four-students-for-gsoc/).
 I was working on
 [Bournish](https://git.savannah.gnu.org/cgit/guix.git/tree/guix/build/bournish.scm),
 a Gash/Gash-utils like utility to make debugging in the early boot process far
@@ -274,7 +274,7 @@ Bournish and it's languished since then.
 
 Currently, I enjoy working on troublesome packages and expanding the number of
 packages available on non-popular architectures.  Sometimes it's removing
-compiler flags or `ifdef gating` architecture-specific includes and other
+compiler flags or ‘ifdef gating’ architecture-specific includes and other
 times certain parts of programs need to be disabled.  Then everything needs to
 be double-checked for cross-compiling.  Right now I'm working on riscv64-linux
 support in Guix, it has a lot of potential but powerful boards are hard to
@@ -710,7 +710,7 @@ So amazing!  Guix fixes many issues I had at work — and introduce new ones^W
 challenges.  Plus, thanks to people around, I am learning a lot, both about
 technical details and about inter-personal interactions.  My wish for the near
 future is a community more structured: more events and meetups, more process
-for smoothing the contributions (“teams“ for improving the reviewing by
+for smoothing the contributions (“teams” for improving the reviewing by
 sharing the load, RFC for discussing new features, regular releases, etc.),
 and more materials for using Guix in various configurations.
 
