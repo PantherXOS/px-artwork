@@ -359,16 +359,17 @@ Quicklisp, as it would make packaging Common Lisp software even easier.
 
 # Hartmut Goebel
 
-Christian Grothoff (GNU Taler) pointed me to Guix early 2016, saying «This
-will become the new Debian!» and asking me to look at it for GNU Taler.  Well,
-quickly I was attracted by the ideas of reproducible build and the ease of
-packaging software.  I also love the one-time usage of programs without
-littering my system.
+Christian Grothoff ([GNU Taler](https://taler.net/en/)) pointed me to Guix
+early 2016, saying «This will become the new Debian!» and asking me to look at
+it for GNU Taler.  Well, quickly I was attracted by the ideas of reproducible
+build and the ease of packaging software.  I also love the one-time usage of
+programs without littering my system.
 
 Curiously, even as I'm a Python developer, my first contributions have been
 about Java packaging.  And I spend quite some time trying to build maven.
 This challenge I gave up after two (or three? can't remember) attempts.  Glad
-Julien Lepiller continued the endeavor and created the Maven build system.
+Julien Lepiller continued the endeavor and [created the Maven build
+system](https://guix.gnu.org/en/blog/2020/online-guix-day-announce-2/).
 
 Nowadays I still use Guix on a foreign distro only, as KDE desktop and some of
 my main applications are still not here.  Guix keeps my main system tidy,
