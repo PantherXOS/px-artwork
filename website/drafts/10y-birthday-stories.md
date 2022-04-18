@@ -135,16 +135,19 @@ than an year and look forward for more exciting things to appear!
 
 I was introduced to Guix in 2016.  That was around the time I was learning
 lisp and having my mind blown.  As soon as I heard that Guix was written in a
-lisp and that it was a FSDG compliant distro, I knew that this was going to be
-the best distro ever and immediately jumped ship.
+lisp and that it was a
+[FSDG](https://www.gnu.org/distros/free-system-distribution-guidelines.en.html)
+compliant distro, I knew that this was going to be the best distro ever and
+immediately jumped ship.
 
 While I was immediately smitten by the perfection and elegance of Guix, I have
 stayed this long not for the technical excellence but for the people.  The
 Guix community is the warmest and most caring free software community I have
 ever been a part of.  I honestly did not believe such people could exist
 online until I saw Guix.  In the future, I would love for this community to
-grow and thrive with a smoother issue tracking and contribution process so
-that potential contributors, especially newcomers, don't turn away frustrated.
+grow and thrive with a smoother [issue tracking](https://issues.guix.gnu.org/)
+and contribution process so that potential contributors, especially newcomers,
+don't turn away frustrated.
 
 # Björn Höfling
 
