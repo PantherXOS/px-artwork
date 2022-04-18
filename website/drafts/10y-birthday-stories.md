@@ -332,8 +332,9 @@ involved.  I’ve got to know Guix by reading discussions on how to do
 sandboxing properly.  But actually, Guix convinced me with its clarity and
 approachability and principles.  Guix opened my eyes on how parts of GNU fit
 together.  Thanks to all who give us this freedom to understand and decide.
-By contributing to the translation, I hope to make it reach more users and
-developers.
+By [contributing to the
+translation](https://guix.gnu.org/manual/devel/en/html_node/Translating-Guix.html),
+I hope to make it reach more users and developers.
 
 # Guillaume Le Vaillant
 
