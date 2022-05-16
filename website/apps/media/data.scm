@@ -52,7 +52,7 @@ Alexander Gosdschan, Katarzyna Wreczycka, Jonathan Ronen, Altuna Akalin"
     #:type (C_ "publication type" "Journal article"))
    (publication
     #:title "Guix: A most advanced operating system"
-    #:url "https://ambrevar.xyz/guix-advance/index.html"
+    #:url "https://web.archive.org/web/20210528220842/https://ambrevar.xyz/guix-advance/index.html"
     #:authors "Pierre Neidhardt"
     #:date (string->date "2019-01-14" "~Y-~m-~d")
     #:type (C_ "publication type" "Article")
