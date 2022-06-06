@@ -76,7 +76,14 @@ Steffen Möller, Geert Smant, Joep de Ligt, Pjotr Prins"
     #:url "https://doi.org/10.22152/programming-journal.org/2022/6/13"
     #:authors "Nathanaëlle Courant, Julien Lepiller, Gabriel Scherer"
     #:date (string->date "2022-02-15" "~Y-~m-~d")
-    #:type (C_ "publication type" "Journal article"))))
+    #:type (C_ "publication type" "Journal article"))
+   (publication
+    #:title "Why Open Source Matters — Guix"
+    #:url "https://blog.bitmex.com/why-open-source-matters-guix/"
+    #:authors "Sjors Provoost"
+    #:date (string->date "2022-05-12" "~Y-~m-~d")
+    #:type (C_ "publication type" "Book chapter")
+    #:scientific? #false)))
 
 
 (define screenshots
