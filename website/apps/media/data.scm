@@ -83,7 +83,14 @@ Steffen Möller, Geert Smant, Joep de Ligt, Pjotr Prins"
     #:authors "Sjors Provoost"
     #:date (string->date "2022-05-12" "~Y-~m-~d")
     #:type (C_ "publication type" "Book chapter")
-    #:scientific? #false)))
+    #:scientific? #false)
+   (publication
+    #:title "Building a Secure Software Supply Chain with GNU Guix"
+    #:authors "Ludovic Courtès"
+    #:url "https://doi.org/10.22152/programming-journal.org/2023/7/1"
+    #:date (string->date "2022-06-30" "~Y-~m-~d")
+    #:type (C_ "publication type" "Journal article")
+    #:scientific? #true)))
 
 
 (define screenshots
