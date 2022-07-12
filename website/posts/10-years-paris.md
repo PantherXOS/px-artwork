@@ -12,6 +12,9 @@ event](https://10years.guix.gnu.org) will take place on **September
 16–18th, 2022**, in Paris, France.  The program is being finalized, but
 you can [already register](https://10years.guix.gnu.org)!
 
+> **Update** (2022-07-12): [Preliminary
+> program](https://10years.guix.gnu.org/program) published!
+
 ![10 year anniversary artwork](/static/blog/img/10-years-of-guix_colorful-10.gif)
 
 This is a community event with several twists to it:
