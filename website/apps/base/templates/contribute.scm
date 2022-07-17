@@ -306,5 +306,5 @@ Translation|I18N|L10N|Artwork") #\|)
           auxiliary information useful to hackers and maintainers is
           available at "
           (a (@ (href "//git.savannah.gnu.org/cgit/guix/maintenance.git"))
-             "git://git.sv.gnu.org/guix/maintenance.git")
+             "https://git.sv.gnu.org/git/guix/maintenance.git")
           "."))))))

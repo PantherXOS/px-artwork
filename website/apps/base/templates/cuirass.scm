@@ -85,6 +85,6 @@ to monitor the build results."))
       ,(G_ `(h3 "Project repository"))
       ,(G_ `(p "Cuirass source code is hosted at "
                ,(G_ `(a (@ (href "//git.savannah.gnu.org/cgit/guix/guix-cuirass.git"))
-                        "git://git.sv.gnu.org/guix/guix-cuirass.git"))
+                        "https://git.sv.gnu.org/git/guix/guix-cuirass.git"))
                "."))
       ))))
