@@ -55,10 +55,10 @@ to monitor the build results."))
                           "Guile-Fibers"))
                  " asynchronous library.")))
       ,(G_ `(h3 "Documentation"))
-      ,(G_ `(p "Cuirass documentation is accessible "
+      ,(G_ `(p "Learn more about Cuirass from the "
                ,(G_ `(a (@ (href ,(guix-url "cuirass/manual/"
                                             #:localize #f)))
-                        "here"))
+                        "Cuirass manual"))
                "."))
       ,(G_ `(h3 "Releases"))
       (ul
