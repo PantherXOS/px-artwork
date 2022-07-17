@@ -13,6 +13,7 @@
  ("fr_FR" . "fr")
  ("ja_JP" . "ja")
  ("ko_KR" . "ko")
+ ("nb_NO" . "nb-NO")
  ("ru_RU" . "ru")
  ("sk_SK" . "sk")
  ("tr_TR" . "tr")

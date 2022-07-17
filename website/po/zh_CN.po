@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20201121\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-04-07 15:18Z\n"
+"POT-Creation-Date: 2022-07-09 07:59Z\n"
 "PO-Revision-Date: 2022-03-24 00:16+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -2051,85 +2051,86 @@ msgid "Article"
 msgstr "文章"
 
 #: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
+#: apps/media/data.scm:92
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "期刊文章"
 
-#: apps/media/data.scm:67
+#: apps/media/data.scm:67 apps/media/data.scm:85
 msgctxt "publication type"
 msgid "Book chapter"
 msgstr "书籍章节"
 
-#: apps/media/data.scm:85
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "图形登录"
 
-#: apps/media/data.scm:89
+#: apps/media/data.scm:103
 msgid "Graphical log-in screen"
 msgstr "图形登录界面"
 
-#: apps/media/data.scm:92
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:96
+#: apps/media/data.scm:110
 msgid "GNOME desktop environment"
 msgstr "GNOME 桌面环境"
 
-#: apps/media/data.scm:99
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:103
+#: apps/media/data.scm:117
 msgid "Xfce desktop environment"
 msgstr "Xfce 桌面环境"
 
-#: apps/media/data.scm:106
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "虚拟机"
 
-#: apps/media/data.scm:110
+#: apps/media/data.scm:124
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "以“guix system vm”启动的虚拟机"
 
-#: apps/media/data.scm:113
+#: apps/media/data.scm:127
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:117
+#: apps/media/data.scm:131
 msgid "Sway window manager running wayland"
 msgstr "运行在 Wayland 上的 Sway 窗口管理器"
 
-#: apps/media/data.scm:120
+#: apps/media/data.scm:134
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:138
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment、Inkscape 和 Cyrillic text"
 
-#: apps/media/data.scm:130
+#: apps/media/data.scm:144
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL: 日常使用 Guix"
 
-#: apps/media/data.scm:138
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "比特币构建系统安全"
 
-#: apps/media/data.scm:145
+#: apps/media/data.scm:159
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "使用 GNU Guix 进行可复现的系统管理"
 
-#: apps/media/data.scm:152
+#: apps/media/data.scm:166
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr "超越容器：利用 GNU Guix 打造可复现的软件环境"

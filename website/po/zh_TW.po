@@ -2,13 +2,14 @@
 # Copyright (C) YEAR the authors of the Guix Website (msgid) and the following authors (msgstr)
 # This file is distributed under the same license as the guix-website package.
 # Whired Planck <fungdaat31@outlook.com>, 2021.
+# Ray Sun <raysun96.ray@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20210527\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-04-07 15:18Z\n"
-"PO-Revision-Date: 2021-10-24 19:05+0000\n"
-"Last-Translator: Whired Planck <fungdaat31@outlook.com>\n"
+"POT-Creation-Date: 2022-07-09 07:59Z\n"
+"PO-Revision-Date: 2022-06-23 03:18+0000\n"
+"Last-Translator: Ray Sun <raysun96.ray@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/guix/website/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.13\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -305,7 +306,7 @@ msgstr "下載"
 #: apps/base/templates/components.scm:404
 msgctxt "website menu"
 msgid "Standard"
-msgstr ""
+msgstr "標準版"
 
 #: apps/base/templates/components.scm:407
 #: apps/download/templates/download-latest.scm:162
@@ -325,8 +326,6 @@ msgid "All"
 msgstr "所有"
 
 #: apps/base/templates/components.scm:418
-#, fuzzy
-#| msgid "GNU Guix Manual <1/>"
 msgctxt "website menu"
 msgid "GNU Guix Manual <1/>"
 msgstr "GNU Guix 使用者手冊 <1/>"
@@ -1656,7 +1655,7 @@ msgstr ""
 
 #: apps/base/templates/irc.scm:33
 msgid "Chat on IRC"
-msgstr ""
+msgstr "在IRC上交流"
 
 #: apps/base/templates/irc.scm:35
 msgid ""
@@ -2091,87 +2090,88 @@ msgid "Article"
 msgstr "文章"
 
 #: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
+#: apps/media/data.scm:92
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "雜誌文章"
 
-#: apps/media/data.scm:67
+#: apps/media/data.scm:67 apps/media/data.scm:85
 msgctxt "publication type"
 msgid "Book chapter"
 msgstr "書本章節"
 
-#: apps/media/data.scm:85
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "圖形登入"
 
-#: apps/media/data.scm:89
+#: apps/media/data.scm:103
 msgid "Graphical log-in screen"
 msgstr "圖形登入介面"
 
-#: apps/media/data.scm:92
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:96
+#: apps/media/data.scm:110
 msgid "GNOME desktop environment"
 msgstr "GNOME 桌面環境"
 
-#: apps/media/data.scm:99
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:103
+#: apps/media/data.scm:117
 msgid "Xfce desktop environment"
 msgstr "Xfce 桌面環境"
 
-#: apps/media/data.scm:106
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "虛擬機器"
 
-#: apps/media/data.scm:110
+#: apps/media/data.scm:124
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "以“guix system vm”啟動的虛擬機器"
 
-#: apps/media/data.scm:113
+#: apps/media/data.scm:127
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:117
+#: apps/media/data.scm:131
 msgid "Sway window manager running wayland"
 msgstr "執行在 Wayland 上的 Sway 視窗管理器"
 
-#: apps/media/data.scm:120
+#: apps/media/data.scm:134
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:138
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment、Inkscape 和 Cyrillic text"
 
-#: apps/media/data.scm:130
+#: apps/media/data.scm:144
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL：日常使用 Guix"
 
-#: apps/media/data.scm:138
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "比特币 构建系统 安全"
 
-#: apps/media/data.scm:145
+#: apps/media/data.scm:159
 #, fuzzy
 #| msgid "System Administration"
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "系統管理"
 
-#: apps/media/data.scm:152
+#: apps/media/data.scm:166
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr ""
@@ -2216,7 +2216,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Published <1/> by <2/>"
 msgid "<1/>. Published <2/> by <3/>. "
-msgstr "<1/> 出版，由 <2/> 著"
+msgstr "<1/> 出版，由 <2/> 著 "
 
 #. TRANSLATORS: Alternative text indicating that
 #. a video is playing.
@@ -2258,7 +2258,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Download video: "
 msgid "Download video"
-msgstr "下載影片： "
+msgstr "下載影片："
 
 #. TRANSLATORS: <1/> is a date, <2/> is a list of authors.
 #: apps/media/templates/video.scm:87

@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20210222\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-04-07 15:18Z\n"
-"PO-Revision-Date: 2022-03-25 07:57+0000\n"
+"POT-Creation-Date: 2022-07-09 07:59Z\n"
+"PO-Revision-Date: 2022-05-03 22:18+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/guix/"
 "website/ko/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -257,7 +257,7 @@ msgstr "모든 연락 미디어"
 #: apps/base/templates/security.scm:31
 msgctxt "website menu"
 msgid "About"
-msgstr "대하여"
+msgstr "정보"
 
 #: apps/base/templates/theme.scm:81 apps/base/templates/theme.scm:83
 msgctxt "webpage title"
@@ -2130,85 +2130,86 @@ msgid "Article"
 msgstr "기사"
 
 #: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
+#: apps/media/data.scm:92
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "저널 기사"
 
-#: apps/media/data.scm:67
+#: apps/media/data.scm:67 apps/media/data.scm:85
 msgctxt "publication type"
 msgid "Book chapter"
 msgstr "책 장"
 
-#: apps/media/data.scm:85
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "그래픽 로그인"
 
-#: apps/media/data.scm:89
+#: apps/media/data.scm:103
 msgid "Graphical log-in screen"
 msgstr "그래픽 로그인 화면"
 
-#: apps/media/data.scm:92
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "그놈"
 
-#: apps/media/data.scm:96
+#: apps/media/data.scm:110
 msgid "GNOME desktop environment"
 msgstr "그놈 데스크탑 환경"
 
-#: apps/media/data.scm:99
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:103
+#: apps/media/data.scm:117
 msgid "Xfce desktop environment"
 msgstr "Xfce 데스크탑 환경"
 
-#: apps/media/data.scm:106
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "가상 장비"
 
-#: apps/media/data.scm:110
+#: apps/media/data.scm:124
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "'guix system vm' 명령어로 생성된 가상 머신"
 
-#: apps/media/data.scm:113
+#: apps/media/data.scm:127
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:117
+#: apps/media/data.scm:131
 msgid "Sway window manager running wayland"
 msgstr "wayland와 동작하는 Sway 창 관리자"
 
-#: apps/media/data.scm:120
+#: apps/media/data.scm:134
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "인라이트먼트(Enlightenment)"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:138
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment, Inkscape와 키릴 문자"
 
-#: apps/media/data.scm:130
+#: apps/media/data.scm:144
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL: 일상 생활에서 Guix 사용"
 
-#: apps/media/data.scm:138
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "비트코인 빌드 시스템 보안"
 
-#: apps/media/data.scm:145
+#: apps/media/data.scm:159
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "GNU Guix로 재현 가능한 시스템 관리"
 
-#: apps/media/data.scm:152
+#: apps/media/data.scm:166
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr "컨테이너 너머: GNU Guix를 이용한 재현 가능한 소프트웨어 환경"

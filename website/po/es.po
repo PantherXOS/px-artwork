@@ -5,6 +5,7 @@
 # Kamen Nedev <kamennedev@gmail.com>, 2021.
 # Emilio Herrera <ehespinosa57@gmail.com>, 2021, 2022.
 # Jorge Javier Araya Navarro <jorge@esavara.cr>, 2021.
+# Alejandro Alcaide <alex@blueselene.com>, 2022.
 #
 # * Se usa blog como término literal cuando no existe otra alternativa.
 # * Feed se traduce como tablón [de anuncios] cuando es posible.
@@ -12,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20201117\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-04-07 15:18Z\n"
-"PO-Revision-Date: 2022-01-25 15:16+0000\n"
-"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"POT-Creation-Date: 2022-07-09 07:59Z\n"
+"PO-Revision-Date: 2022-05-02 03:18+0000\n"
+"Last-Translator: Alejandro Alcaide <alex@blueselene.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/guix/"
 "website/es/>\n"
 "Language: es\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -1025,6 +1026,8 @@ msgid ""
 "Participation to the project communication channels listed below\n"
 "            is subject to this code of conduct."
 msgstr ""
+"La participación en los canales de comunicación del proyecto listados abajo\n"
+"            esta sujeta a este código de conducta."
 
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
@@ -2186,85 +2189,86 @@ msgid "Article"
 msgstr "Artículo"
 
 #: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
+#: apps/media/data.scm:92
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "Artículo de revista"
 
-#: apps/media/data.scm:67
+#: apps/media/data.scm:67 apps/media/data.scm:85
 msgctxt "publication type"
 msgid "Book chapter"
 msgstr "Capítulo de libro"
 
-#: apps/media/data.scm:85
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "Ingreso al sistema gráfico"
 
-#: apps/media/data.scm:89
+#: apps/media/data.scm:103
 msgid "Graphical log-in screen"
 msgstr "Pantalla de ingreso al sistema gráfico"
 
-#: apps/media/data.scm:92
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:96
+#: apps/media/data.scm:110
 msgid "GNOME desktop environment"
 msgstr "Entorno de escritorio GNOME"
 
-#: apps/media/data.scm:99
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:103
+#: apps/media/data.scm:117
 msgid "Xfce desktop environment"
 msgstr "Entorno de escritorio Xfce"
 
-#: apps/media/data.scm:106
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "Máquina virtual"
 
-#: apps/media/data.scm:110
+#: apps/media/data.scm:124
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "Máquina virtual arrancada con 'guix system vm'"
 
-#: apps/media/data.scm:113
+#: apps/media/data.scm:127
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:117
+#: apps/media/data.scm:131
 msgid "Sway window manager running wayland"
 msgstr "El gestor de ventanas Sway ejecutándose sobre wayland"
 
-#: apps/media/data.scm:120
+#: apps/media/data.scm:134
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:138
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment, Inkscape y texto en Cirílico"
 
-#: apps/media/data.scm:130
+#: apps/media/data.scm:144
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL: Uso diario de Guix"
 
-#: apps/media/data.scm:138
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "Bitcoin Construir Sistema de Seguridad"
 
-#: apps/media/data.scm:145
+#: apps/media/data.scm:159
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "Administración del Sistema Reproducible con GNU Guix"
 
-#: apps/media/data.scm:152
+#: apps/media/data.scm:166
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr ""

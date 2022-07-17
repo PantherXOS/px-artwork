@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20220109\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-04-07 15:18Z\n"
-"PO-Revision-Date: 2022-04-10 00:17+0000\n"
+"POT-Creation-Date: 2022-07-09 07:59Z\n"
+"PO-Revision-Date: 2022-04-10 21:36+0000\n"
 "Last-Translator: Taiju HIGASHI <higashi@taiju.info>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/guix/"
 "website/ja/>\n"
@@ -69,8 +69,8 @@ msgid ""
 "Functional package management|Reproducibility"
 msgstr ""
 "GNU|Linux|Unix|フリーソフトウェア|自由ソフトウェア|オペレーティングシステム|"
-"GNU Hurd|GNU Guix パッケージマネージャ|GNU Guile|Guile "
-"Scheme|トランザクションアップグレード|関数型パッケージマネージャ|再現性"
+"GNU Hurd|GNU Guix パッケージマネージャ|GNU Guile|Guile Scheme|トランザクショ"
+"ンアップグレード|関数型パッケージマネージャ|再現性"
 
 #: apps/base/templates/home.scm:32 apps/base/templates/components.scm:396
 msgctxt "website menu"
@@ -210,9 +210,9 @@ msgid ""
 "video.gnu.org/video/misc/2016-07__GNU_Guix_Demo_2.webm</1> (1 minute, 30 "
 "seconds)."
 msgstr ""
-"動画：<1>その他の GNU/Linux ディストリビューションでの Guix のデモ<1.1/>https"
-"://audio-video.gnu.org/video/misc/2016-07__GNU_Guix_Demo_2."
-"webm</1>（1分30秒）。"
+"動画：<1>その他の GNU/Linux ディストリビューションでの Guix のデモ<1.1/"
+">https://audio-video.gnu.org/video/misc/2016-07__GNU_Guix_Demo_2.webm</1>（1"
+"分30秒）。"
 
 #: apps/base/templates/home.scm:225
 msgid ""
@@ -220,17 +220,18 @@ msgid ""
 "can use it as a package manager on top of any GNU/Linux distribution. This "
 "way, you can benefit from all its conveniences."
 msgstr ""
-"もしあなたが GNU Guix を 単独の GNU/Linux "
-"ディストリビューションとして使用しないとしても、任意の GNU/Linux ディストリビ"
-"ューションの主たるパッケージマネージャとして使用することもできます。この使用"
-"方法では、Guix のすべての利点の恩恵を受けることができます。"
+"もしあなたが GNU Guix を 単独の GNU/Linux ディストリビューションとして使用し"
+"ないとしても、任意の GNU/Linux ディストリビューションの主たるパッケージマネー"
+"ジャとして使用することもできます。この使用方法では、Guix のすべての利点の恩恵"
+"を受けることができます。"
 
 #: apps/base/templates/home.scm:230
 msgid ""
 "Guix won't interfere with the package manager that comes with your "
 "distribution. They can live together."
-msgstr "Guix はあなたのディストリビューションのパッケージマネージャの邪魔はしないでし"
-"ょう。それらは共存できます。"
+msgstr ""
+"Guix はあなたのディストリビューションのパッケージマネージャの邪魔はしないで"
+"しょう。それらは共存できます。"
 
 #: apps/base/templates/home.scm:237
 msgctxt "button"
@@ -497,8 +498,8 @@ msgid ""
 "            umbrella of the <3>GNU Project</3>. "
 msgstr ""
 "<1>GNU Guix</1> パッケージ・システムマネージャは<3>GNU プロジェクト</3>傘下で"
-"世界中のボランティアによって開発された<2>自由ソフトウェア</2>プロジェクトです"
-"。 "
+"世界中のボランティアによって開発された<2>自由ソフトウェア</2>プロジェクトで"
+"す。 "
 
 #: apps/base/templates/about.scm:46
 msgid ""
@@ -528,13 +529,13 @@ msgid ""
 "<4>Guile</4> modules, using extensions to the <5>Scheme</5> language—which "
 "makes it nicely hackable."
 msgstr ""
-"GNU Guix はトランザクションアップグレード、ロールバック、再現可能なビルド環境"
-"、非特権パッケージ管理、そしてユーザー毎のプロファイルなどの<1>最先端のパッケ"
-"ージ管理機能<1.1>en</1.1><1.2>Features.html</1.2></1>を提供します。それは "
+"GNU Guix はトランザクションアップグレード、ロールバック、再現可能なビルド環"
+"境、非特権パッケージ管理、そしてユーザー毎のプロファイルなどの<1>最先端のパッ"
+"ケージ管理機能<1.1>en</1.1><1.2>Features.html</1.2></1>を提供します。それは "
 "<2>Nix</2> パッケージマネージャの低レベルな機構を利用しているものの、パッケー"
-"ジは<5>Scheme</5> 言語の拡張を利用したネイティブな <4>Guile</4> "
-"モジュールとして<3>定義され<3.1>en</3.1><3.2>Defining-Packages.html</3."
-"2></3>ており、うまい具合にハックできるようになっています。"
+"ジは<5>Scheme</5> 言語の拡張を利用したネイティブな <4>Guile</4> モジュールと"
+"して<3>定義され<3.1>en</3.1><3.2>Defining-Packages.html</3.2></3>ており、うま"
+"い具合にハックできるようになっています。"
 
 #. TRANSLATORS: Using the Configuration System, Initial RAM Disk
 #. and Defining Services are section names in the English (en)
@@ -672,13 +673,13 @@ msgid ""
 "information on how to submit a patch.  <4>Until February 2017</4>, the guix-"
 "devel mailing list filled that role."
 msgstr ""
-"パッチの投稿。このメーリングリストに送られたすべてのメッセージは我々の <1>パ"
-"ッチ追跡ツール</1>の新たなエントリーとなります。ツールの使い方のさらなる情報"
-"については<2>このページ</2>を参照してください。パッチの送り方のさらなる情報に"
-"ついては<3>マニュアル<3.1>en</3.1><3.2>Submitting-Patches.html</3."
-"2></3>を参照してください。\n"
-"<4>2017 年 2 月までは</4>、guix-devel "
-"メーリングリストがその役割を担っていました。"
+"パッチの投稿。このメーリングリストに送られたすべてのメッセージは我々の <1>"
+"パッチ追跡ツール</1>の新たなエントリーとなります。ツールの使い方のさらなる情"
+"報については<2>このページ</2>を参照してください。パッチの送り方のさらなる情報"
+"については<3>マニュアル<3.1>en</3.1><3.2>Submitting-Patches.html</3.2></3>を"
+"参照してください。\n"
+"<4>2017 年 2 月までは</4>、guix-devel メーリングリストがその役割を担っていま"
+"した。"
 
 #: apps/base/data.scm:165
 msgid "Science Mailing List"
@@ -961,8 +962,8 @@ msgid ""
 "Guix package manager|Community|Mailing lists|IRC channels|Bug reports|Help"
 msgstr ""
 "GNU|Linux|Unix|フリーソフトウェア|自由ソフトウェア|オペレーティングシステム|"
-"GNU Hurd|GNU Guix パッケージマネージャ|コミュニティ|メーリングリスト|IRC "
-"チャンネル|バグ報告|ヘルプ"
+"GNU Hurd|GNU Guix パッケージマネージャ|コミュニティ|メーリングリスト|IRC チャ"
+"ンネル|バグ報告|ヘルプ"
 
 #: apps/base/templates/contact.scm:38 apps/base/templates/contribute.scm:51
 msgid ""
@@ -984,7 +985,8 @@ msgstr ""
 msgid ""
 "Participation to the project communication channels listed below\n"
 "            is subject to this code of conduct."
-msgstr "下記に掲載されたプロジェクトコミュニケーションチャンネルへの参加はこの行動規"
+msgstr ""
+"下記に掲載されたプロジェクトコミュニケーションチャンネルへの参加はこの行動規"
 "範に従うものとします。"
 
 #: apps/base/templates/contribute.scm:17
@@ -1007,8 +1009,8 @@ msgid ""
 "Guix package manager|Volunteer|Development|Translation|I18N|L10N|Artwork"
 msgstr ""
 "GNU|Linux|Unix|フリーソフトウェア|自由ソフトウェア|オペレーティングシステム|"
-"GNU Hurd|GNU Guix "
-"パッケージマネージャ|ボランティア|開発|翻訳|I18N|L10N|アートワーク"
+"GNU Hurd|GNU Guix パッケージマネージャ|ボランティア|開発|翻訳|I18N|L10N|アー"
+"トワーク"
 
 #: apps/base/templates/contribute.scm:35 apps/base/templates/contribute.scm:110
 #: apps/base/templates/contribute.scm:229
@@ -1435,8 +1437,8 @@ msgid ""
 "           usable with exclusively free software): "
 msgstr ""
 "私たちはハードウェアの寄付およびオプションの下記の種類のマシンのホスティング"
-"先を募集しています。（それらは自由ソフトウェアのみで使用できる必要があります"
-"）： "
+"先を募集しています。（それらは自由ソフトウェアのみで使用できる必要がありま"
+"す）： "
 
 #: apps/base/templates/donate.scm:78
 msgid ""
@@ -1448,8 +1450,9 @@ msgstr "1 TiB ほどのストレージおよび 4 GiB ほどの RAM が載った
 msgid ""
 "armv7 machines (such as the Novena) to more quickly test\n"
 "               and provide binaries for the armhf-linux port;"
-msgstr "armhf-linux へ移植するのバイナリをより速くテストし、提供するための（Novena "
-"のような）armv7 マシン。"
+msgstr ""
+"armhf-linux へ移植するのバイナリをより速くテストし、提供するための（Novena の"
+"ような）armv7 マシン。"
 
 #: apps/base/templates/donate.scm:84
 msgid ""
@@ -1496,10 +1499,9 @@ msgid ""
 "i686-linux, and dedicated storage</2><3><3.1>Max Delbrück Center for "
 "Molecular Medicine</3.1> (hardware and hosting)</3>"
 msgstr ""
-"<1>berlin.guix.gnu.org</1><2>x86_64-linux のための 25 "
-"個のビルドノード、そして専用のストレージを持つビルドファーム</"
-"2><3><3.1>分子医学のための Max Delbrück Center</3."
-"1>（ハードウェアおよびホスティング）</3>"
+"<1>berlin.guix.gnu.org</1><2>x86_64-linux のための 25 個のビルドノード、そし"
+"て専用のストレージを持つビルドファーム</2><3><3.1>分子医学のための Max "
+"Delbrück Center</3.1>（ハードウェアおよびホスティング）</3>"
 
 #: apps/base/templates/donate.scm:130
 msgid "<1>overdrive1</1><2>aarch64-linux</2><3><3.1>ARM Holdings</3.1></3>"
@@ -1516,8 +1518,8 @@ msgid ""
 "<1>fosshost1.guix.gnu.org, fosshost2.guix.gnu.org</1><2>x86_64-linux, i686-"
 "linux</2><3>Fosshost</3>"
 msgstr ""
-"<1>fosshost1.guix.gnu.org、fosshost2.guix.gnu."
-"org</1><2>x86_64-linux、i686-linux</2><3>Fosshost</3>"
+"<1>fosshost1.guix.gnu.org、fosshost2.guix.gnu.org</1><2>x86_64-linux、i686-"
+"linux</2><3>Fosshost</3>"
 
 #: apps/base/templates/donate.scm:164
 msgid ""
@@ -1532,16 +1534,17 @@ msgid ""
 "<1>hydra-slave1</1><2>armhf-linux</2><3><3.1>Steve Sprang "
 "(hardware)</3.1><3.2>Mark H Weaver (hosting)</3.2></3>"
 msgstr ""
-"<1>hydra-slave1</1><2>armhf-linux</2><3><3.1>Steve Sprang（ハードウェア）</"
-"3.1><3.2>Mark H Weaver（ホスティング）</3.2></3>"
+"<1>hydra-slave1</1><2>armhf-linux</2><3><3.1>Steve Sprang（ハードウェア）"
+"</3.1><3.2>Mark H Weaver（ホスティング）</3.2></3>"
 
 #: apps/base/templates/donate.scm:184
 msgid ""
 "<1>hydra-slave2</1><2>armhf-linux</2><3><3.1><3.1.1>Harmon "
 "Instruments</3.1.1> (hardware)</3.1><3.2>Mark H Weaver (hosting)</3.2></3>"
 msgstr ""
-"<1>hydra-slave2</1><2>armhf-linux</2><3><3.1><3.1.1>Harmon Instruments</3.1."
-"1>（ハードウェア）</3.1><3.2>Mark H Weaver（ホスティング）</3.2></3>"
+"<1>hydra-slave2</1><2>armhf-linux</2><3><3.1><3.1.1>Harmon "
+"Instruments</3.1.1>（ハードウェア）</3.1><3.2>Mark H Weaver（ホスティング）"
+"</3.2></3>"
 
 #: apps/base/templates/donate.scm:197
 msgid ""
@@ -1549,8 +1552,8 @@ msgid ""
 "Pte Ltd)</3.1.1> (hardware)</3.1><3.2>Mark H Weaver (hosting)</3.2></3>"
 msgstr ""
 "<1>hydra-slave3</1><2>armhf-linux</2><3><3.1><3.1.1>Kosagi (Sutajio Ko-Usagi "
-"Pte Ltd)</3.1.1>（ハードウェア）</3.1><3.2>Mark H Weaver（ホスティング）</3."
-"2></3>"
+"Pte Ltd)</3.1.1>（ハードウェア）</3.1><3.2>Mark H Weaver（ホスティング）"
+"</3.2></3>"
 
 #: apps/base/templates/donate.scm:210
 msgid ""
@@ -1616,8 +1619,8 @@ msgid ""
 "          Distribution” or GuixSD, had its own logo, which is now\n"
 "          deprecated."
 msgstr ""
-"スタンドアロンの Guixは、かつて「Guix System Distribution」または GuixSD "
-"と呼ばれ、独自のロゴがありましたが、現在は非推奨です。"
+"スタンドアロンの Guixは、かつて「Guix System Distribution」または GuixSD と呼"
+"ばれ、独自のロゴがありましたが、現在は非推奨です。"
 
 #: apps/base/templates/graphics.scm:51
 msgid ""
@@ -1682,7 +1685,8 @@ msgstr ""
 msgid ""
 " Note that the conversations that happen\n"
 "          on the <1/> channel are logged (<2>browse the log</2>)."
-msgstr " <1/> チャンネルでやり取りした会話はログ（<2>ログを閲覧する</2>）に残ることに"
+msgstr ""
+" <1/> チャンネルでやり取りした会話はログ（<2>ログを閲覧する</2>）に残ることに"
 "注意してください。"
 
 #: apps/base/templates/menu.scm:16
@@ -1749,8 +1753,8 @@ msgid ""
 "their\n"
 "           respective OpenPGP key:"
 msgstr ""
-"もし OpenPGP で暗号化されたメールを利用して報告したい場合は、以下の Guix "
-"開発者のそれぞれの OpenPGP キーを使用して送信してください："
+"もし OpenPGP で暗号化されたメールを利用して報告したい場合は、以下の Guix 開発"
+"者のそれぞれの OpenPGP キーを使用して送信してください："
 
 #: apps/base/templates/security.scm:66
 msgid "Release signatures"
@@ -1758,7 +1762,8 @@ msgstr "リリース署名"
 
 #: apps/base/templates/security.scm:67
 msgid "Releases of Guix are signed using one of the following OpenPGP keys:"
-msgstr "Guix のリリースは以下のいずれかの OpenPGP キーを使用して署名されています："
+msgstr ""
+"Guix のリリースは以下のいずれかの OpenPGP キーを使用して署名されています："
 
 #: apps/base/templates/security.scm:70
 msgid "Maxim Cournoyer (from version 1.3.0)"
@@ -1972,8 +1977,8 @@ msgid ""
 "Guix package manager|Installer|Source code|Package manager"
 msgstr ""
 "GNU|Linux|Unix|フリーソフトウェア|自由ソフトウェア|オペレーティングシステム|"
-"GNU Hurd|GNU Guix "
-"パッケージマネージャ|インストーラー|ソースコード|パッケージマネージャ"
+"GNU Hurd|GNU Guix パッケージマネージャ|インストーラー|ソースコード|パッケージ"
+"マネージャ"
 
 #: apps/download/templates/download.scm:52
 msgid "Download"
@@ -2053,9 +2058,9 @@ msgstr "最新版のダウンロード"
 msgid ""
 "Download latest development GNU Guix System images built\n"
 "by the Cuirass continuous integration system."
-msgstr "Cuirass（継続的インテグレーションシステム）"
-"によってビルドされた最新の開発者版 GNU Guix "
-"システムイメージをダウンロードします。"
+msgstr ""
+"Cuirass（継続的インテグレーションシステム）によってビルドされた最新の開発者"
+"版 GNU Guix システムイメージをダウンロードします。"
 
 #: apps/download/templates/download-latest.scm:167
 msgid "Download latest development images"
@@ -2071,11 +2076,11 @@ msgid ""
 "you might prefer to use well-tested released images\n"
 "that can be found <4>here.</4>"
 msgstr ""
-"<2/> 上の <1>Cuirass<1.1>en</1.1><1.2>Continuous-Integration.html</1."
-"2></1>（継続的インテグレーションシステム）によってビルドされた最新版 GNU "
-"Guix システムイメージをダウンロードします。これらのイメージは "
-"<3>開発版スナップショット</3>で、 <4>ここ</4> から見つけることができる十分に"
-"テストされたリリースイメージを使用した方が良いかもしれません。"
+"<2/> 上の <1>Cuirass<1.1>en</1.1><1.2>Continuous-Integration."
+"html</1.2></1>（継続的インテグレーションシステム）によってビルドされた最新版 "
+"GNU Guix システムイメージをダウンロードします。これらのイメージは <3>開発版ス"
+"ナップショット</3>で、 <4>ここ</4> から見つけることができる十分にテストされた"
+"リリースイメージを使用した方が良いかもしれません。"
 
 #: apps/media/data.scm:27 apps/media/data.scm:33 apps/media/data.scm:39
 msgctxt "publication type"
@@ -2092,85 +2097,86 @@ msgid "Article"
 msgstr "記事"
 
 #: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
+#: apps/media/data.scm:92
 msgctxt "publication type"
 msgid "Journal article"
 msgstr "学術論文"
 
-#: apps/media/data.scm:67
+#: apps/media/data.scm:67 apps/media/data.scm:85
 msgctxt "publication type"
 msgid "Book chapter"
 msgstr "書籍の章"
 
-#: apps/media/data.scm:85
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "グラフィカルログイン"
 
-#: apps/media/data.scm:89
+#: apps/media/data.scm:103
 msgid "Graphical log-in screen"
 msgstr "グラフィカルログイン画面"
 
-#: apps/media/data.scm:92
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:96
+#: apps/media/data.scm:110
 msgid "GNOME desktop environment"
 msgstr "GNOME デスクトップ環境"
 
-#: apps/media/data.scm:99
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:103
+#: apps/media/data.scm:117
 msgid "Xfce desktop environment"
 msgstr "Xfce デスクトップ環境"
 
-#: apps/media/data.scm:106
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "仮想マシン"
 
-#: apps/media/data.scm:110
+#: apps/media/data.scm:124
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "'guix system vm' で起動した仮想マシン"
 
-#: apps/media/data.scm:113
+#: apps/media/data.scm:127
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:117
+#: apps/media/data.scm:131
 msgid "Sway window manager running wayland"
 msgstr "wayland 上で動作する Sway ウィンドウマネージャ"
 
-#: apps/media/data.scm:120
+#: apps/media/data.scm:134
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:138
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment、Inkscape、そして Cyrillic text"
 
-#: apps/media/data.scm:130
+#: apps/media/data.scm:144
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
 msgstr "SeaGL：Guix の普段使い"
 
-#: apps/media/data.scm:138
+#: apps/media/data.scm:152
 msgctxt "video title"
 msgid "Bitcoin Build System Security"
 msgstr "ビットコインビルドシステムセキュリティ"
 
-#: apps/media/data.scm:145
+#: apps/media/data.scm:159
 msgctxt "video title"
 msgid "Reproducible System Administration with GNU Guix"
 msgstr "GNU Guix を使用した再現性のあるシステム管理"
 
-#: apps/media/data.scm:152
+#: apps/media/data.scm:166
 msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
 msgstr "コンテナの先：GNU Guix を使用した再現性のあるソフトウェア環境"
@@ -2393,8 +2399,8 @@ msgid ""
 "<1>Lint issues</1><2><2.1/>. See <2.2>package definition</2.2> in Guix "
 "source code.</2>"
 msgstr ""
-"<1>Lint の問題 (issues)</1><2><2.1/>。Guix のソースコードの<2."
-"2>パッケージ定義</2.2>を参照。</2>"
+"<1>Lint の問題 (issues)</1><2><2.1/>。Guix のソースコードの<2.2>パッケージ定"
+"義</2.2>を参照。</2>"
 
 #, fuzzy
 #~| msgid "Online conference February 19-20. <1>Learn more</1>!"

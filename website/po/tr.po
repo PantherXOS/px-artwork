@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the guix-website package.
 # The FLOSS Information <theflossinformation@gmail.com>, 2021.
 # Muha Aliss <muhaaliss@gmail.com>, 2021, 2022.
+# MY NAME <wonasal634@iconzap.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: guix-website 20210124\n"
 "Report-Msgid-Bugs-To: bug-guix@gnu.org\n"
-"POT-Creation-Date: 2022-04-07 15:18Z\n"
-"PO-Revision-Date: 2022-03-15 21:23+0000\n"
-"Last-Translator: Muha Aliss <muhaaliss@gmail.com>\n"
+"POT-Creation-Date: 2022-07-09 07:59Z\n"
+"PO-Revision-Date: 2022-06-14 17:22+0000\n"
+"Last-Translator: MY NAME <wonasal634@iconzap.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/guix/"
 "website/tr/>\n"
 "Language: tr\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #. TRANSLATORS: The locale’s display name; please include a country
 #. code like in English (US) *only* if there are multiple
@@ -606,8 +607,8 @@ msgid ""
 "chat with the community about GNU Guix or to get help in real-time."
 msgstr ""
 "Toplulukla GNU Guix hakkında sohbet etmek\n"
-" veya gerçek zamanlı yardım almak için \n"
-"Freenode Libera Chat IRC ağındaki </1> kanalına katılın."
+"veya gerçek zamanlı yardım almak için Freenode Libera Chat IRC ağındaki </1> "
+"kanalına katılın."
 
 #: apps/base/data.scm:34
 msgid "Info Mailing List"
@@ -1007,6 +1008,8 @@ msgid ""
 "Participation to the project communication channels listed below\n"
 "            is subject to this code of conduct."
 msgstr ""
+"proje iletişim kanallarına katılım için aşağıdaki kanallar listelenmiştir\n"
+"               davranış kurallarına tabi olunmalıdır."
 
 #: apps/base/templates/contribute.scm:17
 msgctxt "webpage title"
@@ -1102,7 +1105,7 @@ msgstr ""
 
 #: apps/base/templates/contribute.scm:116 apps/base/templates/cuirass.scm:57
 msgid "Documentation"
-msgstr "Belgelendirme"
+msgstr "Dokümantasyon"
 
 #: apps/base/templates/contribute.scm:117
 msgid ""
@@ -1197,14 +1200,12 @@ msgid ""
 "            setup, as well as the coding and cooperation conventions used\n"
 "            in the project. "
 msgstr ""
-"<1>Guile kılavuzuna</1> veya <2>Scheme ile ilgili diğer tanıtım "
-"materyallerine</2> göz atmayı faydalı bulacaksınız. Ayrıca, projede "
-"kullanılan\n"
-"kodlama ve işbirliği kurallarının yanı sıra geliştirme kurulumu hakkında "
-"daha fazla ayrıntı için\n"
-"            kılavuzun <3>Katkıda Bulunanlar<3.1>en</3.1><3.2>Contributing."
-"html</3.2></3>\n"
-"            bölümünü mutlaka okuyun. "
+"<1>Guile kılavuzuna</1> veya diğer <2>Şema hakkında tanıtım materyaline</2> "
+"göz atmayı faydalı bulacaksınız. Ayrıca, geliştirme hakkında daha fazla "
+"ayrıntı için kılavuzun <3>Contributing<3.1>tr</3.1><3.2>Contributing."
+"html</3.2></3> bölümünü okuduğunuzdan emin olun.\n"
+"            kurulum ve kullanılan kodlama ve işbirliği kuralları\n"
+"            Projede. "
 
 #: apps/base/templates/contribute.scm:205
 msgid "Send a patch"
@@ -1349,11 +1350,11 @@ msgstr "Cuirass, <1/> adresinde GNU Guix inşa çiftliği üzerinde çalışıyo
 
 #: apps/base/templates/cuirass.scm:41
 msgid "Features"
-msgstr "Özellikleri"
+msgstr "Özellikler"
 
 #: apps/base/templates/cuirass.scm:44
 msgid "Poll sources from multiple Git repositories."
-msgstr ""
+msgstr "birden fazla Git veri havuzundan kaynak dosyası tarayın."
 
 #: apps/base/templates/cuirass.scm:46
 msgid "Execute builds on local or remote Guix daemons."
@@ -1486,16 +1487,20 @@ msgid ""
 "armv7 machines (such as the Novena) to more quickly test\n"
 "               and provide binaries for the armhf-linux port;"
 msgstr ""
+"armv7 makineleri (Novena gibi) daha hızlı test için\n"
+"                  ve  binary temin et;"
 
 #: apps/base/templates/donate.scm:84
 msgid ""
 "armv8 machines to more quickly test and provide binaries\n"
 "              for the aarch64-linux port;"
 msgstr ""
+"armv8 makinelerini daha hızlı test etmek için ve binary temin etmek için.\n"
+"              aarch64-linux port için;"
 
 #: apps/base/templates/donate.scm:87
 msgid "mips64el machines to strengthen this port."
-msgstr ""
+msgstr "mips64el makinelerini bu portları güçlendirmek için."
 
 #: apps/base/templates/donate.scm:90
 msgid ""
@@ -1532,69 +1537,78 @@ msgid ""
 "i686-linux, and dedicated storage</2><3><3.1>Max Delbrück Center for "
 "Molecular Medicine</3.1> (hardware and hosting)</3>"
 msgstr ""
+"<1>berlin.guix.gnu.org</1><2>x86_64-linux için 25 node ile farm inşası ve\n"
+"i686-linux ve özel depolama</2><3><3.1>Max Delbrück Center for Molecular "
+"Medicine</3.1> (hardware and hosting)</3>"
 
 #: apps/base/templates/donate.scm:130
 msgid "<1>overdrive1</1><2>aarch64-linux</2><3><3.1>ARM Holdings</3.1></3>"
-msgstr ""
+msgstr "<1>geçersiz kıl</1><2>aarch64-linux</2><3><3.1>ARM Holdings</3.1></3>"
 
 #: apps/base/templates/donate.scm:140
 msgid "<1>bayfront</1><2>new build farm front-end (WIP)</2><3>Igalia</3>"
-msgstr ""
+msgstr "<1>bayfront</1><2>yeni çiflik inşası front-end(WIP)</2><3>Igalia</3>"
 
 #: apps/base/templates/donate.scm:152
 msgid ""
 "<1>fosshost1.guix.gnu.org, fosshost2.guix.gnu.org</1><2>x86_64-linux, i686-"
 "linux</2><3>Fosshost</3>"
 msgstr ""
+"<1>fosshost1.guix.gnu.org, fosshost2.guix.gnu.org</1><2>x86_64-linux, i686-"
+"linux</2><3>Fosshost</3>"
 
 #: apps/base/templates/donate.scm:164
 msgid ""
 "<1>guix-x15.sjd.se, guix-x15b.sjd.se</1><2>armhf-linux</2><3>Simon "
 "Josefsson</3>"
 msgstr ""
+"<1>guix-x15.sjd.se, guix-x15b.sjd.se</1><2>armhf-linux</2><3>Simon "
+"Josefsson</3>"
 
 #: apps/base/templates/donate.scm:174
 msgid ""
 "<1>hydra-slave1</1><2>armhf-linux</2><3><3.1>Steve Sprang "
 "(hardware)</3.1><3.2>Mark H Weaver (hosting)</3.2></3>"
 msgstr ""
+"<1>hydra-slave1</1><2>armhf-linux</2><3><3.1>Steve Sprang "
+"(donanım)</3.1><3.2>Mark H Weaver (barındırma)</3.2></3>"
 
 #: apps/base/templates/donate.scm:184
 msgid ""
 "<1>hydra-slave2</1><2>armhf-linux</2><3><3.1><3.1.1>Harmon "
 "Instruments</3.1.1> (hardware)</3.1><3.2>Mark H Weaver (hosting)</3.2></3>"
 msgstr ""
+"<1>hydra-slave2</1><2>armhf-linux</2><3><3.1><3.1.1>Harmon "
+"Instruments</3.1.1> (donanım)</3.1><3.2>Mark H Weaver (barındırma)</3.2></3>"
 
 #: apps/base/templates/donate.scm:197
 msgid ""
 "<1>hydra-slave3</1><2>armhf-linux</2><3><3.1><3.1.1>Kosagi (Sutajio Ko-Usagi "
 "Pte Ltd)</3.1.1> (hardware)</3.1><3.2>Mark H Weaver (hosting)</3.2></3>"
 msgstr ""
+"<1>hydra-slave3</1><2>armhf-linux</2><3><3.1><3.1.1>Kosagi (Sutajio Ko-Usagi "
+"Pte Ltd)</3.1.1> (donanım)</3.1><3.2>Mark H Weaver (barındırma)</3.2></3>"
 
 #: apps/base/templates/donate.scm:210
 msgid ""
 "<1>redhill</1><2>armhf-linux</2><3><3.1><3.1.1>Kosagi (Sutajio Ko-Usagi Pte "
 "Ltd)</3.1.1> (hardware)</3.1><3.2>Andreas Enge (hosting)</3.2></3>"
 msgstr ""
+"<1>redhill</1><2>armhf-linux</2><3><3.1><3.1.1>Kosagi (Sutajio Ko-Usagi Pte "
+"Ltd)</3.1.1> (donanım)</3.1><3.2>Andreas Enge (barındırma)</3.2></3>"
 
 #: apps/base/templates/donate.scm:224
-#, fuzzy
-#| msgid ""
-#| "Other organizations and individuals helped Guix with hardware and\n"
-#| "hosting in the past and we thank them: <1>Free Software Foundation</1>, "
-#| "<2>GNU España</2>, <3>FSF France</3>, <4>Free Secure Network Systems "
-#| "Group</4> at the <5>Technische Universität München</5>."
 msgid ""
 "Other organizations and individuals helped Guix with hardware and\n"
 "hosting in the past and we thank them: <1>Free Software Foundation</1>, GNU "
 "España, <2>FSF France</2>, and the Free Secure Network Systems Group at the "
 "<3>Technische Universität München</3>."
 msgstr ""
-"Diğer kuruluşlar ve kişiler geçmişte Guix'e donanım ve barındırma konusunda "
+"Diğer kuruluşlar ve bireyler geçmişte Guix'e donanım ve barındırma konusunda "
 "yardım ettiler ve onlara teşekkür ediyoruz:\n"
-" <1>Özgür Yazılım Vakfı</1>, <2>GNU España</2>, <3>FSF Fransa</3>, "
-"<5>Technische Universität München'de</5> <4>Özgür Güvenli Ağ Sistemleri "
-"Grubu</4>."
+" <1>Özgür Yazılım Vakfı</1>, GNU España, <2>FSF Fransa</2>, "
+"<3>Technische Universität München'de</3> ve Özgür Güvenli Ağ Sistemleri "
+"Grubu."
 
 #: apps/base/templates/graphics.scm:16
 msgctxt "webpage title"
@@ -1632,7 +1646,7 @@ msgstr ""
 
 #: apps/base/templates/graphics.scm:44
 msgid "GNU Guix logotype"
-msgstr ""
+msgstr "GNU Guix logo"
 
 #: apps/base/templates/graphics.scm:45
 msgid ""
@@ -1665,6 +1679,13 @@ msgid ""
 "          by Nikita Karetnikov in 2013 and <2>superseded</2> by the golden "
 "GNU in 2016."
 msgstr ""
+"logolar için Kaynak kodları(SVG),varyanları ve\n"
+"               GNU GUİX'in farklı bileşenlerinde kullanılan diğer sanatsal "
+"çalışmalar\n"
+"               Projeler <1>guix-artwork</1> veri tabanında,bir önceki Gnu "
+"Guix  logo tasarımı da dahil olmak üzere mevcuttur.\n"
+"                Nikita Karetnikov  tarafından 2013'te ve golden GNU 2016'da. "
+"<2>superseded</2>"
 
 #: apps/base/templates/irc.scm:17 apps/base/templates/irc.scm:28
 msgctxt "webpage title"
@@ -1686,7 +1707,7 @@ msgstr ""
 
 #: apps/base/templates/irc.scm:33
 msgid "Chat on IRC"
-msgstr ""
+msgstr "IRC'de sohbet edin"
 
 #: apps/base/templates/irc.scm:35
 msgid ""
@@ -1695,12 +1716,17 @@ msgid ""
 "browser</1>, or use one of many <2>other clients</2> to join the <3/> "
 "channel on the <4>Libera Chat IRC network.</4>"
 msgstr ""
+"GNU topluluğu ile konuşun veya gerşek zamanlı yardım isteyin.\n"
+"           Bize <1>web tarayıcınızdaki IRC alıcınızdan</1>,veya <2>diğer "
+"istemcilerden</2>katılmak için<3/>Libera Chat IRC ağından</4>katılın"
 
 #: apps/base/templates/irc.scm:49
 msgid ""
 " Note that the conversations that happen\n"
 "          on the <1/> channel are logged (<2>browse the log</2>)."
 msgstr ""
+" Unutmayın ki  konuşmalar\n"
+"          <1/> kanalda kayıt edilir (<2>kayıtları tarayın</2>)."
 
 #: apps/base/templates/menu.scm:16
 msgctxt "webpage title"
@@ -1727,6 +1753,9 @@ msgid ""
 "   for your GNU Guix installation, and instructions on how\n"
 "   to report security issues."
 msgstr ""
+"Güvenlik güncellemelerini alma hakkında önemli bilgiler\n"
+"   GNU Guix kurulumunuz ve nasıl yapılacağına ilişkin talimatlar için\n"
+"   güvenlik sorunlarını bildirmek için."
 
 #. TRANSLATORS: |-separated list of webpage keywords
 #: apps/base/templates/security.scm:29
@@ -1776,29 +1805,23 @@ msgstr "Sürüm imzaları"
 
 #: apps/base/templates/security.scm:67
 msgid "Releases of Guix are signed using one of the following OpenPGP keys:"
-msgstr ""
+msgstr "Guix yayımları aşağıdaki bir OpenPGP anahtarları ile imzalıdır:"
 
 #: apps/base/templates/security.scm:70
 msgid "Maxim Cournoyer (from version 1.3.0)"
-msgstr ""
+msgstr "Maxim Cournoyer(sürüm 1.3.0'dan)"
 
 #: apps/base/templates/security.scm:72
 msgid "Ludovic Courtès (until version 1.2.0)"
-msgstr ""
+msgstr "Ludovic Courtès (sürüm 1.2.0 kadar)"
 
 #: apps/base/templates/security.scm:73
-#, fuzzy
-#| msgid ""
-#| "Releases of Guix are signed using the OpenPGP key with the fingerprint <1/"
-#| ">.  Users should <2>verify<2.1>en</2.1><2.2>Binary-Installation."
-#| "html</2.2></2> their downloads before extracting or running them."
 msgid ""
 "Users should <1>verify<1.1>en</1.1><1.2>Binary-Installation.html</1.2></1> "
 "their downloads before extracting or running them."
 msgstr ""
-"Guix sürümleri, </1> parmak izi ile OpenPGP anahtarı kullanılarak imzalanır. "
-"Kullanıcılar indirmeden veya çalıştırmadan önce indirmelerini "
-"<2>doğrulamalıdır<2.1>en</2.1><2.2>Binary-Installation.html</2.2></2>."
+"Kullanıcılar, indirmelerini çıkarmadan veya çalıştırmadan önce "
+"<1>doğrulamalı<1.1>tr</1.1><1.2>Binary-Installation.html</1.2></1>."
 
 #: apps/base/templates/security.scm:81
 msgid "Security updates"
@@ -1833,7 +1856,7 @@ msgstr ""
 #: apps/blog/templates/components.scm:33 apps/blog/templates/post.scm:46
 msgctxt "SRFI-19 date->string format"
 msgid "~B ~e, ~Y"
-msgstr ""
+msgstr "~B ~e, ~Y"
 
 #: apps/blog/templates/components.scm:37
 msgctxt "blog post summary ellipsis"
@@ -1910,7 +1933,7 @@ msgstr "Bağımsız Guix Sisteminin USB/DVD ISO yükleyicisi."
 #. English (en) manual.
 #: apps/download/data.scm:31
 msgid "<1>en</1>System-Installation.html"
-msgstr ""
+msgstr "<1>en</1>System-Installation.html"
 
 #: apps/download/data.scm:35
 msgctxt "download page title"
@@ -1925,7 +1948,7 @@ msgstr "QCOW2 sanal makine (VM) imajı."
 #. English (en) manual.
 #: apps/download/data.scm:45
 msgid "<1>en</1>Running-Guix-in-a-VM.html"
-msgstr ""
+msgstr "<1>en</1>Running-Guix-in-a-VM.html"
 
 #: apps/download/data.scm:49
 msgctxt "download page title"
@@ -1944,7 +1967,7 @@ msgstr ""
 #. English (en) manual.
 #: apps/download/data.scm:65
 msgid "<1>en</1>Binary-Installation.html"
-msgstr ""
+msgstr "<1>en</1>Binary-Installation.html"
 
 #: apps/download/data.scm:69
 msgctxt "download page title"
@@ -1959,7 +1982,7 @@ msgstr "Kaynak kod dağıtımı."
 #. manual.
 #: apps/download/data.scm:77
 msgid "<1>en</1>Requirements.html"
-msgstr ""
+msgstr "<1>en</1>Requirements.html"
 
 #: apps/download/templates/components.scm:25
 #: apps/download/templates/download-latest.scm:121
@@ -1984,6 +2007,8 @@ msgid ""
 "Installers and source files for GNU Guix.  GNU Guix can be\n"
 "   installed on different GNU/Linux distributions."
 msgstr ""
+"yükleyici ve GNU Guix için kaynak dosyaları.  GNU Guix \n"
+"   farklı bir GNU/Linux dağtımına yüklenebilir."
 
 #. TRANSLATORS: |-separated list of webpage keywords
 #. TRANSLATORS: |-separated list of webpage keywords
@@ -2052,16 +2077,14 @@ msgid "GNU Guix binary"
 msgstr "GNU Guix ikili dosyası"
 
 #: apps/download/templates/download-latest.scm:97
-#, fuzzy
-#| msgctxt "download page title"
-#| msgid "GNU Guix System on Linux"
 msgctxt "download page title"
 msgid "GNU Guix System on Linux for Pinebook Pro"
-msgstr "Linux içeren GNU Guix Sistem"
+msgstr "Pinebook Pro için Linux'ta GNU Guix Sistemi"
 
 #: apps/download/templates/download-latest.scm:98
 msgid "Guix System on Linux barebones bootable raw image for Pinebook Pro."
 msgstr ""
+"Pinebook pro için önyüklenebilir ham görüntüyü Guix System on Linux sağlar."
 
 #: apps/download/templates/download-latest.scm:131
 msgid "Build details: "
@@ -2073,33 +2096,20 @@ msgid "Download latest"
 msgstr "Günceli indir"
 
 #: apps/download/templates/download-latest.scm:149
-#, fuzzy
-#| msgid ""
-#| "Download latest GNU Guix System images built by the Cuirass continuous\n"
-#| "integration system."
 msgid ""
 "Download latest development GNU Guix System images built\n"
 "by the Cuirass continuous integration system."
 msgstr ""
-"Cuirass sürekli entegrasyon sistemi tarafından oluşturulan\n"
-" güncel GNU Guix Sistem imajlarını indir."
+"En son geliştirme sürümü GNU Guix System görüntülerini indirin\n"
+"Cuirass sürekli entegrasyon sistemi tarafından."
 
 #: apps/download/templates/download-latest.scm:167
-#, fuzzy
-#| msgid "Download latest images"
 msgid "Download latest development images"
-msgstr "Güncel imaj indirme"
+msgstr "geliştirme sürümü imajını indir"
 
 #. TRANSLATORS: Continuous Integration is a section name
 #. in the English (en) manual.
 #: apps/download/templates/download-latest.scm:170
-#, fuzzy
-#| msgid ""
-#| "Download latest GNU Guix System images built by the "
-#| "<1>Cuirass<1.1>en</1.1><1.2>Continuous-Integration.html</1.2></1> "
-#| "continuous integration system at <2/>. These images are <3>development "
-#| "snapshots</3>, you might prefer to use stable images that can be found "
-#| "<4>here.</4>"
 msgid ""
 "Download latest GNU Guix System images built by the "
 "<1>Cuirass<1.1>en</1.1><1.2>Continuous-Integration.html</1.2></1> continuous "
@@ -2107,169 +2117,163 @@ msgid ""
 "you might prefer to use well-tested released images\n"
 "that can be found <4>here.</4>"
 msgstr ""
-"<1>Cuirass<1.1>en</1.1><1.2>Continuous-Integration.html</1.2></1> sürekli "
-"entegrasyon sistemi tarafından oluşturulan en son GNU Guix Sistem imajlarını "
-"<2/> adresinden indirin. Bu imajlar <3>geliştirme anlık görüntüleridir</3>, "
-"burada bulabileceğiniz kararlı imajları da tercih <4>edebilirsiniz.</4>"
+"<1>Cuirass<1.1>tr</1.1><1.2>Continuous-Integration.html</1.2></1> sürekli "
+"entegrasyon sistemi tarafından oluşturulan en son GNU Guix System "
+"görüntülerini <2/> adresinden indirin. Bu görüntüler <3>geliştirme anlık "
+"görüntüleridir</3>, iyi test edilmiş yayınlanmış görüntüleri kullanmayı "
+"tercih edebilirsiniz\n"
+"<4>burada</4> bulunurlar"
 
 #: apps/media/data.scm:27 apps/media/data.scm:33 apps/media/data.scm:39
 msgctxt "publication type"
 msgid "Conference paper"
-msgstr ""
+msgstr "Konferans kağıdı"
 
 #: apps/media/data.scm:31
 msgid "Ludovic Courtès, Ricardo Wurmus"
-msgstr ""
+msgstr "Ludovic Courtès, Ricardo Wurmus"
 
 #: apps/media/data.scm:45 apps/media/data.scm:58
 msgctxt "publication type"
 msgid "Article"
-msgstr ""
+msgstr "Makale"
 
 #: apps/media/data.scm:52 apps/media/data.scm:73 apps/media/data.scm:79
+#: apps/media/data.scm:92
 msgctxt "publication type"
 msgid "Journal article"
-msgstr ""
+msgstr "dergi makalesi"
 
-#: apps/media/data.scm:67
+#: apps/media/data.scm:67 apps/media/data.scm:85
 msgctxt "publication type"
 msgid "Book chapter"
-msgstr ""
+msgstr "Kitap bölümü"
 
-#: apps/media/data.scm:85
+#: apps/media/data.scm:99
 msgctxt "screenshot title"
 msgid "Graphical log-in"
 msgstr "Grafiksel oturum açma"
 
-#: apps/media/data.scm:89
+#: apps/media/data.scm:103
 msgid "Graphical log-in screen"
 msgstr "Grafiksel oturum açma ekranı"
 
-#: apps/media/data.scm:92
+#: apps/media/data.scm:106
 msgctxt "screenshot title"
 msgid "GNOME"
 msgstr "GNOME"
 
-#: apps/media/data.scm:96
+#: apps/media/data.scm:110
 msgid "GNOME desktop environment"
 msgstr "GNOME masaüstü ortamı"
 
-#: apps/media/data.scm:99
+#: apps/media/data.scm:113
 msgctxt "screenshot title"
 msgid "Xfce"
 msgstr "Xfce"
 
-#: apps/media/data.scm:103
+#: apps/media/data.scm:117
 msgid "Xfce desktop environment"
 msgstr "XFCE masaüstü ortamı"
 
-#: apps/media/data.scm:106
+#: apps/media/data.scm:120
 msgctxt "screenshot title"
 msgid "Virtual machine"
 msgstr "Sanal makine"
 
-#: apps/media/data.scm:110
+#: apps/media/data.scm:124
 msgid "Virtual machine started with 'guix system vm'"
 msgstr "'guix system vm' ile başlatılan sanal makine"
 
-#: apps/media/data.scm:113
+#: apps/media/data.scm:127
 msgctxt "screenshot title"
 msgid "Sway"
 msgstr "Sway"
 
-#: apps/media/data.scm:117
+#: apps/media/data.scm:131
 msgid "Sway window manager running wayland"
 msgstr "Wayland üzerinden çalışan Sway pencere yöneticisi"
 
-#: apps/media/data.scm:120
+#: apps/media/data.scm:134
 msgctxt "screenshot title"
 msgid "Enlightenment"
 msgstr "Enlightenment"
 
-#: apps/media/data.scm:124
+#: apps/media/data.scm:138
 msgid "Enlightenment, Inkscape, and Cyrillic text"
 msgstr "Enlightenment, Inkscape, ve Cyrillic text"
 
-#: apps/media/data.scm:130
-#, fuzzy
-#| msgctxt "video title"
-#| msgid "Everyday use of GNU Guix, Part One"
+#: apps/media/data.scm:144
 msgctxt "video title"
 msgid "SeaGL: Everyday use of Guix"
-msgstr "GNU Guix'in Günlük Kullanımı, Birinci Bölüm"
-
-#: apps/media/data.scm:138
-msgctxt "video title"
-msgid "Bitcoin Build System Security"
-msgstr ""
-
-#: apps/media/data.scm:145
-#, fuzzy
-#| msgid "System Administration"
-msgctxt "video title"
-msgid "Reproducible System Administration with GNU Guix"
-msgstr "Sistem Yönetimi"
+msgstr "SeaGL:Guix'in günlük kullanımı"
 
 #: apps/media/data.scm:152
 msgctxt "video title"
+msgid "Bitcoin Build System Security"
+msgstr "Bitcoin sistem güvenliği geliştir"
+
+#: apps/media/data.scm:159
+msgctxt "video title"
+msgid "Reproducible System Administration with GNU Guix"
+msgstr "GNU Guix çoğaltılabilir Sistem Yönetimi"
+
+#: apps/media/data.scm:166
+msgctxt "video title"
 msgid "Beyond containers: Reproducible software environments with GNU Guix"
-msgstr ""
+msgstr "konteyner ötesi:GNU Guix ile yeniden üretilebilir yazılım ortamları"
 
 #: apps/media/templates/components.scm:37
 #: apps/media/templates/components.scm:85
 #: apps/media/templates/components.scm:158 apps/media/templates/video.scm:32
 msgctxt "SRFI-19 date->string format"
 msgid "~b ~d, ~Y"
-msgstr ""
+msgstr "~b ~d, ~Y"
 
 #: apps/media/templates/components.scm:65
 msgid "Playlist: "
-msgstr ""
+msgstr "çalma listesi: "
 
 #: apps/media/templates/components.scm:66
 msgid "Playlist"
-msgstr ""
+msgstr "çalma listesi"
 
 #. TRANSLATORS: <1/> is a date, <2/> is a list of authors.
 #. TRANSLATORS: <1/> is a date, <2/> is a list of authors.
 #: apps/media/templates/components.scm:73
 #: apps/media/templates/components.scm:203
-#, fuzzy
-#| msgid " (Page <1/> of <2/>)"
 msgid "Published <1/> by <2/>"
-msgstr " (Sayfa <1/> <2/>)"
+msgstr "(Sayfa <1/>tarafından <2/>)"
 
 #. TRANSLATORS: This is a tag that indicates a
 #. publication is scientific.
 #: apps/media/templates/components.scm:100
 msgid "[Scientific]"
-msgstr ""
+msgstr "[bilimsel]"
 
 #. TRANSLATORS: This is a help text indicating a
 #. publication is scientific.
 #: apps/media/templates/components.scm:103
 msgid "Scientific"
-msgstr ""
+msgstr "Bilimsel"
 
 #. TRANSLATORS: <1/> is a publication type, <2/> is a date, and
 #. <3/> is a list of authors.
 #: apps/media/templates/components.scm:112
-#, fuzzy
-#| msgid " (Page <1/> of <2/>)"
 msgid "<1/>. Published <2/> by <3/>. "
-msgstr " (Sayfa <1/> <2/>)"
+msgstr "<1/>. Basıldı<2/> tarafından<3/>. "
 
 #. TRANSLATORS: Alternative text indicating that
 #. a video is playing.
 #: apps/media/templates/components.scm:190
 msgid "Playing: "
-msgstr ""
+msgstr "çalıyor: "
 
 #. TRANSLATORS: Tool tip indicating that a video
 #. is playing.
 #: apps/media/templates/components.scm:194
 msgid "Playing"
-msgstr ""
+msgstr "Çalıyor"
 
 #: apps/media/templates/screenshot.scm:20
 #: apps/media/templates/screenshots-overview.scm:17
@@ -2293,20 +2297,16 @@ msgstr ""
 
 #: apps/media/templates/video.scm:74
 msgid "It seems your browser can't read this video."
-msgstr ""
+msgstr "görünüşe göre tarayıcınız bu video'yu okuyamıyor."
 
 #: apps/media/templates/video.scm:76
-#, fuzzy
-#| msgid "Download video: "
 msgid "Download video"
-msgstr "Video indir: "
+msgstr "Video'yu indir"
 
 #. TRANSLATORS: <1/> is a date, <2/> is a list of authors.
 #: apps/media/templates/video.scm:87
-#, fuzzy
-#| msgid " (Page <1/> of <2/>)"
 msgid "Published <1/> by <2/>. "
-msgstr " (Sayfa <1/> <2/>)"
+msgstr "(Sayfa <1/>tarafından <2/>) "
 
 #: apps/media/templates/video-list.scm:27
 msgctxt "webpage title"
@@ -2314,8 +2314,6 @@ msgid "Videos"
 msgstr "Videolar"
 
 #: apps/media/templates/video-list.scm:29
-#, fuzzy
-#| msgid "Video about GNU Guix."
 msgid "Videos about GNU Guix."
 msgstr "GNU Guix hakkında video."
 
@@ -2326,6 +2324,11 @@ msgid ""
 "from different sources; some come from the project itself, some from the "
 "community of users, and some from independent reviewers and organizations."
 msgstr ""
+"Aşağıda, GNU Guix'i ve onun birçok özelliğini tanıtan ve farklı alanlarda "
+"nasıl kullanıldığını gösteren videoların bir listesi bulunmaktadır. Bu "
+"videolar farklı kaynaklardan geliyor; bazısı projenin kendisinden, bazısı "
+"kullanıcı topluluğundan ve bazısı bağımsız eleştirmenlerden ve kuruluşlardan "
+"gelmektedir."
 
 #: apps/packages/templates/components.scm:61
 #: apps/packages/templates/package.scm:56
@@ -2350,7 +2353,7 @@ msgstr "<1>Yamalar:</1> <2/>."
 
 #: apps/packages/templates/components.scm:84
 msgid "<1>Lint issues:</1> <2/>."
-msgstr ""
+msgstr "<1>Lint hataları:</1> <2/>."
 
 #: apps/packages/templates/components.scm:91
 msgid "<1>Builds:</1> <2/>."
@@ -2405,6 +2408,10 @@ msgid ""
 "<3>continuous integration system</3> shows their current build status "
 "(updated <4/>)."
 msgstr ""
+"GNU Guix, <1/> paketleri şeffaf bir şekilde<2>önceden oluşturulmuş binary "
+"olarak sağlar</2> . Bu sayfalar, paketlerin tam bir listesini çıkarır. "
+"<3>Sürekli entegrasyon sistemimiz</3>, mevcut gelişme durumlarını gösterir "
+"(güncellendi <4/>)."
 
 #: apps/packages/templates/detailed-package-list.scm:56
 #: apps/packages/templates/package-list.scm:54
@@ -2436,6 +2443,8 @@ msgid ""
 "<1>Lint issues</1><2><2.1/>. See <2.2>package definition</2.2> in Guix "
 "source code.</2>"
 msgstr ""
+"<1>Lint hataları</1><2><2.1/>. bakınız<2.2>paket tanımı</2.2> Guix kaynak "
+"kodu içerisinde.</2>"
 
 #~ msgctxt "website menu"
 #~ msgid "Stable"
