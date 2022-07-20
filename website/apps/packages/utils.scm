@@ -1,5 +1,5 @@
 ;;; GNU Guix web site
-;;; Copyright © 2017 Ludovic Courtès <ludo@gnu.org>
+;;; Copyright © 2017, 2022 Ludovic Courtès <ludo@gnu.org>
 ;;; Copyright © 2017 Eric Bavier <bavier@member.fsf.org>
 ;;; Copyright © 2020 Ricardo Wurmus <rekado@elephly.net>
 ;;;
@@ -196,7 +196,10 @@ vocabulary."
                                       (match (origin-uri patch)
                                         ((? string? uri) uri)
                                         ((head . tail) head)))
-                                     %mirrors))))))
+                                     %mirrors))))
+      (_
+       ;; It might be a <file-append> or some other file-like object.
+       #f)))
 
   (define patch-name
     (match-lambda
@@ -218,12 +221,14 @@ vocabulary."
       (ilink "snippet" (ilink-url link))))
 
   (define patches
-    (map (lambda (patch)
-           (ilink `(span (@ (class "mono")) ,(patch-name patch))
-		  (patch-url patch)))
-         (match (package-source package)
-           (#f '())
-           ((? origin? o) (origin-patches o)))))
+    (filter-map (lambda (patch)
+                  (let ((url (patch-url patch)))
+                    (and url
+                         (ilink `(span (@ (class "mono")) ,(patch-name patch))
+		                (patch-url patch)))))
+                (match (package-source package)
+                  (#f '())
+                  ((? origin? o) (origin-patches o)))))
 
   (define snippet
     (match (package-source package)
