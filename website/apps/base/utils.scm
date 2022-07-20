@@ -1,5 +1,5 @@
 ;;; GNU Guix web site
-;;; Copyright © 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021 Ludovic Courtès <ludo@gnu.org>
+;;; Copyright © 2013-2022 Ludovic Courtès <ludo@gnu.org>
 ;;; Copyright © 2015 Mathieu Lirzin <mthl@openmailbox.org>
 ;;; Copyright © 2013 Alex Sassmannshausen <alex.sassmannshausen@gmail.com>
 ;;; Copyright © 2017 Eric Bavier <bavier@member.fsf.org>
@@ -38,6 +38,7 @@
 	    latest-guix-version
             locale-display-name
 	    manual-url
+            manual-devel-url
             manual-url-with-language
 	    number*
 	    paginate))
@@ -139,6 +140,14 @@
      /software/guix/manual/en/html_node/System-installation.html."
   (string-append
    (guix-url (string-append (string-append "manual/" language
+                                           "/html_node/")
+                            subpath) #:localize #f)))
+
+(define* (manual-devel-url #:optional (subpath "")
+                           #:key (language "en"))
+  "Similar to 'manual-url', but link to the development manual."
+  (string-append
+   (guix-url (string-append (string-append "manual/devel/" language
                                            "/html_node/")
                             subpath) #:localize #f)))
 

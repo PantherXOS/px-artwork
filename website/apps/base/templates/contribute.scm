@@ -149,7 +149,7 @@ Translation|I18N|L10N|Artwork") #\|)
             "Information on how to add packages to the distribution can
             be found "
             ,(G_
-              (manual-href
+              (manual-devel-href
                "in the manual"
                (G_ "en")
                (G_ "Contributing.html")))
@@ -194,9 +194,9 @@ Translation|I18N|L10N|Artwork") #\|)
             ,(G_ `(a (@ (href "http://www.schemers.org/Documents/#intro-texts"))
                      "introductory material about Scheme"))
             ". Also, make sure to read the "
-            ,(G_ (manual-href "Contributing"
-                              (G_ "en")
-                              (G_ "Contributing.html")))
+            ,(G_ (manual-devel-href "Contributing"
+                                    (G_ "en")
+                                    (G_ "Contributing.html")))
             " section of the manual for more details on the development
             setup, as well as the coding and cooperation conventions used
             in the project. "))
