@@ -1,5 +1,5 @@
 ;;; GNU Guix web site
-;;; Copyright © 2013, 2014, 2015, 2016, 2017, 2018 Ludovic Courtès <ludo@gnu.org>
+;;; Copyright © 2013, 2014, 2015, 2016, 2017, 2018, 2021 Ludovic Courtès <ludo@gnu.org>
 ;;; Copyright © 2015 Mathieu Lirzin <mthl@openmailbox.org>
 ;;; Copyright © 2013 Alex Sassmannshausen <alex.sassmannshausen@gmail.com>
 ;;; Copyright © 2017 Eric Bavier <bavier@member.fsf.org>
@@ -41,17 +41,18 @@
            (sort (parameterize ((%package-module-path (last-pair
                                                        (%package-module-path))))
                    (fold-packages (lambda (package lst)
-                                    (if (package-superseded package)
+                                    (if (or (package-superseded package)
+                                            (package-replacement package))
                                         lst
-                                        (cons (or (package-replacement package)
-                                                  package)
-                                              lst)))
+                                        (cons package lst)))
                                   '()))
                  (lambda (p1 p2)
                    (string<? (package-name p1)
                              (package-name p2))))))
       (cond ((null? packages) '())
-            ((getenv "GUIX_WEB_SITE_LOCAL") (list-head packages 300))
+            ((string=? "yes"
+                       (or (getenv "GUIX_WEB_SITE_LOCAL") "no"))
+             (list-head packages 300))
             (else packages)))))
 
 (define (all-packages)

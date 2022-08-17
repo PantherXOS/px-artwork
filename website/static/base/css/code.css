@@ -12,9 +12,15 @@
     font-weight: bold;
 }
 
-.syntax-symbol, .syntax-default {
+.syntax-symbol, a[href].syntax-symbol, .syntax-default {
     color: #423;
     background-color: #f2efe4;	/* This must match pre.lisp! */
+}
+
+a[href].syntax-symbol:hover {
+    border-bottom-width: 1px;
+    border-bottom-color: color: grey;
+    border-bottom-style: dotted;
 }
 
 .syntax-string {
@@ -46,3 +52,31 @@
 .syntax-paren7:hover { background-color:#DB7859; }
 .syntax-paren8:hover { background-color:#78DB59; }
 .syntax-paren9:hover { background-color:#5978DB; }
+
+/* Additional syntax for the post-processed manual.  */
+
+.symbol-definition {
+    font-weight: normal;
+    border-top: 3px solid #d4cbb6;
+    background: #eee;
+    margin: 0;
+    padding: .5em 0;
+}
+
+.symbol-definition-category { 	/* first argument to @deffn etc. */
+    font-size: 80%;
+    color: #333;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.symbol-definition-prototype { /* remaining arguments to @deffn etc. */
+    font-family: monospace;
+    font-size: 110%;
+}
+
+.symbol-definition + dd {
+    background: #fafafa;
+    margin: 0;
+    padding: .5em 3% 1em 3%;
+}

@@ -1,6 +1,7 @@
 ;;; GNU Guix web site
-;;; Copyright © 2017 Ludovic Courtès <ludo@gnu.org>
+;;; Copyright © 2017, 2022 Ludovic Courtès <ludo@gnu.org>
 ;;; Copyright © 2017 Eric Bavier <bavier@member.fsf.org>
+;;; Copyright © 2020 Ricardo Wurmus <rekado@elephly.net>
 ;;;
 ;;; Initially written by sirgazil
 ;;; who waives all copyright interest on this file.
@@ -23,15 +24,18 @@
 (define-module (apps packages utils)
   #:use-module (apps aux web)
   #:use-module (apps base utils)
+  #:use-module (apps i18n)
   #:use-module (apps packages data)
   #:use-module (apps packages types)
   #:use-module (guix packages)
+  #:use-module ((guix i18n) #:select (P_))
   #:use-module (guix utils)
   #:use-module (guix build utils)
   #:use-module (guix build download)
   #:use-module (guix download)
   #:use-module (srfi srfi-1)
   #:use-module (srfi srfi-26)
+  #:use-module (sxml transform)
   #:use-module (texinfo)
   #:use-module (texinfo html)
   #:use-module (ice-9 match)
@@ -74,17 +78,28 @@
   ;; 'texi-fragment->stexi' uses 'call-with-input-string', so make sure
   ;; those string ports are Unicode-capable.
   (with-fluids ((%default-port-encoding "UTF-8"))
-    (stexi->shtml (texi-fragment->stexi texi))))
+    (let ((shtml (stexi->shtml (texi-fragment->stexi texi))))
+      (pre-post-order shtml
+                      `((*ENTITY*
+                         . ,(lambda (tag entity)
+                              (match entity
+                                ("nbsp" (string #\xa0))
+                                ("hellip" (string #\x2026))
+                                (_ " "))))
+                        (*default*
+                         . ,(lambda args args))
+                        (*text*
+                         . ,(lambda (_ txt) txt)))))))
 
 (define (package-description-shtml package)
   "Return a SXML representation of PACKAGE description field with HTML
 vocabulary."
-  (and=> (package-description package) texinfo->shtml))
+  (and=> (and=> (package-description package) P_) texinfo->shtml))
 
 (define (package-synopsis-shtml package)
   "Return a SXML representation of PACKAGE synopsis field with HTML
 vocabulary."
-  (and=> (package-synopsis package)
+  (and=> (and=> (package-synopsis package) P_)
          (lambda (synopsis)
            ;; Strip the paragraph that 'texinfo->shtml' adds.
            (match (texinfo->shtml synopsis)
@@ -181,7 +196,10 @@ vocabulary."
                                       (match (origin-uri patch)
                                         ((? string? uri) uri)
                                         ((head . tail) head)))
-                                     %mirrors))))))
+                                     %mirrors))))
+      (_
+       ;; It might be a <file-append> or some other file-like object.
+       #f)))
 
   (define patch-name
     (match-lambda
@@ -203,12 +221,14 @@ vocabulary."
       (ilink "snippet" (ilink-url link))))
 
   (define patches
-    (map (lambda (patch)
-           (ilink `(span (@ (class "mono")) ,(patch-name patch))
-		  (patch-url patch)))
-         (match (package-source package)
-           (#f '())
-           ((? origin? o) (origin-patches o)))))
+    (filter-map (lambda (patch)
+                  (let ((url (patch-url patch)))
+                    (and url
+                         (ilink `(span (@ (class "mono")) ,(patch-name patch))
+		                (patch-url patch)))))
+                (match (package-source package)
+                  (#f '())
+                  ((? origin? o) (origin-patches o)))))
 
   (define snippet
     (match (package-source package)

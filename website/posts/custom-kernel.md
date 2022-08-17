@@ -1,8 +1,13 @@
 title: Creating and using a custom Linux kernel on Guix System
 date: 2019-05-21 12:00
 author: Efraim Flashner
-tags: Software development, Kernel, Customization
+tags: Software development, Linux, Customization
 ---
+
+Take note: As of 2021, the code examples in this guide are becoming
+obsolete.  For an up-to-date treatment of this subject, please consult
+the Cookbook recipe [Customizing the
+Kernel](https://guix.gnu.org/cookbook/en/html_node/Customizing-the-Kernel.html).
 
 Guix is, at its core, a source based distribution with
 [substitutes](https://www.gnu.org/software/guix/manual/en/html_node/Substitutes.html),

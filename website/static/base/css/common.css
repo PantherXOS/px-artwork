@@ -146,8 +146,13 @@
     overflow-x: auto;
 }
 
+.download-table-box {
+    border: none;
+    border-collapse: collapse;
+}
+
 .top-shadow-bg {
-    background-image: url("../img/top-shadow-bg.png");
+    background-image: url("../img/depression-shadow-top.png");
     background-repeat: repeat-x;
 }
 

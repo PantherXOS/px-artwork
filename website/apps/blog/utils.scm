@@ -1,5 +1,5 @@
 ;;; GNU Guix web site
-;;; Copyright © 2016, 2017 Ludovic Courtès <ludo@gnu.org>
+;;; Copyright © 2016, 2017, 2020, 2021 Ludovic Courtès <ludo@gnu.org>
 ;;;
 ;;; This file is part of the GNU Guix web site.
 ;;;
@@ -19,6 +19,7 @@
 (define-module (apps blog utils)
   #:use-module (apps aux lists)
   #:use-module (apps aux web)
+  #:use-module (apps i18n)
   #:use-module (haunt post)
   #:use-module (ice-9 match)
   #:use-module (srfi srfi-1)
@@ -30,6 +31,7 @@
 	    post-url-path
 	    posts/latest
 	    syntax-highlight
+            change-image-to-video
 	    tag-first?
 	    tag-system-path
 	    tag-url-path))
@@ -91,7 +93,9 @@
 
    TAG (string)
      A tag as used by Haunt posts. For example: 'Scheme API'."
-  (url-path-join "blog" "tags" (slugify tag)))
+  ;; Note: End the path with a slash so 'localized-root-path' down the road
+  ;; prepends the language tag.
+  (url-path-join "blog" "tags" (slugify tag) ""))
 
 
 
@@ -124,5 +128,28 @@
      `(,tag (@ ,@attributes) ,@(map syntax-highlight body)))
     ((tag body ...)
      `(,tag ,@(map syntax-highlight body)))
+    ((? string? str)
+     str)))
+
+(define (change-image-to-video sxml)
+  "Replace <img> tags in SXML that refer to WebM videos with proper <video>
+tags.  This hack allows one to refer to a video from a Markdown document."
+  (match sxml
+    (('img ('@ attributes ...) body ...)
+     (let ((src (match (assoc 'src attributes)
+                  ((_ url) url)))
+           (alt (match (assoc 'alt attributes)
+                  ((_ text) text))))
+       (if (string-suffix? ".webm" src)
+           `(video (@ (src ,src)
+                      (poster ,(string-append src ".poster.png"))
+                      (controls "controls"))
+                   (p ,(G_ `(a (@ (href ,src) (class "link-subtle"))
+                               "Download video."))))
+           sxml)))
+    ((tag ('@ attributes ...) body ...)
+     `(,tag (@ ,@attributes) ,@(map change-image-to-video body)))
+    ((tag body ...)
+     `(,tag ,@(map change-image-to-video body)))
     ((? string? str)
      str)))

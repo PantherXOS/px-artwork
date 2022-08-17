@@ -1,4 +1,6 @@
 ;;; GNU Guix web site
+;;; Copyright © 2019 Florian Pelz <pelzflorian@pelzflorian.de>
+;;; Copyright © 2021 Simon Tournier <zimon.toutoune@gmail.com>
 ;;; Initially written by sirgazil who waives all
 ;;; copyright interest on this file.
 
@@ -12,6 +14,7 @@
   #:use-module (apps aux web)
   #:use-module (apps base types)
   #:use-module (apps base utils)
+  #:use-module (apps i18n)
   #:use-module (srfi srfi-1)
   #:use-module (ice-9 match)
   #:export (breadcrumbs
@@ -19,10 +22,15 @@
 	    button-little
 	    contact-preview
 	    contact->shtml
+            horizontal-line
 	    horizontal-separator
+            horizontal-skip
 	    link-more
 	    link-subtle
 	    link-yellow
+            manual-href
+            manual-devel-href
+            manual-link-yellow
 	    navbar
 	    page-indicator
             page-selector))
@@ -40,9 +48,9 @@
      (apps base types)."
   `(nav
     (@ (class "breadcrumbs"))
-    (h2 (@ (class "a11y-offset")) "Your location:")
+    ,(G_ `(h2 (@ (class "a11y-offset")) "Your location:"))
 
-    (a (@ (class "crumb") (href ,(guix-url))) "Home") (span " → ")
+    ,(G_ `(a (@ (class "crumb") (href ,(guix-url))) "Home")) (span " → ")
     ,@(separate (crumbs->shtml crumbs) '(span " → "))))
 
 
@@ -120,8 +128,10 @@
        (sxml->string*
         (match (contact-description contact)
           ((and multilingual (((? string?) (? string?)) ...))
-           (match (assoc "en" multilingual)
-             (("en" blurb) blurb)))
+           (let ((code %current-lang))
+             (match (assoc code multilingual)
+               ((code blurb) blurb)
+               (else (assoc "en" multilingual)))))
           (blurb
            blurb)))
        30)
@@ -144,7 +154,7 @@
     ,(if (string=? (contact-log contact) "")
 	 ""
 	 `(small
-	   " (" (a (@ (href ,(contact-log contact))) "archive") ") "))
+           " (" ,(G_ `(a (@ (href ,(contact-log contact))) "archive")) ") "))
 
     ;; The description can be a list of language/blurb pairs.
     ,(match (contact-description contact)
@@ -172,6 +182,17 @@
 	    `(src ,(guix-url "static/base/img/h-separator.png"))
 	    `(src ,(guix-url "static/base/img/h-separator-dark.png")))
        (alt ""))))
+
+(define (horizontal-skip)
+  "Return SHTML for a small horizontal space."
+  `(span (@ (class "hskip"))))
+
+(define (horizontal-line)
+  "Return SHTML for a visible separator to be used in a dropdown menu
+like a menu item."
+  `(img (@ (class "hline")
+           (src ,(guix-url "static/base/img/h-separator.png"))
+           (alt ""))))
 
 
 (define* (link-more #:key (label "More") (url "#") (light #false))
@@ -215,6 +236,56 @@
   `(a (@ (class "link-yellow") (href ,url)) ,label))
 
 
+
+
+(define (manual-href label manual-lang _1 subpath _2)
+  "Return an HTML a element with its href attribute pointing to the
+manual.  It can be marked for translation as:
+
+  (G_ (manual-href \"some-text\" (G_ \"en\") (G_ \"Some-section.html\")))
+
+   LABEL (string)
+     The content of the a element.
+
+   MANUAL-LANG (string)
+     The normalized language for the Guix manual as produced by
+'doc/build.scm' in the Guix source tree, i.e. \"en\" for the English
+manual.
+
+   SUBPATH (string)
+     The same as in the manual-url procedure."
+  ;; The _ arguments are placeholders for args added by G_, cf. i18n-howto.txt.
+  `(a (@ (href ,(manual-url subpath #:language manual-lang))) ,label))
+
+(define (manual-devel-href label manual-lang _1 subpath _2)
+  "Similar to 'manual-href', but link to the development manual."
+  ;; The _ arguments are placeholders for args added by G_, cf. i18n-howto.txt.
+  `(a (@ (href ,(manual-devel-url subpath #:language manual-lang))) ,label))
+
+(define* (manual-link-yellow label manual-lang _1 #:optional (subpath "") _2)
+  "Return a link-yellow component pointing to the manual.  It can be
+used like this:
+
+  (manual-link-yellow \"some-text\" (G_ \"en\") \"Package-Management.html\")
+
+   LABEL (string)
+     The label of the link-yellow.
+
+   MANUAL-LANG (string)
+     The normalized language for the Guix manual as produced by
+'doc/build.scm' in the Guix source tree, i.e. \"en\" for the English
+manual.
+
+   SUBPATH (string)
+     The same as in the manual-url procedure."
+  ;; The _ arguments are placeholders for args added by G_, cf. i18n-howto.txt.
+  (link-yellow
+   #:label label
+   #:url (manual-url subpath #:language manual-lang)))
+
+
+
+
 (define* (menu-dropdown #:key (label "Item") (active-item "") (url "#") (items '()))
   "Return an SHTML li element representing a dropdown for the navbar.
 
@@ -234,19 +305,54 @@
    ITEMS (list of menu items)
      A list of menu items as returned by the menu-item procedure in this
      same module. If not provided, the value defaults to an empty list."
-  `(li
-    (@ (class "dropdown"))
-    (a
-     (@ (class
-	 ,(if (string=? (string-downcase label) (string-downcase active-item))
-	      "menu-item menu-item-active dropdown-btn"
-	      "menu-item dropdown-btn"))
-	(href ,url))
-     ,label)
-    (div
-     (@ (class "submenu"))
-     (div (@ (class "submenu-triangle")) " ")
-     (ul ,@items))))
+  (let ((label-hash (number->string (string-hash label))))
+    `(li
+      (@ (class ,(if (string=? (string-downcase label)
+                               (string-downcase active-item))
+                     "menu-item menu-item-active dropdown dropdown-btn"
+                     "menu-item dropdown dropdown-btn")))
+      ,@(let ((id (string-append "visible-dropdown-" label-hash)))
+          `(;; show dropdown when button is checked:
+            (style ,(string-append "#" id ":checked ~ #submenu-" label-hash "
+{
+    min-width: 150px;
+    width: max-content;
+
+    /* reset to initial values: */
+    height: auto;
+    overflow: visible;
+}"))
+            ;; show uncheck version of button iff button is checked
+            (style ,(string-append "#" id ":checked \
+~ label[for=all-dropdowns-hidden]
+{
+    display: inline;
+}"))
+            (style "label[for=all-dropdowns-hidden]
+{
+    display: none;
+}")
+            ;; show check version of button iff button is unchecked
+            (style ,(string-append "#" id ":checked ~ label[for=" id "]
+{
+    display: none;
+}"))
+            (input (@ (class "menu-hidden-input")
+                      (type "radio")
+                      (name "dropdown")
+                      (id ,id)))
+            (label
+             (@ (for ,id))
+             ,label)
+            (label
+             (@ (for "all-dropdowns-hidden"))
+             ,label)))
+      (div
+       (@ (class "submenu")
+          (id ,(string-append "submenu-" label-hash)))
+       (div (@ (class "submenu-triangle"))
+            " ")
+       (ul ,@items)))))
 
 
 (define* (menu-item #:key (label "Item") (active-item "") (url "#"))
@@ -283,39 +389,140 @@
     (h1
      (a
       (@ (class "branding") (href ,(guix-url)))
-      (span (@ (class "a11y-offset")) "Guix")))
+      ,(C_ "website menu" `(span (@ (class "a11y-offset")) "Guix"))))
 
     ;; Menu.
     (nav (@ (class "menu"))
-     (h2 (@ (class "a11y-offset")) "Website menu:")
+     ,(G_ `(h2 (@ (class "a11y-offset")) "website menu:"))
+     (input (@ (class "menu-hidden-input")
+               (type "radio")
+               (name "dropdown")
+               (id "all-dropdowns-hidden")))
      (ul
-      ,(menu-item #:label "Overview" #:active-item active-item #:url (guix-url))
-      ,(menu-item #:label "Download" #:active-item active-item #:url (guix-url "download/"))
-      ,(menu-item #:label "Packages" #:active-item active-item #:url (guix-url "packages/"))
-      ,(menu-item #:label "Blog" #:active-item active-item #:url (guix-url "blog/"))
+      ,(C_ "website menu" (menu-item #:label "Overview" #:active-item active-item #:url (guix-url)))
 
-      ,(menu-dropdown #:label "Media" #:active-item active-item
+      ,(menu-dropdown #:label (C_ "website menu" "Download")
+                      #:active-item active-item
+                      #:items
+                      (list
+                       (C_ "website menu"
+                           (menu-item #:label "Standard"
+                                      #:active-item active-item
+                                      #:url (guix-url "download/")))
+                       (C_ "website menu"
+                           (menu-item #:label "Latest"
+                                      #:active-item active-item
+                                      #:url (guix-url "download/latest/")))))
+
+      ,(menu-dropdown
+        #:label (C_ "website menu" "Help")
+        #:active-item active-item
         #:items
         (list
-         (menu-item #:label "Videos" #:active-item active-item #:url (guix-url "videos/"))
-         (menu-item #:label "Screenshots" #:active-item active-item #:url (guix-url "screenshots/"))))
+         (C_ "website menu"
+             (menu-item #:label "All"
+                        #:active-item active-item
+                        #:url (guix-url "help/")))
+         (menu-item #:label (C_ "website menu"
+                                (string-append "GNU Guix Manual "
+                                               (latest-guix-version) ""))
+                    #:active-item active-item
+                    #:url (guix-url "manual/"))
+         (C_ "website menu"
+             (menu-item #:label "GNU Guix Manual (latest)"
+                        #:active-item active-item
+                        #:url (guix-url "manual/devel/")))
+         (C_ "website menu"
+             (menu-item #:label "Guix Reference Card"
+                        #:active-item active-item
+                        #:url (guix-url "guix-refcard.pdf")))
+         (C_ "website menu"
+             (menu-item #:label "Videos"
+                        #:active-item active-item
+                        #:url (guix-url "videos/")))
+         (C_ "website menu"
+             (menu-item #:label "Cookbook"
+                        #:active-item active-item
+                        #:url (guix-url "cookbook/")))
+         (C_ "website menu"
+             (menu-item #:label "GNU Manuals"
+                        #:active-item active-item
+                        #:url (gnu-url "manual/")))
+         (C_ "website menu"
+             (menu-item #:label "Wiki"
+                        #:active-item active-item
+                        #:url
+                        (identity "https://libreplanet.org/wiki/Group:Guix")))
+         (C_ "website menu"
+             (menu-item #:label "IRC Chat"
+                        #:active-item active-item
+                        #:url (guix-url "contact/irc/")))
+         (C_ "website menu"
+             (menu-item #:label "Mailing Lists"
+                        #:active-item active-item
+                        #:url (guix-url "contact/")))))
 
-      ,(menu-item #:label "Help" #:active-item active-item #:url (guix-url "help/"))
-      ,(menu-item #:label "Donate" #:active-item active-item #:url (guix-url "donate/"))
 
-      ,(menu-dropdown #:label "About" #:active-item active-item #:url (guix-url "about/")
+      ,(C_ "website menu" (menu-item #:label "Packages" #:active-item active-item #:url (guix-url "packages/")))
+      ,(C_ "website menu" (menu-item #:label "Blog" #:active-item active-item #:url (guix-url "blog/")))
+
+      ,(menu-dropdown #:label (C_ "website menu" "Media") #:active-item active-item
+        #:items
+        (list
+         (C_ "website menu"
+             (menu-item #:label "Videos"
+                        #:active-item active-item
+                        #:url (guix-url "videos/")))
+         (C_ "website menu"
+             (menu-item #:label "Screenshots"
+                        #:active-item active-item
+                        #:url (guix-url "screenshots/")))
+         (C_ "website menu"
+             (menu-item #:label "Publications"
+                        #:active-item active-item
+                        #:url (guix-url "publications/")))))
+
+      ,(C_ "website menu" (menu-item #:label "Donate" #:active-item active-item #:url (guix-url "donate/")))
+
+      ,(menu-dropdown #:label (C_ "website menu" "About") #:active-item active-item
 	#:items
 	(list
-	 (menu-item #:label "Contact" #:active-item active-item #:url (guix-url "contact/"))
-	 (menu-item #:label "Contribute" #:active-item active-item #:url (guix-url "contribute/"))
-	 (menu-item #:label "Security" #:active-item active-item #:url (guix-url "security/"))
-	 (menu-item #:label "Graphics" #:active-item active-item #:url (guix-url "graphics/"))))))
+         (C_ "website menu" (menu-item #:label "About" #:active-item active-item #:url (guix-url "about/")))
+         (horizontal-line)
+         (C_ "website menu" (menu-item #:label "Contact" #:active-item active-item #:url (guix-url "contact/")))
+         (C_ "website menu" (menu-item #:label "Contribute" #:active-item active-item #:url (guix-url "contribute/")))
+         (C_ "website menu" (menu-item #:label "Security" #:active-item active-item #:url (guix-url "security/")))
+         (C_ "website menu" (menu-item #:label "Graphics" #:active-item active-item #:url (guix-url "graphics/")))))
+      ,(horizontal-skip)
+      ;; Languages dropdown.
+      ,(menu-dropdown #:label (locale-display-name) #:active-item active-item
+        #:items
+        (append
+          (map-in-order
+           (lambda (ietf-info)
+             (let ((lingua (car ietf-info))
+                   (code (cdr ietf-info)))
+               (setlocale LC_ALL (string-append lingua ".utf8"))
+               (let ((out (menu-item #:label (locale-display-name)
+                                     #:active-item active-item
+                                     #:url (guix-url (string-append code "/")
+                                                     #:localize #f))))
+                 (setlocale LC_ALL "")
+                 out)))
+           (sort (delete %current-lingua
+                         ietf-tags-file-contents
+                         (lambda (a b) (string=? a (car b))))
+                 (lambda (a b) string<?)))
+          (list
+            (menu-item #:label (G_ "Translate")
+                       #:active-item active-item
+                       #:url "https://translate.fedoraproject.org/projects/guix/website"))))))
+
 
     ;; Menu button.
     (a
      (@ (class "menu-btn")
-	(href ,(guix-url "menu/"))) "")))
-
+        (href ,(guix-url "menu/"))) "")))
 
 (define (page-indicator page-number total-pages)
   "Return an SHTML span element in the form 'page X of Y' if there is
@@ -327,10 +534,10 @@
    TOTAL-PAGES (number)
      The total number of pages that should be displayed."
   (if (> total-pages 1)
-      `(span
-	(@ (class "page-number-indicator"))
-	" (Page " ,(number->string page-number)
-	" of " ,(number->string total-pages) ")")
+      (G_ `(span
+            (@ (class "page-number-indicator"))
+            " (Page " ,(number->string page-number)
+            " of " ,(number->string total-pages) ")"))
       ""))
 
 
@@ -351,8 +558,8 @@
     (@ (class "page-selector"))
     (h3
      (@ (class "a11y-offset"))
-     ,(string-append "Page " (number->string active-page) " of "
-		     (number->string pages) ". Go to another page: "))
+     ,(G_ (string-append "Page " (number->string active-page) " of "
+                         (number->string pages) ". Go to another page: ")))
     ,(if (> pages 1)
 	 (map
 	  (lambda (page-number)

@@ -6,6 +6,7 @@
   #:use-module (apps base data)
   #:use-module (apps base templates about)
   #:use-module (apps base templates contact)
+  #:use-module (apps base templates cuirass)
   #:use-module (apps base templates irc)
   #:use-module (apps base templates contribute)
   #:use-module (apps base templates donate)
@@ -47,15 +48,16 @@
      application. See Haunt <page> objects for more information."
   (flatten
    (list (menu-builder)
-	 (home-builder site posts)
-	 (help-builder)
-	 (donate-builder)
-	 (about-builder)
-	 (contact-builder)
-	 (irc-builder)
-	 (contribute-builder)
-	 (security-builder)
-	 (graphics-builder))))
+         (home-builder site posts)
+         (help-builder)
+         (cuirass-builder)
+         (donate-builder)
+         (about-builder)
+         (contact-builder)
+         (irc-builder)
+         (contribute-builder)
+         (security-builder)
+         (graphics-builder))))
 
 
 
@@ -83,11 +85,13 @@
   "Return a Haunt page representing the Contribute page of the website."
   (make-page "contribute/index.html" (contribute-t) sxml->html))
 
+(define (cuirass-builder)
+  "Return a Haunt page representing the Cuirass page of the website."
+  (make-page "cuirass/index.html" (cuirass-t) sxml->html))
 
 (define (donate-builder)
   "Return a Haunt page representing the Donate page of the website."
   (make-page "donate/index.html" (donate-t) sxml->html))
-
 
 (define (graphics-builder)
   "Return a Haunt page representing the Graphics page of the website."
@@ -106,7 +110,7 @@
 	  (cons "screenshots" screenshots)
 	  (cons "posts" (posts/latest posts 3))
           (cons "contact-media" (list-head contact-media 3))
-          (cons "videos" (take (flatten playlists) 3)))))
+          (cons "videos" (take (reverse videos) 4)))))
     (make-page "guix.html" (home-t context) sxml->html)))
 
 

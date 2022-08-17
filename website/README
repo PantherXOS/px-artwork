@@ -1,9 +1,9 @@
 -*- mode: org -*-
 
-#+TITLE: GuixSD website
+#+TITLE: Guix website
 
-The GuixSD website available at https://www.gnu.org/software/guix/ is
-a static website built with [[https://haunt.dthompson.us/][Haunt]].  This directory contains the source
+The Guix website available at https://www.gnu.org/software/guix/ is
+a static website built with [[https://dthompson.us/projects/haunt.html][Haunt]].  This directory contains the source
 files of the website.
 
 
@@ -14,8 +14,12 @@ following command to install all the software needed to build the
 website:
 
 #+BEGIN_EXAMPLE
-$ guix package -i git glibc-locales gnutls guile guile-json guile-syntax-highlight guix haunt
+  guix package -m manifest.scm
 #+END_EXAMPLE
+
+*Note*: the packages =guix= and =haunt= should have the same version of Guile,
+otherwise building the website is slow and raises bunch of warnings.  The
+manifest file takes care.
 
 * Running the website
 
@@ -23,14 +27,37 @@ To try out the website locally while you work on it, run the following
 commands:
 
 #+BEGIN_EXAMPLE
-$ cd path/to/guix-artwork/website
-$ GUIX_WEB_SITE_LOCAL=yes haunt build
-$ haunt serve
+  cd path/to/guix-artwork/website
 #+END_EXAMPLE
 
-Then, visit http://localhost:8080/guix.html in a web browser.
+** Build locally
+#+begin_example
+  LANG=en_US.UTF-8 GUIX_WEB_SITE_LOCAL=yes guix environment -C -m manifest.scm \
+                          -E LANG -E GUIX_WEB_SITE_LOCAL  --share=/tmp         \
+                          -- haunt build
+#+end_example
+
+Any other value than =GUIX_WEB_SITE_LOCAL=yes= will build the full website
+considering all the packages and not a small subset.  Note that the final
+website is built using the following command:
+
+#+begin_example
+  guix build -f .guix.scm
+#+end_example
+
+** Serve locally
+#+begin_example
+  LANG=en_US.UTF-8 guix environment -CN -m manifest.scm \
+       -E LANG --share=/tmp                             \
+       -- haunt serve -w
+#+end_example
+
+Then, visit http://localhost:8080/en/guix.html in a web browser.
 
 You can stop the server pressing ~Ctrl + C~ twice.
+
+See also the file i18n-howto.txt for information on working with
+translations.
 
 * Deploying
 
@@ -41,6 +68,29 @@ once the files have been checked into CVS.
 
 See https://savannah.gnu.org/cvs/?group=guix for information on how to
 access Savannah CVS.
+
+* Adding videos
+
+To add more videos to the list in https://guix.gnu.org/en/videos/, do
+the following:
+
+1. Add new video or playlist records to the =videos= list defined in the
+   =(apps media data)= module. Also add video tracks (subtitles and
+   captions) if available. The Video, Playlist and Track data types
+   are documented in the =(apps media types)= module.
+2. For every new video, add the following files to the
+   =website/static/media/videos/YYYY= directory, where =YYYY= is the
+   year of publication of the video:
+
+   1. A poster image of the video, =SLUG.webp=, where =SLUG= is the
+      slug of the video defined in step 1.
+   2. A 250x141 px miniature image based on the poster and called
+      =SLUG.mini.webp=.
+   3. Any subtitles and close caption files named using the format
+      =SLUG-KIND.LANG.vtt=, where =SLUG= is the slug of the video, and
+      =KIND= and =LANG= are the values of those attributes in the
+      track record(s) defined for the video in step 1.
+3. Run the website and check that the videos are displayed correctly.
 
 * Copying
 

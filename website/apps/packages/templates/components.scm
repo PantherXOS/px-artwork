@@ -8,13 +8,16 @@
   #:use-module (apps aux web)
   #:use-module (apps base templates components)
   #:use-module (apps base utils)
+  #:use-module (apps i18n)
   #:use-module (apps packages data)
   #:use-module (apps packages types)
   #:use-module (apps packages utils)
   #:use-module (guix licenses)
   #:use-module (guix packages)
+  #:use-module ((guix i18n) #:select (P_))
   #:use-module (guix gnu-maintenance)
   #:use-module (srfi srfi-1)
+  #:use-module (srfi srfi-26)
   #:use-module (texinfo)
   #:use-module (texinfo plain-text)
   #:export (detailed-package-preview
@@ -55,37 +58,38 @@
      ;; 'gnu-package?' might fetch stuff from the network.  Assume #f if that
      ;; doesn't work.
      ,(if (false-if-exception (gnu-package? package))
-          '(p (i "This is a GNU package.  "))
+          `(p (i ,(G_ "This is a GNU package.  ")))
           "")
 
      ,(package-description-shtml package))
 
     (ul
      (@ (class "package-info"))
-     (li (b "License:") " "
-	 ,(license->shtml (package-license package))
-	 ".")
+     ,(G_ `(li ,(G_ `(b "License:")) " "
+               ,(license->shtml (package-license package))
+               "."))
 
-     (li (b "Website:") " "
-	 ,(link-subtle #:label (package-home-page package)
-		       #:url (package-home-page package)) ".")
+     ,(G_ `(li ,(G_ `(b "Website:")) " "
+               ,(link-subtle #:label (package-home-page package)
+                             #:url (package-home-page package)) "."))
 
-     (li (b "Package source:") " "
-	 ,(location->shtml (package-location package))
-	 ".")
+     ,(G_ `(li ,(G_ `(b "Package source:")) " "
+               ,(location->shtml (package-location package))
+               "."))
 
-     (li (b "Patches:") " "
-	 ,(patches->shtml (package-patches package))
-	 ".")
+     ,(G_ `(li ,(G_ `(b "Patches:")) " "
+               ,(patches->shtml (package-patches package))
+               "."))
 
-     (li (b "Lint issues:") " "
-     	 ,(if (null? (package-lint-issues package))
-     	      "No"
-     	      (link-subtle #:label "Yes"
-     	 		   #:url (guix-url "packages/issues/")))
-     	 ".")
+     ,(G_ `(li ,(G_ `(b "Lint issues:")) " "
+               ,(if (null? (package-lint-issues package))
+                    (G_ "No")
+                    (link-subtle #:label (G_ "Yes")
+                                 #:url (guix-url "packages/issues/")))
+               "."))
 
-     (li (b "Builds:") " " ,(supported-systems->shtml package) ".")
+     ,(G_ `(li ,(G_ `(b "Builds:")) " "
+               ,(supported-systems->shtml package) "."))
      "\n")))
 
 
@@ -99,7 +103,7 @@
      A span element if the count is 0. A mark element otherwise."
   `(,(if (> count 0) 'mark 'span)
     ,(number->string count)
-    ,(if (= count 1) " issue" " issues")))
+    ,(N_ " issue" " issues" count)))
 
 
 (define* (letter-selector #:optional (active-letter ""))
@@ -110,10 +114,10 @@
      The letter that should be displayed as active."
   `(section
     (@ (class "letter-selector"))
-    (h3 (@ (class "a11y-offset")) "Packages menu: ")
+    ,(G_ `(h3 (@ (class "a11y-offset")) "Packages menu: "))
 
-    (h4 (@ (class "selector-title selector-title-top"))
-	"Browse alphabetically")
+    ,(G_ `(h4 (@ (class "selector-title selector-title-top"))
+              "Browse alphabetically"))
     (div
      (@ (class "selector-box-padded"))
      ,@(map
@@ -183,7 +187,8 @@
     (p
      (@ (class "item-summary"))
      ,(string-summarize
-       (stexi->plain-text (texi-fragment->stexi (package-description package)))
+       (stexi->plain-text
+         (texi-fragment->stexi (P_ (package-description package))))
        30)
      "…")))
 
@@ -199,7 +204,7 @@
      If the list of patches is empty, return the string 'None'.
      Otherwise, return a list of links to patches."
   (if (null? patches)
-      "None"
+      (C_ "patches" "None")
       (separate
        (map (lambda (patch)
 	      (link-subtle #:label (ilink-name patch)
@@ -216,9 +221,9 @@
      The letter in which the current packages are listed."
   `(section
     (@ (class "side-bar"))
-    (h3 (@ (class "a11y-offset")) "Packages menu: ")
+    ,(G_ `(h3 (@ (class "a11y-offset")) "Packages menu: "))
 
-    (h4 (@ (class "bar-title bar-title-top")) "Browse alphabetically")
+    ,(G_ `(h4 (@ (class "bar-title bar-title-top")) "Browse alphabetically"))
     (div
      (@ (class "bar-box-padded"))
      ,@(map
@@ -233,16 +238,16 @@
 
     ;; FIXME: This is currently too costly to produce so we just disable it.
 
-    ;; (h4 (@ (class "bar-title")) "Packages Issues")
+    ;; ,(G_ `(h4 (@ (class "bar-title")) "Packages Issues"))
     ;; (ul
     ;;  (@ (class "bar-list"))
     ;;  (li (@ (class "bar-item"))
-    ;;      (a (@ (class "bar-link")
-    ;;            (href ,(guix-url "packages/issues/lint/"))) "Lint"))
+    ;;      ,(G_ `(a (@ (class "bar-link")
+    ;;                  (href ,(guix-url "packages/issues/lint/"))) "Lint")))
     ;;  (li (@ (class "bar-item"))
-    ;;      (a (@ (class "bar-link")
-    ;;            (href ,(guix-url "packages/issues/reproducibility/")))
-    ;;         "Reproducibility")))
+    ;;      ,(G_ `(a (@ (class "bar-link")
+    ;;                  (href ,(guix-url "packages/issues/reproducibility/")))
+    ;;               "Reproducibility"))))
     ))
 
 
@@ -256,22 +261,15 @@
      If the list of supported systems of the package is empty, return
      the string 'None'. Otherwise, return a list of links to systems
      builds in hydra."
-  (let ((build-url "https://hydra.gnu.org/job/gnu/master/")
+  (let ((build-url "https://ci.guix.gnu.org/job/gnu/master/")
 	(package-id (string-append (package-name package)
 				   "-"
 				   (package-version package)))
-	(systems (lset-intersection
-                  string=?
-                  %hydra-supported-systems
-                  (package-transitive-supported-systems package))))
+	(systems (filter (cut supported-package? package <>)
+                         %cuirass-supported-systems)))
     (if (null? systems)
-	"None"
-	(separate
-	 (map (lambda (system)
-		(link-subtle #:label system
-			     #:url (string-append build-url
-						  package-id
-						  "."
-						  system)))
-	      systems)
-	 ", "))))
+        (C_ "systems" "None")
+        ;; TODO: There's currently no way to refer to a job like
+        ;; 'coreutils-8.32' in the Cuirass web UI.  Add such a link once it's
+        ;; become available.
+	(separate systems ", "))))

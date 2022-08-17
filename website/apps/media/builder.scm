@@ -5,18 +5,21 @@
 
 (define-module (apps media builder)
   #:use-module (apps aux system)
+  #:use-module (apps base utils)
   #:use-module (apps media data)
+  #:use-module (apps media templates publication-list)
   #:use-module (apps media templates screenshot)
   #:use-module (apps media templates screenshots-overview)
   #:use-module (apps media templates video)
   #:use-module (apps media templates video-list)
   #:use-module (apps media types)
+  #:use-module (haunt artifact)
   #:use-module (haunt html)
   #:use-module (haunt page)
   #:use-module (haunt utils)
   #:use-module (apps aux web)
   #:use-module (apps media utils)
-  #:use-module (srfi srfi-1)
+  #:use-module (srfi srfi-19)
   #:export (builder))
 
 
@@ -37,11 +40,13 @@
      A list of post objects that represent articles from the blog. See
      Haunt <post> objects for more information.
 
-   RETURN (list of <page>)
-     A list of page objects that represent the web resources of the
-     application. See Haunt <page> objects for more information."
+   RETURN (list of <artifact> and <page>)
+     A list of objects that represent the web resources of the
+     application. See Haunt <artifact> and <page> objects for more
+     information."
   (flatten
-   (list (screenshots-overview-builder)
+   (list (publication-list-builder)
+         (screenshots-overview-builder)
          (screenshots-builder)
          (videos-builder)
          (video-list-builder))))
@@ -50,6 +55,13 @@
 ;;;
 ;;; Helper builders.
 ;;;
+
+(define (publication-list-builder)
+  "Return a Haunt artifact representing the publications page."
+  (serialized-artifact (url-path-join "publications" "index.html")
+                       (publication-list-t publications)
+                       sxml->html))
+
 
 (define (screenshots-builder)
   "Return a list of Haunt pages representing screenshot pages."
@@ -72,24 +84,42 @@
              (screenshots-overview-t screenshots)
              sxml->html))
 
-
 (define (videos-builder)
-  "Return a list of Haunt pages representing videos."
-  (map-in-order
-   (lambda (playlist)
-     (map-in-order
-      (lambda (previous video next)
-        (make-page (video->url video)
-                   (video-t previous video next)
-                   sxml->html))
-      (cons #f (drop-right playlist 1))
-      playlist
-      (append (cdr playlist) '(#f))))
-   playlists))
+  "Return a list whose elements can be single Haunt artifacts or lists
+   of Haunt artifacts, where each artifact represents a page of a
+   video."
+  (define* (video-builder video #:optional (playlist #false))
+    "Return a Haunt artifact for the video."
+    (let ((year (date-year (video-date video)))
+          (slug (video-slug video)))
+
+      (serialized-artifact (path-join "videos"
+                                      (number->string year)
+                                      slug
+                                      "index.html")
+                           (video-t video playlist)
+                           sxml->html)))
+
+  (define (playlist-builder playlist)
+    "Return a list of Haunt artifacts for the videos in the playlist."
+    (map
+     (lambda (video)
+       (video-builder video playlist))
+     (playlist-videos playlist)))
+
+  (map
+   (lambda (item)
+     (cond ((video? item) (video-builder item))
+           ((playlist? item) (playlist-builder item))))
+   videos))
 
 
 (define (video-list-builder)
-  "Return a Haunt page displaying all videos."
-  (make-page (url-path-join "videos" "index.html")
-             (video-list-t)
-             sxml->html))
+  "Return a list of Haunt pages representing a paginated catalog of
+   videos."
+  (let ((sorted-videos (reverse videos)))
+
+    (paginate #:dataset sorted-videos
+	            #:base-path "videos"
+	            #:template video-list-t
+	            #:writer sxml->html)))

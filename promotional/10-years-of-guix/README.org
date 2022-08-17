@@ -1,0 +1,88 @@
+#+TITLE: 10 Years of Guix
+#+DATE: 2022-03-31
+
+
+* Summary
+
+This directory contains the source files of the animated GIFs titled
+/10 Years of Guix/, which include:
+
+
+#+begin_example
+10-years-of-guix/                     # Root directory
+├── colorful-10-sequence              # PNGs to generate Colorful 10 GIF
+├── count-to-10-sequence              # PNGs to generate Count to 10 GIF
+├── scripts                           # Scripts to generate background patterns
+├── *.svg                             # Source SVGs
+├── 10-years-of-guix_colorful-10.gif  # Animated GIF
+├── 10-years-of-guix_count-to-10.gif  # Animated GIF
+├── manifest.scm                      # Guix manifest
+└── README.org
+#+end_example
+
+
+The rest of this document assumes you are working on a guix
+environment with the software required to edit the files. For example:
+
+#+begin_example
+cd 10-years-of-guix
+guix shell -m manifest.scm
+#+end_example
+
+
+* Generating animated GIFs
+
+Assuming you are in the root directory:
+
++ Colorful 10 ::
+
+  #+begin_example
+  convert -delay 50 -loop 1 -dispose previous colorful-10-sequence/*.png /tmp/colorful-10.gif
+  #+end_example
+
++ Count to 10 ::
+
+  #+begin_example
+  convert -delay 100 -loop 1 -dispose previous count-to-10-sequence/*.png /tmp/count-to-10.gif
+  #+end_example
+
+
+* Using the scripts
+
+The =scripts= folder has two scripts with the same purpose: generate
+triangle patterns to be used as background images on the final
+artwork. You can see examples of these patterns in the same directory.
+
+The reason there are two scripts is that I tried to generate the image
+in Guile Scheme first, but the resulting SVG was not editable in
+Inkscape, so I ended up doing it in [Dr]Racket.
+
+-----
+*NOTE:* The generated SVGs are written to the =/tmp= directory.
+Running the scripts again will overwrite any existing SVGs with the
+same name.
+-----
+
++ trigon-pattern.rkt ::
+
+  #+begin_example
+  racket scripts/trigon-pattern.rkt
+  #+end_example
+
++ trigon-pattern.scm ::
+
+  #+begin_example
+  guile scripts/trigon-pattern.scm
+  #+end_example
+
+
+* Copying
+
+Copyleft 2022 Luis Felipe López Acevedo
+
+Except for the programs in the =scripts= folder, which I dedicate to
+the public domain,
+
+Permission is granted to copy, distribute and/or modify this work
+under the terms of the Creative Commons Attribution-ShareAlike 4.0
+International License, with attribution to the copyleft holder.

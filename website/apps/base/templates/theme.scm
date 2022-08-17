@@ -1,19 +1,22 @@
 ;;; GNU Guix web site
+;;; Public domain 2020 Luis Felipe López Acevedo
 ;;; Initially written by sirgazil who waives all
 ;;; copyright interest on this file.
 
 (define-module (apps base templates theme)
   #:use-module (apps base templates components)
   #:use-module (apps base utils)
+  #:use-module (apps i18n)
   #:export (theme))
 
 
 (define* (theme #:key
-		(lang-tag "en")
+                (lang-tag %current-ietf-tag)
 		(title '())
 		(description "")
 		(keywords '())
-		(active-menu-item "About")
+                (index? #true)
+                (active-menu-item (C_ "website menu" "About"))
 		(css '())
 		(scripts '())
 		(crumbs '())
@@ -23,7 +26,8 @@
    LANG-TAG (string)
      IETF language tag. This is used to specify the language of the
      document. For example: en, en-CA. If not provided, the value
-     defaults to English (en).
+     defaults to the currently built language, i.e. the
+     %current-ietf-tag from (apps i18n).
 
    TITLE (list)
      A list of strings to form the value of the title element of the
@@ -39,6 +43,11 @@
    KEYWORDS (list)
      A list of keyword strings that will be used as the value for
      the keywords meta element of the document.
+
+   INDEX? (boolean)
+     Indicate whether the page should be indexed by Internet robots,
+     such as search engine robots. If not provided, it defaults to
+     true.
 
    ACTIVE-MENU-ITEM (string)
      The label of the menu item in the navigation bar that should be
@@ -65,16 +74,22 @@
   `((doctype "html")
 
     (html
-     (@ (lang "en"))
+     (@ (lang ,lang-tag))
 
      (head
       ,(if (null? title)
-	   `(title "GNU Guix")
-	   `(title ,(string-join (append title '("GNU Guix")) " — ")))
+           `(title ,(C_ "webpage title" "GNU Guix"))
+           `(title ,(string-join (append title
+                                         (C_ "webpage title" '("GNU Guix")))
+                                 " — ")))
       (meta (@ (charset "UTF-8")))
       (meta (@ (name "keywords") (content ,(string-join keywords ", "))))
       (meta (@ (name "description") (content ,description)))
       (meta (@ (name "viewport") (content "width=device-width, initial-scale=1.0")))
+      ;; Info for Internet robots.
+      ,(if index?
+           ""
+           '(meta (@ (name "robots") (content "noindex"))))
       ;; Menu prefetch.
       (link (@ (rel "prefetch") (href ,(guix-url "menu/index.html"))))
       ;; Base CSS.
@@ -91,7 +106,7 @@
 	     css)
       ;; Feeds.
       (link (@ (type "application/atom+xml") (rel "alternate")
-	       (title "GNU Guix — Activity Feed")
+               (title ,(C_ "webpage title" "GNU Guix — Activity Feed"))
 	       (href ,(guix-url "feeds/blog.atom"))))
       (link (@ (rel "icon") (type "image/png")
 	       (href ,(guix-url "static/base/img/icon.png"))))
@@ -105,20 +120,50 @@
      (body
       ,(navbar #:active-item active-menu-item)
 
+      ;; NOTE: Comment these messages out when they are not needed anymore.
+      ;(div
+      ; (@ (class "message-box msg-info"))
+      ; (p ,(G_ `("Online conference February 19-20. "
+      ;           ,(G_ `(a
+      ;                  (@ (href "/blog/2022/online-guix-days-2022-announcement-1/"))
+      ;                  "Learn more"))
+      ;           "!"))))
+      ;(div
+      ; (@ (class "message-box msg-info"))
+      ; (p ,(G_ `("Online conference February 19-20. "
+      ;           "Watch the "
+      ;           ,(G_ `(a
+      ;      (@ (href "https://xana.lepiller.eu/guix-days-2022/"))
+      ;      "pre-recorded talks"))
+      ;           "."
+      ;           ,(G_ `(a
+      ;      (@ (href "https://meet.univ-grenoble-alpes.fr/b/pie-uia-2a2-wzl"))
+      ;      "Join us"))
+      ;           "! Learn "
+      ;           ,(G_ `(a
+      ;      (@ (href ,(guix-url "blog/2022/online-guix-days-2022-announcement-2/")))
+      ;      "more"))
+      ;           "!"))))
+
       ,(if (null? crumbs) "" (breadcrumbs crumbs))
 
       ,content
-      (footer
-       "Made with " (span (@ (class "metta")) "♥")
-       " by humans and powered by "
-       (a (@ (class "link-yellow") (href ,(gnu-url "software/guile/")))
-	  "GNU Guile") ".  "
-	  (a
-	   (@ (class "link-yellow")
-	      (href "//git.savannah.gnu.org/cgit/guix/guix-artwork.git/tree/website"))
-	   "Source code")
-	  " under the "
-	  (a
-	   (@ (class "link-yellow")
-	      (href ,(gnu-url "licenses/agpl-3.0.html")))
-	   "GNU AGPL") ".")))))
+      ,(G_
+        `(footer
+          "Made with " ,(G_ `(span (@ (class "metta")) "♥"))
+          " by humans and powered by "
+          ,(G_ `(a
+                 (@ (class "link-yellow")
+                    (href ,(gnu-url "software/guile/")))
+                 "GNU Guile"))
+          ".  "
+          ,(G_ `(a
+                 (@ (class "link-yellow")
+                    (href "//git.savannah.gnu.org/cgit/guix/guix-artwork.git/tree/website"))
+                 "Source code"))
+          " under the "
+          ,(G_ `(a
+                 (@ (class "link-yellow")
+                    (href ,(gnu-url "licenses/agpl-3.0.html")))
+                 "GNU AGPL"))
+          "."))))))
